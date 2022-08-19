@@ -1,0 +1,293 @@
+
+
+:root{
+    --midnight-green: #073b4c;
+    --blue-NCS: #118Ab2;
+    --caribbean-green: #06d6a0;
+    --yellow-crayola: #ffd166;
+    --paradise-pink: #ef476f;
+    
+    --gray-light: #eeeeee;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 360px;   
+    font-family: 'Roboto', sans-serif; 
+}
+
+/******************************
+Header
+*****************************/
+.header{
+    height: 70px;
+    background-color: var(--blue-NCS);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+    color: var(--gray-light);
+    font-size: 0.7em;    
+    font-weight: 300;
+    letter-spacing: 0.2em;
+}
+.header_btn-menu{
+    font-size: 2.4em;
+}
+
+
+/******************************
+aboutme
+*****************************/
+.aboutme{
+    max-height: 300px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    background-color: var(--midnight-green);
+    color: var(--gray-light);
+    position: relative;
+}
+.aboutme_title{
+    margin: 0.5em 1em;
+    text-transform: uppercase;
+}
+.aboutme_textcontent{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4em;
+    word-break: break-all;
+    margin: 0.6em 1em;
+}
+.aboutme_link{
+    color: var(--caribbean-green);
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: -0.05em;    
+    text-transform: uppercase;
+}
+.aboutme_showmore{
+    position: absolute;
+    bottom: 0px;
+    color: var(--gray-light);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
+    align-self: center;    
+    text-align: center;    
+    width: 100%;
+    height: 1.6em;
+    font-size: 1.2em;
+    
+}
+.aboutme_showmore_link{
+    color: inherit;
+    text-decoration: none;  
+    margin: 0.5em;  
+}
+.aboutme_showmore_ghost{
+    height: 1.6em;
+}
+
+/******************************
+MY SKILLS
+*****************************/
+.myskills{
+    max-height: 400px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    background-color: var(--yellow-crayola);
+    color: var(--midnight-green);
+    position: relative;
+}
+.myskills_title{
+    margin: 0.5em 1em;
+    text-transform: uppercase;
+}
+.myskills_skill_header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0.5em 1em;
+}
+
+.myskills_skill_header_icon{
+    background-color: var(--gray-light);
+    color: var(--paradise-pink);
+    box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+    font-size: 1.8em;
+    padding: 0.3em 0.5em;
+    border-radius: 50%;
+    border: solid var(--paradise-pink) 4px;
+}
+
+.myskills_skill_header_title{
+    margin-left: 0.5em;
+    color: var(--paradise-pink);    
+}
+
+.myskills_skill_textcontent{
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.4em;
+    word-break: break-all;
+    margin: 0.6em 1em;
+}
+.myskills_skill_link{
+    color: var(--caribbean-green);
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: -0.05em;    
+    text-transform: uppercase;
+}
+.myskills_showmore{
+    position: absolute;
+    bottom: 0px;
+    color: var(--gray-light);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
+    align-self: center;
+    text-align: center;    
+    width: 100%;      
+    height: 1.6em;
+    font-size: 1.2em;     
+}
+.myskills_showmore_link{
+    color: inherit;
+    text-decoration: none;  
+    margin: 0.5em;  
+}
+.myskills_showmore_ghost{
+    height: 1.6em;
+}
+
+/*******************************
+RECENT PROJECTS SECTION
+*************************/
+.recentprojects{
+    /*max-height: 700px;    */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    background-color: var(--caribbean-green);
+    color: var(--midnight-green);
+    position: relative;
+}
+.recentprojects_title{
+    margin: 0.5em 1em;
+    text-transform: uppercase;
+}
+.recentprojects_textcontent{
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.4em;
+    word-break: break-all;
+    margin: 0.6em 1em;
+}
+.recentprojects_textcontent_link{
+    color: var(--paradise-pink);
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: -0.05em;    
+    text-transform: uppercase;
+}
+
+.recentprojects_project{
+    padding-bottom: 2em;
+}
+
+.recentprojects_project_img{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: auto;
+}
+
+.recentprojects_project_title{
+    background-color: rgba(0,0,0,0.4);    
+    color: var(--yellow-crayola);    
+    position: relative;
+    padding:  0.4em;  
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+}
+
+.recentprojects_project_title_details{
+    position: absolute;
+    top: -2.2em;
+    right: 0em;    
+    background-color: rgba(0,0,0,0.4);
+    padding: 0.5em;
+    border-radius: 10px 0px 0px 0px;
+    font-weight: 700;
+    letter-spacing: -0.012em;
+    text-decoration: underline;
+}
+.recentprojects_showmore{
+    position: absolute;
+    bottom: 0px;
+    color: var(--gray-light);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
+    align-self: center;
+    text-align: center;    
+    width: 100%;      
+    height: 1.6em;
+    font-size: 1.2em;     
+}
+.recentprojects_showmore_link{
+    color: inherit;
+    text-decoration: none;  
+    margin: 0.5em;  
+}
+.recentprojects_showmore_ghost{
+    height: 1.6em;
+}
+
+
+/*************************
+CONTACTME SECTION
+***********************/
+.contactme{
+    min-height: 400px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    background-color: var(--blue-NCS);
+    color: var(--gray-light);
+    position: relative;
+}
+.contactme_title{
+    margin: 0.5em 1em;
+    text-transform: uppercase;
+}
+
+.contactme_form_input{
+    margin: 0.2em 1em;    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+    font-size: 1.4em;
+}
+
+.contactme_form_input_label{
+    margin-bottom: 0.2em;
+}
+.contactme_form_input_input{
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    color: var(--midnight-green);
+}
+
+.contactme_form_btn{
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    background-color: var(--midnight-green);
+    color: var(--gray-light);
+}
