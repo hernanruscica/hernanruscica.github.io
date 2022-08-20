@@ -196,30 +196,46 @@ RECENT PROJECTS SECTION
 }
 
 .recentprojects_project{
-    padding-bottom: 2em;
+    /*background: url("./images/ProductPage.png");
+    background-position: left;
+    background-size: cover;*/
+    width: 85%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    border: var(--midnight-green) 2px solid;
+    box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+    position: relative;
+    overflow: hidden;
 }
 
 .recentprojects_project_img{
-    background-color: rgba(0,0,0,0.4);
-    width: 100%;
-    height: auto;
+    object-fit: cover;
+    object-position: left;
+    height: 100%;
+    width: auto;
+    
 }
 
-.recentprojects_project_title{
-    background-color: rgba(0,0,0,0.4);    
-    color: var(--yellow-crayola);    
-    position: relative;
+.recentprojects_project_title{    
+    background-color: var(--midnight-green);
+    opacity: 0.8;
+    color: var(--yellow-crayola);        
     padding:  0.4em;  
+    width: 100%;
     text-transform: capitalize;
     letter-spacing: 0.2em;
     font-weight: 300;
+    position: absolute;
+    bottom: 0px;
 }
 
 .recentprojects_project_title_details{
     position: absolute;
     top: -2.2em;
     right: 0em;    
-    background-color: rgba(0,0,0,0.4);
+    background-color: inherit;
+    opacity: inherit;
     padding: 0.5em;
     border-radius: 10px 0px 0px 0px;
     font-weight: 700;
