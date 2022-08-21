@@ -40,10 +40,10 @@ Header
     font-size: 2.4em;
 }
 
-
 /******************************
-aboutme
+shared styles
 *****************************/
+
 .aboutme,
 .myskills, 
 .recentprojects,
@@ -55,6 +55,39 @@ aboutme
     padding-top: 2em;
     position: relative;
 }
+
+.aboutme_showmore,
+.myskills_showmore,
+.recentprojects_showmore{
+    position: absolute;
+    bottom: 0px;
+    color: var(--gray-light);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
+    align-self: center;    
+    text-align: center;    
+    width: 100%;
+    height: 1.6em;
+    font-size: 1.2em;    
+}
+.aboutme_showmore_link,
+.myskills_showmore_link,
+.recentprojects_showmore_link{
+    color: inherit;
+    text-decoration: none;  
+    margin: 0.5em;  
+}
+
+.aboutme_showmore_ghost,
+.myskills_showmore_ghost,
+.recentprojects_showmore_ghost{
+    height: 2em;
+}
+
+/******************************
+aboutme
+*****************************/
+
 .aboutme{
     background-color: var(--midnight-green);
     color: var(--gray-light);    
@@ -77,27 +110,6 @@ aboutme
     letter-spacing: -0.05em;    
     text-transform: uppercase;
 }
-.aboutme_showmore{
-    position: absolute;
-    bottom: 0px;
-    color: var(--gray-light);
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
-    align-self: center;    
-    text-align: center;    
-    width: 100%;
-    height: 1.6em;
-    font-size: 1.2em;
-    
-}
-.aboutme_showmore_link{
-    color: inherit;
-    text-decoration: none;  
-    margin: 0.5em;  
-}
-.aboutme_showmore_ghost{
-    height: 1.6em;
-}
 
 /******************************
 MY SKILLS
@@ -119,18 +131,19 @@ MY SKILLS
 }
 
 .myskills_skill_header_icon{
-    background-color: var(--gray-light);
+    background-color: rgba (0, 0, 0, 0);
     color: var(--paradise-pink);
-    box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
-    font-size: 1.8em;
+    /*box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);*/
+    font-size: 1.6em;
     padding: 0.3em 0.5em;
     border-radius: 50%;
-    border: solid var(--paradise-pink) 4px;
+    border: solid var(--paradise-pink) 6px;
 }
 
 .myskills_skill_header_title{
     margin-left: 0.5em;
     color: var(--paradise-pink);    
+    font-size: 1.6em;
 }
 
 .myskills_skill_textcontent{
@@ -146,26 +159,6 @@ MY SKILLS
     font-weight: 700;
     letter-spacing: -0.05em;    
     text-transform: uppercase;
-}
-.myskills_showmore{
-    position: absolute;
-    bottom: 0px;
-    color: var(--gray-light);
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
-    align-self: center;
-    text-align: center;    
-    width: 100%;      
-    height: 1.6em;
-    font-size: 1.2em;     
-}
-.myskills_showmore_link{
-    color: inherit;
-    text-decoration: none;  
-    margin: 0.5em;  
-}
-.myskills_showmore_ghost{
-    height: 1.6em;
 }
 
 /*******************************
@@ -195,11 +188,9 @@ RECENT PROJECTS SECTION
     text-transform: uppercase;
 }
 
-.recentprojects_project{
-    /*background: url("./images/ProductPage.png");
-    background-position: left;
-    background-size: cover;*/
+.recentprojects_project{    
     width: 85%;
+    max-width: 400px;
     height: 300px;
     margin: 0 auto;
     margin-bottom: 2em;
@@ -213,8 +204,7 @@ RECENT PROJECTS SECTION
     object-fit: cover;
     object-position: left;
     height: 100%;
-    width: auto;
-    
+    width: auto;    
 }
 
 .recentprojects_project_title{    
@@ -242,27 +232,6 @@ RECENT PROJECTS SECTION
     letter-spacing: -0.012em;
     text-decoration: underline;
 }
-.recentprojects_showmore{
-    position: absolute;
-    bottom: 0px;
-    color: var(--gray-light);
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
-    align-self: center;
-    text-align: center;    
-    width: 100%;      
-    height: 1.6em;
-    font-size: 1.2em;     
-}
-.recentprojects_showmore_link{
-    color: inherit;
-    text-decoration: none;  
-    margin: 0.5em;  
-}
-.recentprojects_showmore_ghost{
-    height: 1.6em;
-}
-
 
 /*************************
 CONTACTME SECTION
