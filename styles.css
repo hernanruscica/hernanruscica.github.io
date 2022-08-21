@@ -237,6 +237,10 @@ RECENT PROJECTS SECTION
 CONTACTME SECTION
 ***********************/
 
+input {
+    all: unset;
+  }
+
 .contactme{    
     background-color: var(--blue-NCS);
     color: var(--gray-light);    
@@ -261,6 +265,7 @@ CONTACTME SECTION
     padding: 0.4em 0.6em;
     font-size: 0.8em;
     color: var(--midnight-green);
+    background-color: var(--gray-light);
 }
 
 .contactme_form_btn{
