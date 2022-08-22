@@ -23,6 +23,7 @@ html {
 body{
     min-width: 360px;   
     font-family: 'Roboto', sans-serif; 
+    
 }
 
 /******************************
@@ -112,6 +113,26 @@ Header
     font-size: 2em;
     color: var(--gray-light);
 }
+
+.top_arrow{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    font-size: 1em;
+    padding: 0.5em;
+    color: var(--caribbean-green);
+    background-color: rgba(0,0,0,0.75);
+    z-index: 6;
+    text-decoration: none;
+    opacity: 0;
+    transition: all ease-in-out 0.6s;
+}
+.top_arrow_show{
+    opacity: 1;
+    transition: all ease-in-out 0.6s;
+}
+
+
 
 /******************************
 shared styles
