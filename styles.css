@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     min-width: 360px;   
     font-family: 'Roboto', sans-serif; 
@@ -35,9 +39,78 @@ Header
     font-size: 0.7em;    
     font-weight: 300;
     letter-spacing: 0.2em;
+    position: relative;
+    
+    
 }
-.header_btn-menu{
+.header_btn_menu{
     font-size: 2.4em;
+    margin-right: 0.6em;
+    cursor: pointer;
+}
+
+.header_navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;    
+    z-index: 10;
+    background-color: #073b4c;
+    color: var(--gray-light);
+    opacity: 0.9;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 4em;
+    translate: 100vw;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+.header_navbar_close{
+    position: absolute;
+    top: 0.33em;
+    right: 0.8em;
+    font-size: 4em;
+    cursor: pointer;
+}
+.navbar_show{
+    translate: 0vw;
+    opacity: 0.9;
+    transition: all ease-in-out 0.5s;
+}
+
+.navbar_fixed{
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    width: 100vw;
+    opacity: 0.9;
+    animation-name: up_down;
+    animation-duration: 1s;
+}
+
+@keyframes up_down {
+    0% {transform: translateY(-6em);
+        opacity: 0}
+    100% {transform: translateY(0px);
+            opacity: 0.9;}
+}
+
+
+.header_navbar_lista{
+    list-style-type: none;
+}
+.header_navbar_lista_item{
+    border-bottom: var(--caribbean-green) solid 2px;
+    margin-bottom: 1em;
+}
+
+.header_navbar_link{
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--gray-light);
 }
 
 /******************************
@@ -69,6 +142,8 @@ shared styles
     width: 100%;
     height: 1.6em;
     font-size: 1.2em;    
+    cursor: pointer;
+    display: block
 }
 .aboutme_showmore_link,
 .myskills_showmore_link,
@@ -76,6 +151,7 @@ shared styles
     color: inherit;
     text-decoration: none;  
     margin: 0.5em;  
+    
 }
 
 .aboutme_showmore_ghost,
@@ -237,7 +313,7 @@ RECENT PROJECTS SECTION
 CONTACTME SECTION
 ***********************/
 
-input {
+input, textarea {
     all: unset;
   }
 
@@ -263,7 +339,15 @@ input {
 }
 .contactme_form_input_input{
     padding: 0.4em 0.6em;
-    font-size: 0.8em;
+    font-size: 0.8em;    
+    color: var(--midnight-green);
+    background-color: var(--gray-light);
+}
+.contactme_form_input_message{
+    height: 200px;
+    text-align: left;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;    
     color: var(--midnight-green);
     background-color: var(--gray-light);
 }
@@ -274,3 +358,49 @@ input {
     background-color: var(--midnight-green);
     color: var(--gray-light);
 }
+
+.contactme_form_input_input:focus,
+.contactme_form_input_message:focus{    
+    color: var(--midnight-green);
+    background-color: #fff;
+}
+
+/*************************
+FOOTER SECTION
+***********************/
+.footer{
+    min-height: 200px; 
+    padding: 2em 0em;
+    background-color: var(--midnight-green);
+    color: var(--gray-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_social{    
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_social_link{
+    color: var(--caribbean-green);
+    font-size: 2em;
+    margin: 0 0.5em;    
+}
+
+.footer_text{
+    text-align: center;
+}
+
+.footer_text_link{
+    color: var(--caribbean-green);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.aboutme_showmore{
+    display: block
+}
+

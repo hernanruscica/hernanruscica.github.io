@@ -13,27 +13,54 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="header" id = "header">
         <h1 class="header_title">Cesar Hernan Ruscica</h1>
-        <i class="fa-solid fa-bars header_btn-menu"></i>
+        <i class="fa-solid fa-bars header_btn_menu" id = "header_btn_menu"></i>
+        <nav class="header_navbar" id = "header_navbar">
+            <i class="fa-solid fa-xmark header_navbar_close" id = "navbarBtnClose"></i>
+            <ol  class="header_navbar_lista">
+                <li class="header_navbar_lista_item">
+                    <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">About Me</a>
+                </li>
+                <li class="header_navbar_lista_item">
+                    <a href="#myskills" class="header_navbar_link" id = "header_navbar_link_2">Skills</a>
+                </li>
+                <li class="header_navbar_lista_item">
+                    <a href="#recentprojects" class="header_navbar_link" id = "header_navbar_link_3">Recent Projects</a>
+                </li>
+                <li class="header_navbar_lista_item">
+                    <a href="#contactme" class="header_navbar_link" id = "header_navbar_link_4">Contact me</a>
+                </li>
+            </ol>
+        </nav>
     </header>
+    <div class="fake_header" id = 'fake_header'></div>
+
     <!--ABOUT ME SECTION-->
-    <section class="aboutme">
+    <section class="aboutme" id = "aboutme">
         <h2 class="aboutme_title">ABOUT ME</h2>
         <P class="aboutme_textcontent">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             <a href="#" class="aboutme_link">Enlace de about me</a>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </P>
-        <div class="aboutme_showmore">
-            <i class="fa-solid fa-angle-down"></i>
-            <a href="" class="aboutme_showmore_link">Show me more</a>
-            <i class="fa-solid fa-angle-down"></i>
-        </div>
+        <details>
+            <summary class="aboutme_showmore"> 
+                <p class="aboutme_showmore_text" id="aboutme_showmore_text">
+                    <i class="fa-solid fa-angle-down"></i>  
+                    Show me more
+                    <i class="fa-solid fa-angle-down"></i>                
+                </p>                 
+            </summary>
+            <p class="aboutme_textcontent">
+                texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et ducimus natus iure rerum accusantium officiis nobis, facilis autem.
+            </p>
+        </details>
         <div class="aboutme_showmore_ghost"></div>
     </section>
+
     <!--MY SKILLS SECTION-->
-    <section class="myskills">
+    <section class="myskills"  id = "myskills">
         <h2 class="myskills_title">SKILLS</h2>
 
         <!--SKILL SECTION-->
@@ -60,16 +87,21 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </P>
         </div>   
-        <div class="myskills_showmore">
-            <i class="fa-solid fa-angle-down"></i>
-            <a href="" class="myskills_showmore_link">Show me more</a>
-            <i class="fa-solid fa-angle-down"></i>
-        </div>
+        <details>
+            <summary class="myskills_showmore">
+                <i class="fa-solid fa-angle-down"></i>
+                Show me more
+                <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <p class="aboutme_textcontent">
+                texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et ducimus natus iure rerum accusantium officiis nobis, facilis autem.
+            </p>
+        </details>
         <div class="myskills_showmore_ghost"></div>
-    </section>
+    </section>  
 
      <!--RECENT PROJECTS SECTION-->
-    <section class="recentprojects">
+    <section class="recentprojects" id = "recentprojects">
         <h2 class="recentprojects_title">RECENTS PROJECTS</h2>
         <P class="recentprojects_textcontent">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
@@ -97,30 +129,36 @@
                 </div>
             </h3>
         </div>
-        <div class="recentprojects_showmore">
-            <i class="fa-solid fa-angle-down"></i>
-            <a href="" class="recentprojects_showmore_link">Show me more</a>
-            <i class="fa-solid fa-angle-down"></i>
-        </div>
+        <details>
+            <summary class="recentprojects_showmore">
+                <i class="fa-solid fa-angle-down"></i>
+                Show me more
+                <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <p class="aboutme_textcontent">
+                texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et ducimus natus iure rerum accusantium officiis nobis, facilis autem.
+            </p>
+        </details>
         <div class="recentprojects_showmore_ghost"></div>
     </section>
+
     <!--CONTACT ME SECTION-->
-    <section class="contactme">
+    <section class="contactme" id = "contactme">
         <h2 class="contactme_title">Contact me</h2>
         <form  class="contactme_form">
             <div class="contactme_form_input">
                 <label for="name" class="contactme_form_input_label">Name</label>
                 <input type="text" name="name" class="contactme_form_input_input"
-                id="contactme_name" placeholder="Insert your name">
+                id="contactme_name" placeholder="Insert your name" required>
             </div>
             <div class="contactme_form_input">
                 <label for="email" class="contactme_form_input_label">Email</label>
-                <input type="text" name="email"  class="contactme_form_input_input"
-                 id="contactme_email" placeholder="Insert your Email">
+                <input type="email" name="email"  class="contactme_form_input_input"
+                 id="contactme_email" placeholder="Insert your Email" pattern='\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b'  required>
             </div>
             <div class="contactme_form_input">
                 <label for="message" class="contactme_form_input_label">Message</label>
-                <textarea name="message"  class="contactme_form_input_input"
+                <textarea name="message"  class="contactme_form_input_message" required
                     id="contactme_message" placeholder="Write your message">
                 </textarea> 
             </div>
@@ -130,6 +168,25 @@
             
         </form>        
     </section>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer">
+        <div class="footer_social">
+            <a href="#" class="footer_social_link">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="footer_social_link">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="footer_social_link">
+                <i class="fa-brands fa-free-code-camp"></i>
+            </a>
+        </div>
+        <p class="footer_text">Copyright 2022 <br>
+            Cesar Hernan Ruscica<br>
+            <a href="mailto: cesarhernanruscica@gmail.com" class="footer_text_link">Email me!</a>
+        </p>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
