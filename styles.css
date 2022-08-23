@@ -2,7 +2,8 @@
 
 :root{
     --midnight-green: #073b4c;
-    --blue-NCS: #118Ab2;
+    --blue-NCS: rgb(17, 138, 178);
+    --blue-NCS-transparent: rgba(17, 138, 178, 0.9);
     --caribbean-green: #06d6a0;
     --yellow-crayola: #ffd166;
     --paradise-pink: #ef476f;    
@@ -85,6 +86,7 @@ Header
 .navbar_fixed{
     position: fixed;
     top: 0px;
+    background-color: rgba(0,0,0,0.8);
     z-index: 5;
     width: 100vw;
     opacity: 0.9;
@@ -116,20 +118,28 @@ Header
 
 .top_arrow{
     position: fixed;
-    bottom: 1em;
-    right: 1em;
+    bottom: 50vh;
+    right: 0.5em;
     font-size: 1em;
-    padding: 0.5em;
-    color: var(--caribbean-green);
-    background-color: rgba(0,0,0,0.75);
-    z-index: 6;
+    padding: 0.7em 1em;
+    border-radius: 50%;
+    color: var(--gray-light);
+    background-color: rgba(0,0,0,0.6);
+    z-index: 4;
     text-decoration: none;
     opacity: 0;
-    transition: all ease-in-out 0.6s;
+    transform: scale(0);
+    transition: all ease-in-out 0.5s;
 }
 .top_arrow_show{
     opacity: 1;
-    transition: all ease-in-out 0.6s;
+    transform: scale(1);
+    transition: all ease-in-out 0.5s;
+}
+
+.top_arrow_icon{
+    font-size: 2em;
+    
 }
 
 
