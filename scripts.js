@@ -48,4 +48,3 @@ window.addEventListener('scroll', (e) => {
 )
 
 /*navbar_fixed */
-

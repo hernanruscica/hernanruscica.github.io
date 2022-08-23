@@ -11,14 +11,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
+<body>    
     <header class="header" id = "header">
         <h1 class="header_title">Cesar Hernan Ruscica</h1>
         <i class="fa-solid fa-bars header_btn_menu" id = "header_btn_menu"></i>
         <nav class="header_navbar" id = "header_navbar">
             <i class="fa-solid fa-xmark header_navbar_close" id = "navbarBtnClose"></i>
             <ol  class="header_navbar_lista">
+                <li class="header_navbar_lista_item">                    
+                    <i class="fa-solid fa-language header_navbar_language"></i>
+                    <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">
+                        ENG
+                    </a>
+                    &lt;&gt;
+                    <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">
+                        ESP
+                    </a>
+                </li>
                 <li class="header_navbar_lista_item">
                     <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">About Me</a>
                 </li>
@@ -31,6 +40,17 @@
                 <li class="header_navbar_lista_item">
                     <a href="#contactme" class="header_navbar_link" id = "header_navbar_link_4">Contact me</a>
                 </li>
+
+                <li class="header_navbar_lista_item">
+                    <a href="https://github.com/hernanruscica" class="footer_social_link">
+                        <i class="fa-brands fa-github header_navbar_social"></i></a>              
+                    <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link">
+                        <i class="fa-regular fa-envelope header_navbar_social"></i></a>
+                    <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer_social_link">
+                        <i class="fa-brands fa-whatsapp header_navbar_social"></i>
+                    </a>
+                </li>
+
             </ol>
         </nav>
     </header>
@@ -166,8 +186,7 @@
             </div>
             <div class="contactme_form_input">
                 <button class="contactme_form_btn">Send message</button>
-            </div>
-            
+            </div>            
         </form>        
     </section>
 
@@ -181,13 +200,18 @@
                 <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="https://www.freecodecamp.org/chruscica" class="footer_social_link">
-                <i class="fa-brands fa-free-code-camp"></i>
-                
+                <i class="fa-brands fa-free-code-camp"></i>                
+            </a>
+            <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer_social_link">
+                <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>
         <p class="footer_text">Copyright 2022 <br>
             Cesar Hernan Ruscica<br>
-            <a href="mailto: cesarhernanruscica@gmail.com" class="footer_text_link">Email me!</a>
+            <a href="#" class="footer_text_link">Volver Arriba</a>
             
         </p>
     </footer>

@@ -41,8 +41,7 @@ Header
     font-size: 0.7em;    
     font-weight: 300;
     letter-spacing: 0.2em;
-    position: relative;
-    
+    position: relative;    
     
 }
 .header_btn_menu{
@@ -104,22 +103,35 @@ Header
 
 .header_navbar_lista{
     list-style-type: none;
+    padding-top: 2em;
 }
 .header_navbar_lista_item{
     border-bottom: var(--caribbean-green) solid 2px;
-    margin-bottom: 1em;
+    margin-bottom: 0.3em;
+    font-size: 2.8em;
+}
+.header_navbar_social{
+    font-size: 0.6em;
 }
 
 .header_navbar_link{
     text-decoration: none;
-    font-size: 2em;
+    font-size: 0.7em;
     color: var(--gray-light);
+}
+
+.header_navbar_language{
+    font-size: 1em;
+}
+
+.header_navbar_lista_item:last-child{
+    border-bottom: none;
 }
 
 .top_arrow{
     position: fixed;
-    bottom: 50vh;
-    right: 0.5em;
+    bottom: 4vh;
+    right: 0.2em;
     font-size: 1em;
     padding: 0.7em 1em;
     border-radius: 50%;
@@ -381,6 +393,7 @@ input, textarea {
     font-size: 0.8em;    
     color: var(--midnight-green);
     background-color: var(--gray-light);
+    text-align: left;
 }
 
 .contactme_form_btn{
@@ -394,6 +407,7 @@ input, textarea {
 .contactme_form_input_message:focus{    
     color: var(--midnight-green);
     background-color: #fff;
+    text-align: left;
 }
 
 /*************************
@@ -434,4 +448,3 @@ FOOTER SECTION
 .aboutme_showmore{
     display: block
 }
-
