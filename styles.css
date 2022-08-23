@@ -273,7 +273,7 @@ MY SKILLS
     margin: 0.6em 1em;
 }
 .myskills_skill_link{
-    color: var(--caribbean-green);
+    color: var(--midnight-green);
     text-decoration: underline;
     font-weight: 700;
     letter-spacing: -0.05em;    
@@ -344,12 +344,19 @@ RECENT PROJECTS SECTION
     top: -2.2em;
     right: 0em;    
     background-color: inherit;
+    color: var(--caribbean-green);
     opacity: inherit;
-    padding: 0.5em;
+    padding: 0.5em 0.5em;
     border-radius: 10px 0px 0px 0px;
     font-weight: 700;
+    font-size: 1.4em;
     letter-spacing: -0.012em;
     text-decoration: underline;
+    transform: scale(1);
+}
+.recentprojects_project_title_details:hover{
+    transform: scale(1.1); 
+    color: var(--yellow-crayola)
 }
 
 /*************************
@@ -370,11 +377,12 @@ input, textarea {
 }
 
 .contactme_form_input{
-    margin: 0.2em 1em;    
+    /*margin: 0.2em 1em;    */
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.8em;
-    font-size: 1.4em;
+    margin:0em  auto 0.8em auto;
+    font-size: 1.4em;   
+    width: 90%;     
 }
 
 .contactme_form_input_label{
@@ -384,16 +392,18 @@ input, textarea {
     padding: 0.4em 0.6em;
     font-size: 0.8em;    
     color: var(--midnight-green);
-    background-color: var(--gray-light);
+    background-color: var(--gray-light);    
+    
 }
 .contactme_form_input_message{
-    height: 200px;
+    height: 200px;    
     text-align: left;
-    padding: 0.4em 0.6em;
+    padding: 0.4em 1.2em;
     font-size: 0.8em;    
     color: var(--midnight-green);
     background-color: var(--gray-light);
     text-align: left;
+    resize: none;
 }
 
 .contactme_form_btn{
@@ -401,6 +411,7 @@ input, textarea {
     font-size: 0.8em;
     background-color: var(--midnight-green);
     color: var(--gray-light);
+    cursor: pointer;
 }
 
 .contactme_form_input_input:focus,
@@ -448,3 +459,4 @@ FOOTER SECTION
 .aboutme_showmore{
     display: block
 }
+

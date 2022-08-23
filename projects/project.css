@@ -1,0 +1,32 @@
+
+
+
+.project_first_section{
+    background-color: var(--caribbean-green);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.project_first_section_img{
+    width: 100%;
+    height: auto;
+}
+.project_first_section_link{
+    text-decoration: none;
+    font-size: 1.6em;
+    margin: 0.5em 0.5em;
+    color: var(--paradise-pink);
+    background-color: var(--yellow-crayola);
+    border-radius: 10px;
+    padding: 0.4em 0.5em;
+    box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+    border: solid #555 1px;
+}
+
+.project_second_section{
+    background-color: var(--yellow-crayola);
+    min-height: 300px;    
+}

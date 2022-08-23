@@ -66,13 +66,9 @@
             <a href="#" class="aboutme_link">Enlace de about me</a>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </P>
-        <details>
-            <summary class="aboutme_showmore" id = "aboutme_showmore"> 
-                <p class="aboutme_showmore_text" id="aboutme_showmore_text">
-                    <i class="fa-solid fa-angle-down"></i>  
-                    Show me more
-                    <i class="fa-solid fa-angle-down"></i>                
-                </p>                 
+        <details>            
+            <summary class="aboutme_showmore" id = "aboutme_showmore">                                     
+                    <i class="fa-solid fa-angle-down"></i> Show me more <i class="fa-solid fa-angle-down"></i>
             </summary>
             <p class="aboutme_textcontent">
                 texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et ducimus natus iure rerum accusantium officiis nobis, facilis autem.
@@ -110,7 +106,7 @@
             </P>
         </div>   
         <details>
-            <summary class="myskills_showmore">
+            <summary class="myskills_showmore" id = "myskills_showmore">
                 <i class="fa-solid fa-angle-down"></i>
                 Show me more
                 <i class="fa-solid fa-angle-down"></i>
@@ -136,9 +132,9 @@
             
             <h3 class="recentprojects_project_title">
                 Form validation
-                <div class="recentprojects_project_title_details">
+                <a href = "projects/project01.html" class="recentprojects_project_title_details">
                     DETAILS
-                </div>
+                </a>
             </h3>
         </div>
         <!--RECENT PROJECT 2 SECTION-->
@@ -146,13 +142,13 @@
             <img src="./images/PorfolioPage.png" alt="" class="recentprojects_project_img">
             <h3 class="recentprojects_project_title">
                 portfolio
-                <div class="recentprojects_project_title_details">
+                <a href="#" class="recentprojects_project_title_details">
                     DETAILS
-                </div>
+                </a>
             </h3>
         </div>
         <details>
-            <summary class="recentprojects_showmore">
+            <summary class="recentprojects_showmore" id = "recentprojects_showmore">
                 <i class="fa-solid fa-angle-down"></i>
                 Show me more
                 <i class="fa-solid fa-angle-down"></i>
@@ -167,23 +163,28 @@
     <!--CONTACT ME SECTION-->
     <section class="contactme" id = "contactme">
         <h2 class="contactme_title">Contact me</h2>
-        <form  class="contactme_form">
+        <form  action="https://formspree.io/f/mlevdjdk" method="post" class="contactme_form">
+            
             <div class="contactme_form_input">
                 <label for="name" class="contactme_form_input_label">Name</label>
                 <input type="text" name="name" class="contactme_form_input_input"
                 id="contactme_name" placeholder="Insert your name" required>
             </div>
+
             <div class="contactme_form_input">
                 <label for="email" class="contactme_form_input_label">Email</label>
                 <input type="email" name="email"  class="contactme_form_input_input"
                  id="contactme_email" placeholder="Insert your Email" pattern='\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b'  required>
             </div>
+
             <div class="contactme_form_input">
                 <label for="message" class="contactme_form_input_label">Message</label>
                 <textarea name="message"  class="contactme_form_input_message" required
-                    id="contactme_message" placeholder="Write your message">
+                    id="contactme_message" placeholder="Write your message"
+                    cols="200">
                 </textarea> 
             </div>
+
             <div class="contactme_form_input">
                 <button class="contactme_form_btn">Send message</button>
             </div>            

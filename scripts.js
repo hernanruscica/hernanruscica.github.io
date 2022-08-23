@@ -10,7 +10,7 @@ const $topArrow = $d.getElementById('top_arrow');
 
 $d.addEventListener('click', (e) => {  
     
-    console.log(e.target);
+    
     if (e.target.id == 'navbarBtnClose'){
         console.log('click en el boton de cerrar el menu');
         $navbar.classList.toggle('navbar_show');
@@ -23,7 +23,17 @@ $d.addEventListener('click', (e) => {
         console.log("btn navbar")
         $navbar.classList.toggle('navbar_show');
     }
-    
+    if (e.target.id == 'aboutme_showmore' || e.target.id == 'myskills_showmore' || e.target.id == 'recentprojects_showmore' ){        
+        let isOpen = e.target.parentElement.hasAttribute('open');
+        let textContent = '';
+        if (isOpen == false){
+            textContent = '<i class="fa-solid fa-angle-up"></i> Show me less <i class="fa-solid fa-angle-up"></i>'
+        }else{
+            textContent = '<i class="fa-solid fa-angle-down"></i> Show me more <i class="fa-solid fa-angle-down"></i>'
+        }
+        console.log(e.target.style.height)
+        e.target.innerHTML = textContent;
+    }    
     //console.log(window.scrollY);
 }
 );
