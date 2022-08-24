@@ -116,16 +116,32 @@ Header
 
 .header_navbar_link{
     text-decoration: none;
-    font-size: 0.7em;
+    font-size: 18px;
+    padding: 0.6em;    
     color: var(--gray-light);
+}
+.header_navbar_link + .header_navbar_link{
+    margin-left: 1.4em;
+}
+.header_navbar_link_selected{
+    border: var(--caribbean-green) solid 2px;
+    background-color: none;
+}
+
+.header_navbar_link_image{
+    height: 16px;
+    width: auto;
 }
 
 .header_navbar_language{
     font-size: 1em;
 }
 
-.header_navbar_lista_item:last-child{
+.header_navbar_lista_item:last-child,
+.header_navbar_lista_item:first-child{
     border-bottom: none;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 .top_arrow{
@@ -230,6 +246,22 @@ aboutme
     text-transform: uppercase;
 }
 
+.aboutme_textcontent_more{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4em;
+    word-break: break-all;
+    margin: 0.6em 1em;
+    height: 0px;
+    transition: all ease-in-out 0.5s;
+}
+
+.aboutme_textcontent_more_expanded{
+    height:150px;
+    transition: all ease-in-out 0.5s;
+}
+
+
 /******************************
 MY SKILLS
 *****************************/
@@ -279,6 +311,22 @@ MY SKILLS
     letter-spacing: -0.05em;    
     text-transform: uppercase;
 }
+
+.myskills_textcontent_more{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4em;
+    word-break: break-all;
+    margin: 0.6em 1em;
+    height: 0px;
+    transition: all ease-in-out 0.5s;
+}
+
+.myskills_textcontent_more_expanded{
+    height:150px;
+    transition: all ease-in-out 0.5s;
+}
+
 
 /*******************************
 RECENT PROJECTS SECTION
@@ -358,6 +406,22 @@ RECENT PROJECTS SECTION
     transform: scale(1.1); 
     color: var(--yellow-crayola)
 }
+
+.recentprojects_textcontent_more{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4em;
+    word-break: break-all;
+    margin: 0.6em 1em;
+    height: 0px;
+    transition: all ease-in-out 0.5s;
+}
+
+.recentprojects_textcontent_more_expanded{
+    height:150px;
+    transition: all ease-in-out 0.5s;
+}
+
 
 /*************************
 CONTACTME SECTION

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +12,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>    
+    
+    <!--HEADER SECTIOn-->
     <header class="header" id = "header">
         <h1 class="header_title">Cesar Hernan Ruscica</h1>
         <i class="fa-solid fa-bars header_btn_menu" id = "header_btn_menu"></i>
         <nav class="header_navbar" id = "header_navbar">
             <i class="fa-solid fa-xmark header_navbar_close" id = "navbarBtnClose"></i>
             <ol  class="header_navbar_lista">
-                <li class="header_navbar_lista_item">                    
-                    <i class="fa-solid fa-language header_navbar_language"></i>
-                    <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">
-                        ENG
+                <li class="header_navbar_lista_item">   
+                    <a href="#aboutme" class="header_navbar_link header_navbar_link_selected" id = "header_navbar_link_1">
+                        <img src="../icons/gb_flag.svg" alt="English flag" class="header_navbar_link_image">
+                        ENGLISH
                     </a>
-                    &lt;&gt;
                     <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">
-                        ESP
+                        <img src="../icons/es_flag.svg" alt="spanish flag" class="header_navbar_link_image">
+                        ESPAÑOL
                     </a>
                 </li>
                 <li class="header_navbar_lista_item">
@@ -50,10 +52,11 @@
                         <i class="fa-brands fa-whatsapp header_navbar_social"></i>
                     </a>
                 </li>
-
             </ol>
         </nav>
     </header>
+    
+    <!--FAKE HEADER SECTION its take the empty space when the header becomes fixed-->
     <div class="fake_header" id = 'fake_header'></div>
     <a href="#" class="top_arrow" id="top_arrow">
         <i class="fa-solid fa-angles-up top_arrow_icon"></i>
@@ -66,15 +69,14 @@
             <a href="#" class="aboutme_link">Enlace de about me</a>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </P>
-        <details>            
-            <summary class="aboutme_showmore" id = "aboutme_showmore">                                     
-                    <i class="fa-solid fa-angle-down"></i> Show me more <i class="fa-solid fa-angle-down"></i>
-            </summary>
-            <p class="aboutme_textcontent">
-                texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et ducimus natus iure rerum accusantium officiis nobis, facilis autem.
-            </p>
-        </details>
-        <div class="aboutme_showmore_ghost"></div>
+        <p class="aboutme_textcontent_more" id="aboutme_more">
+            texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et 
+            ducimus natus iure rerum accusantium officiis nobis, facilis autem.
+        </p>      
+        <div class="aboutme_showmore" id = "aboutme_showmore">                                     
+            <i class="fa-solid fa-angle-down "></i> Show me more <i class="fa-solid fa-angle-down "></i>
+        </div>          
     </section>
 
     <!--MY SKILLS SECTION-->
@@ -105,17 +107,14 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </P>
         </div>   
-        <details>
-            <summary class="myskills_showmore" id = "myskills_showmore">
-                <i class="fa-solid fa-angle-down"></i>
-                Show me more
-                <i class="fa-solid fa-angle-down"></i>
-            </summary>
-            <p class="aboutme_textcontent">
-                texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et ducimus natus iure rerum accusantium officiis nobis, facilis autem.
-            </p>
-        </details>
-        <div class="myskills_showmore_ghost"></div>
+        <p class="myskills_textcontent_more" id="myskills_more">
+            texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et 
+            ducimus natus iure rerum accusantium officiis nobis, facilis autem.
+        </p>      
+        <div class="myskills_showmore" id = "myskills_showmore">                                     
+            <i class="fa-solid fa-angle-down "></i> Show me more <i class="fa-solid fa-angle-down "></i>
+        </div>         
     </section>  
 
      <!--RECENT PROJECTS SECTION-->
@@ -126,13 +125,17 @@
             <a href="#" class="recentprojects_textcontent_link">Enlace de recent projects</a>            
         </P>
         <!--RECENT PROJECT 1 SECTION-->
-        <div class="recentprojects_project">
-            
-            <img src="./images/ProductPage.png" alt="" class="recentprojects_project_img">
-            
+        <!-- Datos necesarios:
+            . nombre de la captura de pantalla del proyecto
+            . titulo del proyecto
+            . url a la demo en github pages
+            . url a la pagina del projecto dentro de mi sitio.
+        -->
+        <div class="recentprojects_project">            
+            <img src="./images/todo_list_snapshot.png" alt="" class="recentprojects_project_img">            
             <h3 class="recentprojects_project_title">
-                Form validation
-                <a href = "projects/project01.html" class="recentprojects_project_title_details">
+                "To do" List project
+                <a href = "projects/project_todolist.html" class="recentprojects_project_title_details">
                     DETAILS
                 </a>
             </h3>
@@ -147,17 +150,16 @@
                 </a>
             </h3>
         </div>
-        <details>
-            <summary class="recentprojects_showmore" id = "recentprojects_showmore">
-                <i class="fa-solid fa-angle-down"></i>
-                Show me more
-                <i class="fa-solid fa-angle-down"></i>
-            </summary>
-            <p class="aboutme_textcontent">
-                texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et ducimus natus iure rerum accusantium officiis nobis, facilis autem.
-            </p>
-        </details>
-        <div class="recentprojects_showmore_ghost"></div>
+        
+        <p class="recentprojects_textcontent_more" id="recentprojects_more">
+            texto despues del summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero eveniet laborum velit? Veniam, saepe itaque, cum optio ratione necessitatibus libero et 
+            ducimus natus iure rerum accusantium officiis nobis, facilis autem.
+        </p>      
+        <div class="recentprojects_showmore" id = "recentprojects_showmore">                                     
+            <i class="fa-solid fa-angle-down "></i> Show me more <i class="fa-solid fa-angle-down "></i>
+        </div>  
+
     </section>
 
     <!--CONTACT ME SECTION-->
