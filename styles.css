@@ -164,17 +164,23 @@ Header
     padding: 0.7em 1em;
     border-radius: 50%;
     color: var(--gray-light);
-    background-color: rgba(0,0,0,0.6);
+    background-color: var(--midnight-green);
     z-index: 4;
     text-decoration: none;
     opacity: 0;
     transform: scale(0);
-    transition: all ease-in-out 0.5s;
+
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out    
 }
 .top_arrow_show{
-    opacity: 1;
+    opacity: 0.8;
     transform: scale(1);
-    transition: all ease-in-out 0.5s;
+
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out
 }
 
 .top_arrow_icon{
@@ -381,20 +387,21 @@ RECENT PROJECTS SECTION
 
 .recentprojects_project_img{
     object-fit: cover;
-    object-position: left;
-    height: 100%;
-    width: auto;    
+    object-position: center;   
+    filter: blur(1px);
+    filter: brightness(70%); 
+    border: var(--midnight-green);
 }
 
 .recentprojects_project_title{    
-    background-color: var(--midnight-green);
-    opacity: 0.8;
-    color: var(--yellow-crayola);        
-    padding:  0.4em;  
+    background-color: var(--gray-light);
+    opacity: 1;
+    color: var(--midnight-green);        
+    padding:  0.8em;  
     width: 100%;
     text-transform: capitalize;
     letter-spacing: 0.2em;
-    font-weight: 300;
+    font-weight: 500;
     position: absolute;
     bottom: 0px;
 }
@@ -403,19 +410,24 @@ RECENT PROJECTS SECTION
     position: absolute;
     top: -2.2em;
     right: 0em;    
-    background-color: inherit;
+    background-color: var(--midnight-green);
     color: var(--caribbean-green);
-    opacity: inherit;
+    border: var(--gray-light) solid 2px;
+    opacity: 1;
     padding: 0.5em 0.5em;
+    
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px 0px 0px 0px;
     font-weight: 700;
-    font-size: 1.4em;
+    font-size: 1em;
     letter-spacing: -0.012em;
-    text-decoration: underline;
+    text-decoration: none;
     transform: scale(1);
 }
-.recentprojects_project_title_details:hover{
-    transform: scale(1.1); 
+.recentprojects_project_title_details:hover{    
     color: var(--yellow-crayola)
 }
 

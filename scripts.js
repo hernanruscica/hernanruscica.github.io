@@ -62,7 +62,7 @@ window.addEventListener('scroll', (e) => {
         $fakeHeader.style.height = '0px';
     }  
     */  
-    if (window.scrollY > 200){
+    if (window.scrollY > 70){
         $topArrow.classList.add('top_arrow_show');
     }else{
         $topArrow.classList.remove('top_arrow_show');
