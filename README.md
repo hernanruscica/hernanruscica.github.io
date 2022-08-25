@@ -1,5 +1,6 @@
 # hernanruscica.github.io
 Sitio web de portfolio
-<h1>my personal web page, fully responsive</h1>
+<h1>My personal Web Page, fully responsive</h1>
 <a href="https://hernanruscica.github.io/">demo ONLINE</a>
-<p>incluye proyectos realizados con JS y CSS</p>
+<p>It includes JS, CSS, and HTML projects.</p>
+
