@@ -53,13 +53,15 @@ $d.addEventListener('click', (e) => {
 }
 );
 window.addEventListener('scroll', (e) => {
-    if (window.scrollY > 70){
+    /*
+    if (window.scrollY > 0){
         $header.classList.add('navbar_fixed');   
         $fakeHeader.style.height = '70px';
     }else{
         $header.classList.remove('navbar_fixed');        
         $fakeHeader.style.height = '0px';
-    }    
+    }  
+    */  
     if (window.scrollY > 200){
         $topArrow.classList.add('top_arrow_show');
     }else{

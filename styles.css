@@ -32,6 +32,7 @@ Header
 *****************************/
 .header{
     height: 70px;
+    width: 100vw;
     background-color: var(--blue-NCS);
     display: flex;
     justify-content: space-between;
@@ -41,7 +42,10 @@ Header
     font-size: 0.7em;    
     font-weight: 300;
     letter-spacing: 0.2em;
-    position: relative;    
+    position: fixed;    
+    top: 0px;
+    left: 0px;
+    z-index: 5;
     
 }
 .header_btn_menu{
@@ -54,7 +58,7 @@ Header
     position: fixed;
     top: 0px;
     left: 0px;    
-    z-index: 10;
+    z-index: 5;
     background-color: #073b4c;
     color: var(--gray-light);
     opacity: 0.9;
@@ -76,6 +80,12 @@ Header
     font-size: 4em;
     cursor: pointer;
 }
+/*
+.header_fake{
+    height: 70px;
+}
+*/
+
 .navbar_show{
     translate: 0vw;
     opacity: 0.9;
@@ -89,17 +99,19 @@ Header
     z-index: 5;
     width: 100vw;
     opacity: 0.9;
+    /*
     animation-name: up_down;
     animation-duration: 1s;
+    */
 }
-
+/*
 @keyframes up_down {
     0% {transform: translateY(-6em);
         opacity: 0}
     100% {transform: translateY(0px);
             opacity: 0.9;}
 }
-
+*/
 
 .header_navbar_lista{
     list-style-type: none;
@@ -184,7 +196,7 @@ shared styles
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
-    padding-top: 2em;
+    padding-top: 4em;
     position: relative;
 }
 
