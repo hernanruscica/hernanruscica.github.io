@@ -26,7 +26,6 @@
                         <img src="../icons/gb_flag.svg" alt="English flag" class="header_navbar_link_image">
                         ENGLISH
                     </a>
-
                     <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">
                         <img src="../icons/es_flag.svg" alt="spanish flag" class="header_navbar_link_image">
                         ESPAÑOL
@@ -59,37 +58,48 @@
     </header>
     
 
-    <!--FAKE HEADER SECTION its take the empty space when the header becomes fixed-->
-    <div class="fake_header" id = 'fake_header'></div>
+    <!--Top the top of the page-->    
     <a href="#" class="top_arrow" id="top_arrow">
         <i class="fa-solid fa-angles-up top_arrow_icon"></i>
     </a>   
 
+
+    <!-- ids of the elements to put the Variables
+        'project_title': title of the project,
+        'project_image': image capture of the project (just file name),
+        'project_link_external': url to the external link,
+        'project_description': brieft description for the project.
+        'project_skill': One skill needed to make the project. you can put several skills by put them in an array.
+    -->
+
+    <!-- **********************************      DINAMIC PART     Starts ***********************************-->
     <!--PROJECT PAGE FIRST SECTION-->
     <section class="project_first_section" id = "project_first_section">
-        <h1 class="project_first_section_title">Todo List Project</h1>
-        <img src="../images/ProductPage.png" alt="" class="project_first_section_img">     
-        <a href="#" class="project_first_section_link">Live Demo</a>
+        <h1 class="project_first_section_title" id = "project_title">Todo List Project</h1>
+        <img src="../images/ProductPage.png" alt="" class="project_first_section_img" id = 'project_image'>     
+        <a href="#" class="project_first_section_link" id = 'project_link_external'>Live Demo</a>
         <a href="../index.html" class="project_first_section_back">
             <i class="fa-solid fa-circle-arrow-left"></i>
-            Back to projects
+            Back to index
         </a>
     </section>
 
     <!--PROJECT PAGE FIRST SECTION-->
     <section class="project_second_section"  id = "project_second_section">
         <h2 class="project_second_section_title">Description:</h2>
-        <p class="project_second_section_paragraph">
+        <p class="project_second_section_paragraph" id = 'project_description'>
             Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <h2 class="project_second_section_title">Skills:</h2>
         <ul class="project_second_section_list">
-            <li class="project_second_section_list_item">skill 1 brief description</li>
-            <li class="project_second_section_list_item">skill 2 brief description</li>
-            <li class="project_second_section_list_item">skill 3 brief description</li>
-        </ul>
-       
+            <li class="project_second_section_list_item" id = "project_skill">skill 1 brief description</li>
+            <li class="project_second_section_list_item" id = "project_skill">skill 2 brief description</li>
+            <li class="project_second_section_list_item" id = "project_skill">skill 3 brief description</li>
+        </ul>       
     </section>
+    <!-- **********************************       DINAMIC PART  Ends  ***********************************-->
+
+
 
     <!--FOOTER SECTION-->
     <footer class="footer">
