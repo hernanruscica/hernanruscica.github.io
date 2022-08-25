@@ -27,7 +27,7 @@
     max-width: 450px;
     height: 50vw;     
     align-self: center;
-    border: var(--midnight-green) solid 4px;
+    border: var(--yellow-crayola) solid 4px;
 }
 .project_first_section_link{
     text-decoration: none;
@@ -57,7 +57,7 @@
     border-radius: 0px 0px 15px 0px;
     opacity: 0.8;   
     display: flex;
-    width: 240px;
+    width: 220px;
     justify-content: space-between;
     align-items: center;
 }
