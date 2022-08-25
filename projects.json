@@ -1,0 +1,23 @@
+[
+{
+    "id": 0,
+    "titulo": "'To Do' List project",
+    "imagen": "./images/todo_list_snapshot.png",
+    "enlaceInterno": "./projects/project_todolist.html",
+    "enlaceExterno": "https://hernanruscica.github.io/JavaScriptManipulacionDOM/domManipulationPart2/proyecto05/"
+},
+{
+    "id": 1,
+    "titulo": "Chronometer project",
+    "imagen": "./images/cronometer_snapshot.png",
+    "enlaceInterno": "./projects/project_chronometer.html",
+    "enlaceExterno": "https://hernanruscica.github.io/JavaScriptManipulacionDOM/domManipulationPart2/proyecto04"
+},
+{
+    "id": 2,
+    "titulo": "Phrases Generator project",
+    "imagen": "./images/phrases_generator_snapshot.png",
+    "enlaceInterno": "./projects/project_phrases_generator.html",
+    "enlaceExterno": "https://hernanruscica.github.io/JavaScriptManipulacionDOM/domManipulationPart2/"
+}
+]
