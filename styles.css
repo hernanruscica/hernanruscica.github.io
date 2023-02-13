@@ -24,14 +24,14 @@ html {
 body{
     min-width: 360px;   
     font-family: 'Roboto', sans-serif; 
-    
+    padding-top: 50px;
 }
 
 /******************************
 Header
 *****************************/
 .header{
-    height: 70px;
+    height: 50px;
     width: 100vw;
     background-color: var(--blue-NCS);
     display: flex;
@@ -39,7 +39,7 @@ Header
     align-items: center;
     padding: 0em 1em;
     color: var(--gray-light);
-    font-size: 0.7em;    
+    font-size: 0.5em;    
     font-weight: 300;
     letter-spacing: 0.2em;
     position: fixed;    
@@ -48,14 +48,22 @@ Header
     z-index: 5;
     
 }
-.header_btn_menu{
+.header__title{
+    font-size: 1.7em;
+    
+    text-align: center;
+}
+
+
+
+.header__btn-menu{
     display: block;
     font-size: 2.4em;
-    margin-right: 0.6em;
+    margin-right: 1em;
     cursor: pointer;
 }
 
-.header_navbar{
+.header__navbar-mobile{
     position: fixed;
     top: 0px;
     left: 0px;    
@@ -73,7 +81,7 @@ Header
     opacity: 0;
     transition: all ease-in-out 0.5s;
 }
-.header_navbar_close{
+.header__navbar-mobile__btn-menu-close{
     position: absolute;
     top: 0.33em;
     right: 0.8em;
@@ -96,26 +104,26 @@ Header
     opacity: 0.9;    
 }
 
-.header_navbar_lista{
+.header__navbar-mobile__list{
     list-style-type: none;
     padding-top: 2em;
 }
-.header_navbar_lista_item{
+.header__navbar-mobile__list__item{
     border-bottom: var(--caribbean-green) solid 2px;
     margin-bottom: 0.3em;
     font-size: 2.8em;
 }
-.header_navbar_social{
+.header_navbar-mobile_social{
     font-size: 0.6em;
 }
 
-.header_navbar_link{
+.header__navbar-mobile__link{
     text-decoration: none;
     font-size: 18px;
     padding: 0.6em;    
     color: var(--gray-light);
 }
-.header_navbar_link + .header_navbar_link{
+.header__navbar-mobile__link + .header__navbar-mobile__link{
     margin-left: 1.4em;
 }
 .header_navbar_link_selected{
@@ -138,6 +146,36 @@ Header
     text-align: center;
     margin-bottom: 2em;
 }
+
+
+/*navbar desktop starts*/
+.header__navbar-desktop{
+    
+    display: none;
+}
+
+.header__navbar-desktop__list{    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header__navbar-desktop__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--yellow-crayola);
+    padding: 0.4em 0;
+    border-bottom: none;
+}
+
+.navbar-selected{
+    border-bottom: var(--yellow-crayola) solid 3px;
+}
+
+/*navbar desktop finish*/
 
 .top_arrow{
     position: fixed;
@@ -171,8 +209,6 @@ Header
     
 }
 
-
-
 /******************************
 shared styles
 *****************************/
@@ -185,39 +221,9 @@ shared styles
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
-    padding-top: 4em;
+    padding-top: 1em;
     position: relative;
-}
-
-.aboutme_showmore,
-.myskills_showmore,
-.recentprojects_showmore{
-    position: absolute;
-    bottom: 0px;
-    color: var(--gray-light);
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
-    align-self: center;    
-    text-align: center;    
-    width: 100%;
-    height: 1.6em;
-    font-size: 1.2em;    
-    cursor: pointer;
-    display: block
-}
-.aboutme_showmore_link,
-.myskills_showmore_link,
-.recentprojects_showmore_link{
-    color: inherit;
-    text-decoration: none;  
-    margin: 0.5em;  
-    
-}
-
-.aboutme_showmore_ghost,
-.myskills_showmore_ghost,
-.recentprojects_showmore_ghost{
-    height: 2em;
+    font-size: 0.8em;
 }
 
 /******************************
@@ -227,18 +233,48 @@ aboutme
 .aboutme{
     background-color: var(--midnight-green);
     color: var(--gray-light);    
+    display: flex;
+    flex-direction: column;
 }
 .aboutme_title{
     margin: 0.5em 1em;
     text-transform: uppercase;
+    align-self: flex-start;
 }
+
+.aboutme__image__container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.aboutme_image{
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
 .aboutme_textcontent{
-    font-size: 1.2em;
+    position: absolute;
+    bottom: 0;
+    font-size: 1em;
     font-weight: 300;
-    line-height: 1.4em;
-    word-break:keep-all;
-    margin: 0.6em 1em;
+    line-height: 1.6em;
+    word-break: keep-all;
+    width: 100%;
+    max-width: 400px;
+    padding:  1.2em;
+    background-color: rgba(0,0,0,0.5);
 }
+
+.aboutme__textcontent__more{    
+    padding:  0.8em  1.2em 0.8em 1.2em;
+    font-size: 1.2em;
+}
+
 .aboutme_link{
     color: var(--caribbean-green);
     text-decoration: underline;
@@ -246,22 +282,6 @@ aboutme
     letter-spacing: -0.05em;    
     text-transform: uppercase;
 }
-
-.aboutme_textcontent_more{
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4em;
-    word-break: keep-all;
-    margin: 0.6em 1em;
-    height: 0px;
-    transition: all ease-in-out 0.5s;
-}
-
-.aboutme_textcontent_more_expanded{
-    height:150px;
-    transition: all ease-in-out 0.5s;
-}
-
 
 /******************************
 MY SKILLS
@@ -312,22 +332,6 @@ MY SKILLS
     letter-spacing: -0.05em;    
     text-transform: uppercase;
 }
-
-.myskills_textcontent_more{
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4em;
-    word-break: keep-all;
-    margin: 0.6em 1em;
-    height: 0px;
-    transition: all ease-in-out 0.5s;
-}
-
-.myskills_textcontent_more_expanded{
-    height:150px;
-    transition: all ease-in-out 0.5s;
-}
-
 
 /*******************************
 RECENT PROJECTS SECTION
@@ -413,22 +417,6 @@ RECENT PROJECTS SECTION
 .recentprojects_project_title_details:hover{    
     color: var(--yellow-crayola)
 }
-
-.recentprojects_textcontent_more{
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4em;
-    word-break: keep-all;
-    margin: 0.6em 1em;
-    height: 0px;
-    transition: all ease-in-out 0.5s;
-}
-
-.recentprojects_textcontent_more_expanded{
-    height:150px;
-    transition: all ease-in-out 0.5s;
-}
-
 
 /*************************
 CONTACTME SECTION
@@ -526,11 +514,12 @@ FOOTER SECTION
     font-size: 1.2em;
     text-decoration: none;
 }
-
+/*
 .aboutme_showmore{
     display: block
 }
-
+*/
+/*view for bigger viewports */
 @media (min-width: 800px){
     .container{
         width: 80vw;
@@ -539,39 +528,40 @@ FOOTER SECTION
         padding: 2em;
         box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
     }
-    .header_btn_menu{
-        display: none;        
-    }
-    .header_navbar_close{
-        display: none;
-    }
-    .header_navbar{
-        position: static;            
-        z-index: 7;
-        display: inline-block;
-        background-color: inherit;
-        color: var(--gray-light);    
-        width: 100%;
-        height: 100%;        
-        padding-top: 4em;
-        translate: 0vw;     
-        opacity: 1;
-        margin: 0;        
-        padding: 0;           
-    }
-   
-    .header_navbar_lista{
-        position: inherit;
-        display: flex;
-        flex-direction: row;
-        height: inherit;
-        font-size: 0.7rem;
-    }
 
+    .header__title{
+        width: 30%;
+        font-size: 2em;
+    }    
     
+    .header__navbar-mobile, .header__btn-menu{
+        display: none;
+    }    
+    .header__navbar-desktop{
+        width: 50%;
+        font-size: 1.4em;
+        display: block;
+    }
 
-    .header_navbar_lista i{
-        font-size: 0.4em;
-        color: var(--gray-light)
+    .aboutme{
+        flex-direction: row;
+    }
+
+    .aboutme__title__container{
+        width: 80%;
+    }
+
+    .aboutme_title{
+        width: 50%;
+    }
+    .aboutme__image__container{
+        width: 100%;        
+    }
+
+    .aboutme__textcontent__more{
+        width: 60%;
+        padding:  4em  1.2em 0.8em 1.2em;
+        align-self: flex-start;
+        justify-content: left;
     }
 }
