@@ -7,7 +7,7 @@
     background-color: var(--caribbean-green);
     min-height: 300px;
     width: 100%;
-    padding-top: 2em;
+    padding: 2em 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
@@ -15,25 +15,35 @@
 }
 
 .project_first_section_title{
-    margin: 1.4em 0em 0.4em 0.4em;
+    margin: 1.4em 0em 2em 0.4em;
     color: var(--midnight-green);    
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: 500;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .project_first_section_img{
     object-fit: cover;
     object-position: center; 
-    filter: blur(1px);
-    filter: brightness(70%);
+   /* filter: blur(1px);
+    filter: brightness(70%);*/
     width: 100%;     
     max-width: 400px;
     height: 40vw;     
     min-height: 250px;
     max-height: 400px;
     align-self: center;
-    border: var(--yellow-crayola) solid 4px;
+    border: var(--midnight-green) solid 2px;
 }
+
+.project_first_section__links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
 .project_first_section_link{
     text-decoration: none;
     font-size: 1em;
@@ -41,8 +51,7 @@
     margin:  0.6em 0.4em;
     padding: 0.5em 0.6em;
     width: 140px;
-    border-radius: 5px;
-    align-self: flex-end;
+    border-radius: 5px;    
     display: flex;
     justify-content: space-between;
     background-color: var(--midnight-green);
@@ -76,14 +85,25 @@
 }
 
 .project_second_section_title{
-    margin-bottom: 0.4em;
+    margin: 0.6em 0;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
-.project_second_section_paragraph{
+.project_second_section_paragraph, .project_second_section_list{
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
     margin-bottom: 1em;
 }
 .project_second_section_list{
     padding: 0.2em 0.5em 0em 1.2em;
+}
+
+.project_second_section_link{
+    color: var(--caribbean-green);
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 @media (min-width: 800px){
@@ -95,6 +115,9 @@
     .project_first_section,
     .project_second_section{
         width: 50%;        
+    }
+    .project_first_section{
+        padding: 2em 1em 1em 1em;
     }
     .project_second_section{
         padding: 4em 1em 1.5em 2em;

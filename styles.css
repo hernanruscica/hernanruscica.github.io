@@ -359,10 +359,14 @@ RECENT PROJECTS SECTION
 }
 
 .recentprojects_project_img{
-    object-fit: cover;
-    object-position: center;   
-    filter: blur(1px);
-    filter: brightness(70%); 
+    object-fit: contain;
+    object-position: center;  
+    width: 100%;
+    height: auto;
+    /* 
+    filter: blur(1px);*/
+    filter: brightness(80%); 
+    
     border: var(--midnight-green);
 }
 
@@ -370,13 +374,15 @@ RECENT PROJECTS SECTION
     background-color: var(--gray-light);
     opacity: 1;
     color: var(--midnight-green);        
-    padding:  0.8em;  
+    padding:  0.6em 0.4em 0.4em 0.8em;  
     width: 100%;
     text-transform: capitalize;
     letter-spacing: 0.2em;
-    font-weight: 500;
+    line-height: 1.6em;
+    font-weight: 700;
     position: absolute;
     bottom: 0px;
+    border-top: #073b4c solid 2px;
 }
 
 .recentprojects_project_title_details{

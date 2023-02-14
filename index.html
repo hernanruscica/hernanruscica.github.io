@@ -148,10 +148,12 @@
 
      <!--RECENT PROJECTS SECTION-->
     <section class="recentprojects container" id = "recentprojects">
-        <h2 class="recentprojects_title">RECENTS PROJECTS</h2>
+        <h2 class="recentprojects_title">Proyectos recientes</h2>
         <P class="recentprojects_textcontent">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            Estos algunos de los proyectos en los que estuve trabajando recientemente.
+            <!--
             <a href="#" class="recentprojects_textcontent_link">Enlace de recent projects</a>            
+            -->
         </P>
         <!--RECENT PROJECT 1 SECTION-->
         <!-- Datos necesarios:
@@ -161,34 +163,47 @@
             . url a la pagina del projecto dentro de mi sitio.
         -->
         <div class="recentprojects__projects">
+
+            <!--RECENT PROJECT 1 SECTION-->
             <div class="recentprojects_project">            
-                <img src="/assets/images/todo_list_snapshot.png" alt="" class="recentprojects_project_img">            
+                <img src="/assets/images/interactive_comments01.jpg" alt="" class="recentprojects_project_img">            
                 <h3 class="recentprojects_project_title">
-                    "To do" List project
-                    <a href = "./projects/project_todolist.html" class="recentprojects_project_title_details">
-                        DETAILS<i class="fa-solid fa-circle-arrow-right"></i>
+                    Sección de comentarios interactivos
+                    <a href = "./projects/project_interactive_comments.html" class="recentprojects_project_title_details">
+                        Ver más<i class="fa-solid fa-circle-arrow-right"></i>
                     </a>
                 </h3>
             </div>
 
             <!--RECENT PROJECT 2 SECTION-->
+            <div class="recentprojects_project">            
+                <img src="/assets/images/todo_list_snapshot.png" alt="" class="recentprojects_project_img">            
+                <h3 class="recentprojects_project_title">
+                    "To do" List project
+                    <a href = "./projects/project_todolist.html" class="recentprojects_project_title_details">
+                        Ver más<i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </h3>
+            </div>
+
+            <!--RECENT PROJECT 3 SECTION-->
             <div class="recentprojects_project">
                 <img src="/assets/images/cronometer_snapshot.png" alt="" class="recentprojects_project_img">
                 <h3 class="recentprojects_project_title">
                     Chronometer project
                     <a href="./projects/project_chronometer.html" class="recentprojects_project_title_details">
-                        DETAILS<i class="fa-solid fa-circle-arrow-right"></i>
+                        Ver más<i class="fa-solid fa-circle-arrow-right"></i>
                     </a>
                 </h3>
             </div>
             
-            <!--RECENT PROJECT 3 SECTION-->
+            <!--RECENT PROJECT 4 SECTION-->
             <div class="recentprojects_project">
                 <img src="/assets/images/phrases_generator_snapshot.png" alt="" class="recentprojects_project_img">
                 <h3 class="recentprojects_project_title">
                     Phrases Generator project
                     <a href="./projects/project_phrases_generator.html" class="recentprojects_project_title_details">
-                        DETAILS<i class="fa-solid fa-circle-arrow-right"></i>
+                        Ver más<i class="fa-solid fa-circle-arrow-right"></i>
                     </a>
                 </h3>
             </div>         
@@ -198,23 +213,23 @@
 
     <!--CONTACT ME SECTION-->
     <section class="contactme container" id = "contactme">
-        <h2 class="contactme_title">Contact me</h2>
+        <h2 class="contactme_title">Hablemos</h2>
         <form  action="https://formspree.io/f/mlevdjdk" method="post" class="contactme_form">
             
             <div class="contactme_form_input">
-                <label for="name" class="contactme_form_input_label">Name</label>
+                <label for="name" class="contactme_form_input_label">Nombre:</label>
                 <input type="text" name="name" class="contactme_form_input_input"
                 id="contactme_name" placeholder="Insert your name" required>
             </div>
 
             <div class="contactme_form_input">
-                <label for="email" class="contactme_form_input_label">Email</label>
+                <label for="email" class="contactme_form_input_label">Email:</label>
                 <input type="email" name="email"  class="contactme_form_input_input"
                  id="contactme_email" placeholder="Insert your Email" pattern='\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b'  required>
             </div>
 
             <div class="contactme_form_input">
-                <label for="message" class="contactme_form_input_label">Message</label>
+                <label for="message" class="contactme_form_input_label">Mensaje:</label>
                 <textarea name="message"  class="contactme_form_input_message" required
                     id="contactme_message" placeholder="Write your message"
                     cols="200">
