@@ -15,46 +15,73 @@
     
     <!--HEADER SECTIOn-->
     <header class="header" id = "header">
-        <h1 class="header_title">Cesar Hernan Ruscica</h1>
-        <i class="fa-solid fa-bars header_btn_menu" id = "header_btn_menu"></i>
-        <nav class="header_navbar" id = "header_navbar">
-            <i class="fa-solid fa-xmark header_navbar_close" id = "navbarBtnClose"></i>
-            <ol  class="header_navbar_lista">
-                <li class="header_navbar_lista_item">   
+        <h1 class="header__title">Cesar Hernan Ruscica</h1>
+        <i class="fa-solid fa-bars header__btn-menu" id = "header__btn-menu-open"></i>
+
+        <!--navbar mobile Empieza-->
+        <nav class="header__navbar-mobile" id = "header__navbar">            
+            <i class="fa-solid fa-xmark header__navbar-mobile__btn-menu-close" id = "header__btn-menu-close"></i>
+            <ol  class="header__navbar-mobile__list">
+                <!--eng / spa flags
+                <li class="0">   
                     <a href="#aboutme" class="header_navbar_link header_navbar_link_selected" id = "header_navbar_link_1">
-                        <img src="./icons/gb_flag.svg" alt="English flag" class="header_navbar_link_image">
+                        <img src="/assets/icons/gb_flag.svg" alt="English flag" class="header_navbar_link_image">
                         ENGLISH
                     </a>
                     <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">
-                        <img src="./icons/es_flag.svg" alt="spanish flag" class="header_navbar_link_image">
+                        <img src="/assets/icons/es_flag.svg" alt="spanish flag" class="header_navbar_link_image">
                         ESPAÑOL
                     </a>
                 </li>
-                <li class="header_navbar_lista_item">
-                    <a href="./index.html#aboutme" class="header_navbar_link" id = "header_navbar_link_1">About Me</a>
+                -->
+                <li class="header__navbar-mobile__list__item">
+                    <a href="./index.html#aboutme" class="header__navbar-mobile__link" id = "header_navbar_link_1">Sobre mí</a>
                 </li>
-                <li class="header_navbar_lista_item">
-                    <a href="./index.html#myskills" class="header_navbar_link" id = "header_navbar_link_2">Skills</a>
+                <li class="header__navbar-mobile__list__item">
+                    <a href="./index.html#myskills" class="header__navbar-mobile__link" id = "header_navbar_link_2">Skills</a>
                 </li>
-                <li class="header_navbar_lista_item">
-                    <a href="./index.html#recentprojects" class="header_navbar_link" id = "header_navbar_link_3">Recent Projects</a>
+                <li class="header__navbar-mobile__list__item">
+                    <a href="./index.html#recentprojects" class="header__navbar-mobile__link" id = "header_navbar_link_3">Proyectos</a>
                 </li>
-                <li class="header_navbar_lista_item">
-                    <a href="./index.html#contactme" class="header_navbar_link" id = "header_navbar_link_4">Contact me</a>
+                <li class="header__navbar-mobile__list__item">
+                    <a href="./index.html#contactme" class="header__navbar-mobile__link" id = "header_navbar_link_4">Contactarme</a>
                 </li>
 
-                <li class="header_navbar_lista_item">
+                <!--social media links -->
+                <li class="header__navbar-mobile__list__item">
                     <a href="https://github.com/hernanruscica" class="footer_social_link">
-                        <i class="fa-brands fa-github header_navbar_social"></i></a>              
+                        <i class="fa-brands fa-github header_navbar-mobile_social"></i></a>              
                     <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link">
-                        <i class="fa-regular fa-envelope header_navbar_social"></i></a>
+                        <i class="fa-regular fa-envelope header_navbar-mobile_social"></i></a>
                     <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer_social_link">
-                        <i class="fa-brands fa-whatsapp header_navbar_social"></i>
+                        <i class="fa-brands fa-whatsapp header_navbar-mobile_social"></i>
                     </a>
                 </li>
             </ol>
         </nav>
-    </header>
+        <!--navbar mobile Termina-->
+
+
+        <!--navbar Desktop empieza-->
+        <nav class="header__navbar-desktop" id="header__navbar__desktop">
+            <ol class="header__navbar-desktop__list">
+                <li class="header__navbar-desktop__list__item">
+                    <a href="./index.html#aboutme" class="header__navbar-desktop__link navbar-selected" id="header_navbar-desktop_link_1">Sobre mí</a>
+                </li>            
+                <li class="header__navbar-desktop__list__item">
+                    <a href="./index.html#myskills" class="header__navbar-desktop__link" id="header_navbar-desktop_link_2">Skills</a>
+                </li>           
+                <li class="header__navbar-desktop__list__item">
+                    <a href="./index.html#recentprojects" class="header__navbar-desktop__link" id="header_navbar-desktop_link_3">Proyectos</a>
+                </li>            
+                <li class="header__navbar-desktop__list__item">
+                    <a href="./index.html#contactme" class="header__navbar-desktop__link" id="header_navbar-desktop_link_4">Contactarme</a>
+                </li>
+            </ol>
+        </nav>
+        <!--navbar Desktop Termina-->
+
+    </header> 
         
     <a href="#" class="top_arrow" id="top_arrow">
         <i class="fa-solid fa-angles-up top_arrow_icon"></i>
@@ -62,38 +89,17 @@
     <!--ABOUT ME SECTION-->
     <section class="aboutme" id = "aboutme">
         <h2 class="aboutme_title">Sobre mí.</h2>
-        <P class="aboutme_textcontent">
-            Soy César Ruscica, actualmente me focalizo en el desarrollo web Frontend, con sólidas bases en HTML, CSS y JAVASCRIPT. <br>
-            Paso a paso estoy avanzando con el backend con node.js, PHP y Python. <br>
-            Me gusta estar en los detalles hasta llegar a completar las tareas.
-        </P>            
-        <p class="aboutme_textcontent">
-            Me llamo César Hernan Ruscica, actualmente vivo en Merlo, provincia de Buenos Aires. Siempre fui un entusiasta de la tecnología. Me gusta aprender nuevos lenguajes de programación y profundizar en aquellos que más conozco.
-        </p>
-        <p class="aboutme_textcontent">
-            Mis conocimientos en programación tienen bases sólidas. Esto se debe a que tengo la carrera de “Ingeniería en Informática” sin terminar, pero avanzada hasta 2do año.
-        </p>           
-        <p class="aboutme_textcontent">
-            Más allá de la discontinuidad en mi educación formal, nunca dejé de aprender por mi cuenta las tecnologías que me interesaron gracias a internet. Algunas de ellas, por fuera del desarrollo Full Stack, que podría mencionar son: Arduino; IoT; programación de videojuegos y generación de gráficos vectoriales en Inkscape
-        </p>
-        <p class="aboutme_textcontent">
-            Me llevo muy bien con el aprendizaje autodidacta y creo que una forma de fortalecer los conocimientos adquiridos es compartirlos. Con eso en mente es como también me dedico a difundirlo a través de un proyecto llamado “Demmake”, desde el año 2018 (canal de YouTube). Donde además desarrollé mis habilidades para la creación de contenidos, diseño y edición de videos. Acá pueden ver dicho canal de youtube: https://www.youtube.com/@deMMake
-        </p>
-        <p class="aboutme_textcontent">
-            Actualmente mi educación formal sigue con dos carreras que me interesan terminar para poder certificar conocimientos ya adquiridos informalmente. La más desafiante de las dos es la  Tecnicatura en “Desarrollo Web y Aplicaciones Digitales” en el Instituto Superior Politécnico Córdoba, por la cual obtendré mi título de Técnico Superior en
-            Desarrollo Web y Aplicaciones Digitales a nivel nacional a mediados de 2024.
-            https://www.ispc.edu.ar/tecnicatura-web/
-
-        </p>
-        <p class="aboutme_textcontent">
-            La segunda es el curso de “Desarrollo Web Full stack ” del programa “Codo a Codo 4.0” de la ciudad autónoma de Buenos Aires. En el mismo, vemos el desarrollo frontend con HTML, CSS, Javascript y Bootstrap. Mientras que para el backend, vemos Bases de datos mySql, servidores y Node.js. La modalidad de la cursada es 100% virtual y finalizó en Diciembre de 2022. Para mas informacion, dejo un enlace al programa: https://www.buenosaires.gob.ar/educacion/codocodo/el-programa
-        </p>
-        <p class="aboutme_textcontent">
+        
+        
+        <p class="aboutme__textcontent__more">
             Durante el año 2021 terminé dos cursos de FreeCodeCamp, el primero fué “Diseño Web Responsivo” y el segundo, “Algoritmos y estructuras de datos en JavaScript”. Los cursos de FreeCodeCamp, además de ser gratuitos y 100% virtuales, son de mucha calidad. Tienen un nivel de exigencia bastante alto, con lo cual se alcanza a tener conocimientos sólidos sobre cada tema. 
             Adjunto los enlaces a los certificados de los mismos: 
-            https://www.freecodecamp.org/certification/chruscica/responsive-web-design
-            https://www.freecodecamp.org/certification/chruscica/javascript-algorithms-and-data-structures
-
+            <a class="aboutme_link" href="https://www.freecodecamp.org/certification/chruscica/responsive-web-design" target = "_blank">
+                Responsive web Design
+            </a><br>
+            <a class="aboutme_link"  href="https://www.freecodecamp.org/certification/chruscica/javascript-algorithms-and-data-structures" target = "_blank">
+                Javascript Algorithms and Data Structures
+            </a>
         </p>
     </section>
   

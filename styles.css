@@ -49,12 +49,9 @@ Header
     
 }
 .header__title{
-    font-size: 1.7em;
-    
+    font-size: 1.7em;    
     text-align: center;
 }
-
-
 
 .header__btn-menu{
     display: block;
@@ -226,6 +223,18 @@ shared styles
     font-size: 0.8em;
 }
 
+.aboutme_link, .myskills_skill_link, .recentprojects_textcontent_link{
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: -0.05em;    
+    text-transform: uppercase;
+}
+
+.aboutme_title, .myskills_title, .recentprojects_title, .contactme_title{
+    margin: 0.5em 1em;
+    text-transform: uppercase;    
+}
+
 /******************************
 aboutme
 *****************************/
@@ -235,11 +244,6 @@ aboutme
     color: var(--gray-light);    
     display: flex;
     flex-direction: column;
-}
-.aboutme_title{
-    margin: 0.5em 1em;
-    text-transform: uppercase;
-    align-self: flex-start;
 }
 
 .aboutme__image__container{
@@ -255,7 +259,6 @@ aboutme
     object-fit: cover;
     object-position: center;
 }
-
 
 .aboutme_textcontent{
     position: absolute;
@@ -276,11 +279,7 @@ aboutme
 }
 
 .aboutme_link{
-    color: var(--caribbean-green);
-    text-decoration: underline;
-    font-weight: 700;
-    letter-spacing: -0.05em;    
-    text-transform: uppercase;
+    color: var(--caribbean-green);    
 }
 
 /******************************
@@ -291,10 +290,7 @@ MY SKILLS
     background-color: var(--yellow-crayola);
     color: var(--midnight-green);    
 }
-.myskills_title{
-    margin: 0.5em 1em;
-    text-transform: uppercase;
-}
+
 .myskills_skill_header{
     display: flex;
     justify-content: left;
@@ -318,7 +314,7 @@ MY SKILLS
     font-size: 1.6em;
 }
 
-.myskills_skill_textcontent{
+.myskills_skill_textcontent, .recentprojects_textcontent{
     font-size: 1.2em;
     font-weight: 500;
     line-height: 1.4em;
@@ -326,11 +322,7 @@ MY SKILLS
     margin: 0.6em 1em;
 }
 .myskills_skill_link{
-    color: var(--midnight-green);
-    text-decoration: underline;
-    font-weight: 700;
-    letter-spacing: -0.05em;    
-    text-transform: uppercase;
+    color: var(--midnight-green);    
 }
 
 /*******************************
@@ -341,28 +333,22 @@ RECENT PROJECTS SECTION
     background-color: var(--caribbean-green);
     color: var(--midnight-green);    
 }
-.recentprojects_title{
-    margin: 0.5em 1em;
-    text-transform: uppercase;
-}
-.recentprojects_textcontent{
-    font-size: 1.2em;
-    font-weight: 500;
-    line-height: 1.4em;
-    word-break: keep-all;
-    margin: 0.6em 1em;
-}
+
 .recentprojects_textcontent_link{
-    color: var(--paradise-pink);
-    text-decoration: underline;
-    font-weight: 700;
-    letter-spacing: -0.05em;    
-    text-transform: uppercase;
+    color: var(--paradise-pink);    
+}
+
+.recentprojects__projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .recentprojects_project{    
-    width: 85%;
-    max-width: 400px;
+    width: 95%;
+    max-width: 300px;
     height: 300px;
     margin: 0 auto;
     margin-bottom: 2em;
@@ -413,9 +399,12 @@ RECENT PROJECTS SECTION
     letter-spacing: -0.012em;
     text-decoration: none;
     transform: scale(1);
+    transition: all 0.04s ease-in-out;
 }
 .recentprojects_project_title_details:hover{    
-    color: var(--yellow-crayola)
+    color: var(--yellow-crayola);
+    transform: scale(1.1);
+    transition: all 0.04s ease-in-out;
 }
 
 /*************************
@@ -430,11 +419,6 @@ input, textarea {
     background-color: var(--blue-NCS);
     color: var(--gray-light);    
 }
-.contactme_title{
-    margin: 0.5em 1em;
-    text-transform: uppercase;
-}
-
 .contactme_form_input{
     /*margin: 0.2em 1em;    */
     display: flex;
@@ -442,6 +426,7 @@ input, textarea {
     margin:0em  auto 0.8em auto;
     font-size: 1.4em;   
     width: 90%;     
+    max-width: 600px;
 }
 
 .contactme_form_input_label{
@@ -514,11 +499,8 @@ FOOTER SECTION
     font-size: 1.2em;
     text-decoration: none;
 }
-/*
-.aboutme_showmore{
-    display: block
-}
-*/
+
+
 /*view for bigger viewports */
 @media (min-width: 800px){
     .container{
