@@ -15,11 +15,12 @@
 }
 
 .project_first_section_title{
-    margin: 1.4em 0em 2em 0.4em;
+    margin: 1.4em 0em 1em 0.4em;
     color: var(--midnight-green);    
     font-size: 1.2em;
-    font-weight: 500;
-    text-decoration: underline;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -32,9 +33,10 @@
     max-width: 400px;
     height: 40vw;     
     min-height: 250px;
-    max-height: 400px;
+    max-height: 250px;
     align-self: center;
-    border: var(--midnight-green) solid 2px;
+    border: var(--midnight-green) solid 2px;    
+    margin-bottom: 1em;
 }
 
 .project_first_section__links{
@@ -42,6 +44,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;    
+    margin-bottom: 1em;
 }
 
 .project_first_section_link{
@@ -56,14 +59,14 @@
     justify-content: space-between;
     background-color: var(--midnight-green);
     color: var(--gray-light);    
-    box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);    
+    box-shadow: 6px 6px 10px -2px rgba(0,0,0,0.75);    
 }
 
 .project_first_section_back{
     position: fixed;    
-    top: 2.8rem;
+    top: 3rem;
     left: 0em;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: var(--gray-light);    
     background-color: var(--midnight-green);
@@ -71,9 +74,14 @@
     border-radius: 0px 0px 15px 0px;
     opacity: 0.8;   
     display: flex;
-    width: 220px;
+    width: 120px;
     justify-content: space-between;
     align-items: center;
+}
+
+.project_first_section_link:hover,
+.project_first_section_back:hover{
+    transform: scale(1.07);
 }
 
 .project_second_section{
@@ -86,8 +94,8 @@
 
 .project_second_section_title{
     margin: 0.6em 0;
-    font-weight: 500;
-    text-decoration: underline;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .project_second_section_paragraph, .project_second_section_list{
@@ -100,10 +108,16 @@
 }
 
 .project_second_section_link{
-    color: var(--caribbean-green);
+    color: var(--midnight-green);
     font-size: 1.2em;
     font-weight: 700;
     text-decoration: underline;
+    transition: color 0.3s ease-out;
+}
+
+.project_second_section_link:hover{
+    color: var(--caribbean-green);
+    transition: color 0.3s ease-out;
 }
 
 @media (min-width: 800px){
@@ -123,3 +137,22 @@
         padding: 4em 1em 1.5em 2em;
     }
 }
+
+
+
+/*figure zoom*/
+figure.zoom {
+    background-position: 50% 50%;
+    position: relative;
+    /*width: 500px;*/
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  figure.zoom img:hover {
+    opacity: 0;
+  }
+  figure.zoom img {
+    transition: opacity 0.5s;
+    display: block;
+    width: 100%;
+  }/*# sourceMappingURL=zoom.css.map */

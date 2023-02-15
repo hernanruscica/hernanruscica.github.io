@@ -91,22 +91,23 @@
         
         <!--PROJECT PAGE FIRST SECTION-->
         <section class="project_first_section" id = "project_first_section">
-            <h1 class="project_first_section_title">Sección de comentarios interactivos</h1>
-            
+            <h1 class="project_first_section_title">Agenda de contactos con node.js</h1>
+
             <!-- imagen simple, sin zoom
             <img src="/assets/images/interactive_comments01.jpg" alt="" class="project_first_section_img">    
             -->
+
             <!--figure zoom-->
-            <figure class="zoom project_first_section_img" style='background-image: url(/assets/images/interactive_comments01.jpg)' onmousemove='zoom(event)'>
-                <img src="/assets/images/interactive_comments01.jpg" alt=""  class="project_first_section_img">  
+            <figure class="zoom project_first_section_img" style='background-image: url(/assets/images/agenda-cac01.jpg)' onmousemove='zoom(event)'>
+                <img src="/assets/images/agenda-cac01.jpg" alt="captura de la agenda funcionando"  class="project_first_section_img">  
             </figure>
 
             <div class="project_first_section__links">
-            <a href="https://github.com/hernanruscica/Frontend_mentor_Interactive-comments-section" target="_blank" class="project_first_section_link">    
+            <a href="https://github.com/hernanruscica/integrador_cac_alumnos" target="_blank" class="project_first_section_link">    
                 Ver Código<i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
 
-            <a href="https://hernanruscica.github.io/Frontend_mentor_Interactive-comments-section/" target="_blank" class="project_first_section_link">    
+            <a href="https://agenda-cac.onrender.com/" target="_blank" class="project_first_section_link">    
                 Live Demo<i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
             </div>            
@@ -121,30 +122,32 @@
         <section class="project_second_section"  id = "project_second_section">
             <h2 class="project_second_section_title">Descripción:</h2>
             <p class="project_second_section_paragraph">
-                Una sección de comentarios interactivos hecho con puro javascript, CSS, y HTML.
-                Al desafio original de <strong>"Frontend Mentor"</strong>:
-                <a class="project_second_section_link" target="_blank"
-                    href="https://www.frontendmentor.io/solutions/comments-and-replies-w-vanilla-js-localstorage-dom-and-responsive-owDoG5J22U">
-                    Interactive comments section
-                </a>
-                , yo le agregué la característica de almacenamiento en el <strong>local Storage</strong>, para mantener los datos de prueba, entre sesiones.
+                Pequeña aplicación hecha con <strong>node.js</strong> y <strong>mysql</strong> para administrar contactos en una agenda.<br>
+                Este proyecto está creado como muestra de trabajo práctico integrador de los conceptos aprendidos en el curso de 
+                <a href="https://buenosaires.gob.ar/educacion/codo-codo-40" class="project_second_section_link" target="_blank"> Codo A Codo </a>                 
+                4.0 edición 2022.<br>
+                En dicho curso se enseña el Desarrollo Web Fullstack, orientado a Javascript. Se vé tanto el frontend como backend.       
             </p>
             <h2 class="project_second_section_title">Características:</h2>
             <p class="project_second_section_paragraph">                
                 <ul class="project_second_section_list">
-                    <li class="project_second_section_list_item">Puedes <strong>agregar</strong> un comentario, borrarlo o editarlo. </li>
-                    <li class="project_second_section_list_item">Puedes <strong>responder</strong> un comentario, borrarlo o editarlo </li>
-                    <li class="project_second_section_list_item">Puedes <strong>votar</strong> los comentarios o respuestas</li>
-                    <li class="project_second_section_list_item">Guardado del estado en el <strong>local storage</strong> del navegador</li>                    
+                    <li class="project_second_section_list_item">Podra <strong>registrarse</strong> en la aplicación para poder usarla y tener sus contactos personales guardados en su agenda. </li>
+                    <li class="project_second_section_list_item"><strong>Restablecer</strong> la contraseña en el caso de olvido u otro motivo.</li>
+                    <li class="project_second_section_list_item"><strong>Agregar</strong> un nuevo contacto, con sus correspondientes datos como: nombres, apellidos, teléfono, correo y una foto.</li>
+                    <li class="project_second_section_list_item"><strong>Editar</strong> un contacto, para corregir un error o actualizar los datos.</li>                    
+                    <li class="project_second_section_list_item"><strong>Eliminar</strong> algun contacto, si es necesario.</li>            
+                    <li class="project_second_section_list_item"><strong>Buscar</strong> en la agenda por nombre y/o apellido.</li>            
                 </ul>
             </p>
             <h2 class="project_second_section_title">Habilidades:</h2>
             <ul class="project_second_section_list">
+                <li class="project_second_section_list_item">Node.js</li>
+                <li class="project_second_section_list_item">Express.js</li>
+                <li class="project_second_section_list_item">base de datos y mysql</li>
                 <li class="project_second_section_list_item">Document Object Model </li>
                 <li class="project_second_section_list_item">Html</li>
                 <li class="project_second_section_list_item">Diseño responsivo</li>
-                <li class="project_second_section_list_item">Nomenclatura BEN</li>
-                <li class="project_second_section_list_item">Local Storage</li>
+                <li class="project_second_section_list_item">Nomenclatura BEN</li>                
             </ul>
         </section>
     </main>
@@ -170,12 +173,11 @@
         </div>
         <p class="footer_text">Copyright 2022 <br>
             Cesar Hernan Ruscica<br>
-            <a href="#" class="footer_text_link">Volver Arriba</a>
-            
+            <a href="#" class="footer_text_link">Volver Arriba</a>            
         </p>
     </footer>
 
-    <script src="../scripts.js"></script>
+    <script src="../scripts.js"></script>        
     <script src="projects.js"></script>
 </body>
 </html>

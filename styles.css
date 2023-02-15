@@ -46,16 +46,16 @@ Header
     top: 0px;
     left: 0px;
     z-index: 5;
-    
+    box-shadow: 4px 4px 15px -2px rgba(0,0,0,0.75);
 }
 .header__title{
-    font-size: 1.7em;    
+    font-size: 2em;    
     text-align: center;
 }
 
 .header__btn-menu{
     display: block;
-    font-size: 2.4em;
+    font-size: 2.8em;
     margin-right: 1em;
     cursor: pointer;
 }
@@ -163,13 +163,13 @@ Header
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 700;
-    color: var(--yellow-crayola);
+    color: var(--gray-light);
     padding: 0.4em 0;
     border-bottom: none;
 }
 
 .navbar-selected{
-    border-bottom: var(--yellow-crayola) solid 3px;
+    border-bottom: var(--gray-light) solid 3px;
 }
 
 /*navbar desktop finish*/
@@ -314,6 +314,31 @@ MY SKILLS
     font-size: 1.6em;
 }
 
+.myskills_showcase{
+    background-color: var(--gray-light);
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.myskills_showcase_link{
+    text-decoration: none;   
+}
+
+.myskills_showcase_image{
+    width: auto;   
+    height: 70px;
+     padding-bottom: 1em;
+}
+.myskills_showcase_image:hover{
+    /*
+    border-bottom: solid 4px var(--midnight-green);    
+    transform: scale(0.95);
+    */
+}
+
 .myskills_skill_textcontent, .recentprojects_textcontent{
     font-size: 1.2em;
     font-weight: 500;
@@ -324,6 +349,8 @@ MY SKILLS
 .myskills_skill_link{
     color: var(--midnight-green);    
 }
+
+
 
 /*******************************
 RECENT PROJECTS SECTION
@@ -343,12 +370,12 @@ RECENT PROJECTS SECTION
     flex-direction: row;
     flex-wrap: wrap;   
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .recentprojects_project{    
-    width: 95%;
-    max-width: 300px;
+    width: 92%;
+    max-width: 400px;
     height: 300px;
     margin: 0 auto;
     margin-bottom: 2em;
@@ -394,14 +421,14 @@ RECENT PROJECTS SECTION
     border: var(--gray-light) solid 2px;
     opacity: 1;
     padding: 0.5em 0.5em;
-    
+    text-transform: uppercase;
     width: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px 0px 0px 0px;
-    font-weight: 700;
-    font-size: 1em;
+    font-weight: 500;
+    font-size: 1.1em;
     letter-spacing: -0.012em;
     text-decoration: none;
     transform: scale(1);
