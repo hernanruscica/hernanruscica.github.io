@@ -232,6 +232,7 @@ shared styles
 
 .aboutme_title, .myskills_title, .recentprojects_title, .contactme_title{
     margin: 0.5em 1em;
+    padding-top: 2em;
     text-transform: uppercase;    
 }
 
@@ -275,7 +276,7 @@ aboutme
 
 .aboutme__textcontent__more{    
     padding:  1.2em  1.2em 1.2em 1.2em;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.6em;
     letter-spacing: 0.05em;
 }
@@ -300,6 +301,7 @@ MY SKILLS
     justify-content: left;
     align-items: center;
     margin: 0.5em 1em;
+    padding-top: 4em;
 }
 
 .myskills_skill_header_icon{
@@ -384,7 +386,7 @@ RECENT PROJECTS SECTION
 
 .recentprojects_project{    
     width: 92%;
-    max-width: 400px;
+    max-width: 320px;
     height: 300px;
     margin: 0 auto;
     margin-bottom: 2em;

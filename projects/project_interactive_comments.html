@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>    
 <!--HEADER SECTIOn-->
@@ -96,10 +97,27 @@
             <!-- imagen simple, sin zoom
             <img src="/assets/images/interactive_comments01.jpg" alt="" class="project_first_section_img">    
             -->
-            <!--figure zoom-->
+            <!--figure zoom
             <figure class="zoom project_first_section_img" style='background-image: url(/assets/images/interactive_comments01.jpg)' onmousemove='zoom(event)'>
                 <img src="/assets/images/interactive_comments01.jpg" alt=""  class="project_first_section_img">  
             </figure>
+            -->
+
+             <!--empieza la imagen y los thumbnails-->
+             <div class="slider-container">
+                <div class="slider-wrapper">
+                  <img src="/assets/images/interactive_comments01.jpg" alt="Image 1" />
+                  <img src="/assets/images/interactive_comments02.jpg" alt="Image 2" />
+                  <img src="/assets/images/interactive_comments03.jpg" alt="Image 3" />                  
+                </div>
+                <div class="thumbnail-wrapper">
+                  <img src="/assets/images/interactive_comments01.jpg" alt="Image 1" class="thumbnail" />
+                  <img src="/assets/images/interactive_comments02.jpg" alt="Image 2" class="thumbnail" />
+                  <img src="/assets/images/interactive_comments03.jpg" alt="Image 3" class="thumbnail" />
+                </div>
+              </div>
+              <!--termina la imagen y los thumbnails-->
+
 
             <div class="project_first_section__links">
             <a href="https://github.com/hernanruscica/Frontend_mentor_Interactive-comments-section" target="_blank" class="project_first_section_link">    
@@ -177,5 +195,6 @@
 
     <script src="../scripts.js"></script>
     <script src="projects.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>
