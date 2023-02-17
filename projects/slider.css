@@ -38,6 +38,6 @@
   
   @media (min-width: 800px){
   .slider-container {
-    max-width: 420px;
+    width: 95%;
   } 
   }
