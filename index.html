@@ -34,7 +34,7 @@
                     </a>
                 </li>
                 -->
-                <li class="header__navbar-mobile__list__item">
+                <li class="header__navbar-mobile__list__item" id = "header_navbar_link_1">
                     <a href="./index.html#aboutme" class="header__navbar-mobile__link" id = "header_navbar_link_1">Sobre mí</a>
                 </li>
                 <li class="header__navbar-mobile__list__item">
@@ -94,18 +94,23 @@
             <div class="aboutme__image__container">
                 <img class="aboutme_image" src="/assets/images/foto-perfil.jpeg" alt="Foto de perfil de cesar hernan ruscica ">
                 <P class="aboutme_textcontent">
-                    Soy César Ruscica, actualmente me focalizo en el desarrollo web Frontend, con sólidas bases en HTML, CSS y JAVASCRIPT (del diseño al código). 
-                    Incursionando en el mundo backend de la mano de node.js, PHP y Python.
+                    Desarrollador FullStack, con sólidas bases de HTML, CSS y JAVASCRIPT. 
+                    Backend de la mano de node.js, PHP, mysql y Python.
                     Detallista y metódico, me gusta el trabajo en equipo.
+                    Estudiante de diseño UI/UX y de REACT.<br>
                     <a href="aboutme.html" class="aboutme_link">Más sobre mí</a>
+                    <a href="/assets/documentos/28470361CV.pdf" class="aboutme_link" target="_blank" style="font-size: 1rem; float: right;">
+                        <i class="fa-regular fa-file-pdf" style="font-size:1.6em; margin-right: 0.2em;"></i>
+                        Bajar CV
+                    </a>
                 </P>  
             </div>      
         </div>
         <p class="aboutme__textcontent__more">
             <strong>Actualmente:</strong><br>
-            Desarrollando API REST con node.js. Cada tanto, hago desafios del sitio <strong>frontendmentor.io</strong>
+            Desarrollando API REST con node.js. Me gusta hacer desafios del sitio <strong>frontendmentor.io</strong>
             <a class="aboutme_link" href="https://www.frontendmentor.io/profile/hernanruscica"  target="_blank">Mi perfil en frontendmentor.io</a><br>
-            Preparando videos educativos para mi canal de youtube 
+            Hago videos educativos como los de este canal: 
             <a class="aboutme_link" href="https://www.youtube.com/c/demmake" target="_blank">deMMAke.</a> donde hablo de electrónica y microcontroladores.<br>
             Por otro lado voy dando mis primeros pasos con Flutter.            
         </p>                       
@@ -137,7 +142,7 @@
         <!--SKILL SECTION-->
         <div class="myskill_skill">
 
-            <div class="myskills_skill_header">                
+            <div class="myskills_skill_header" id="html">                
                 <i class="fa-brands fa-html5 myskills_skill_header_icon"></i>
                 <h3 class="myskills_skill_header_title">HTML</h3>
             </div>            
@@ -154,14 +159,19 @@
         </div>   
         <!--SKILL SECTION-->
         <div class="myskill_skill">
-            <div class="myskills_skill_header">                
+            <div class="myskills_skill_header" id="css">                
                 <i class="fa-brands fa-css3-alt myskills_skill_header_icon"></i>
                 <h3 class="myskills_skill_header_title">CSS</h3>
             </div>            
             <P class="myskills_skill_textcontent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                <a href="#" class="myskills_skill_link">Enlace de My Skills</a>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Considero a CSS como mí herramienta preferida para dar estilo a mis proyectos. Me permite cumplir al detalle con los requerimientos de un diseño. 
+                Me encanta usar la nomenclatura <strong>BEM</strong>. Uso CSS aproximadamente desde 2010. <br>
+                Mis cursos más recientes de HTML fueron: Los de 
+                <a href="https://www.freecodecamp.org/chruscica" class="myskills_skill_link" target = "_blank">Freecodecamp</a>
+                , 
+                <a href="https://buenosaires.gob.ar/educacion/codo-codo-40" class="myskills_skill_link" target = "_blank">Codo a Codo</a>
+                 y 
+                 <a href="https://open-bootcamp.com/" class="myskills_skill_link" target = "_blank">OpenBootCamp</a>.
             </P>
         </div>                  
     </section>  
@@ -185,7 +195,7 @@
         <div class="recentprojects__projects">
 
 
-            <!--RECENT PROJECT 0 SECTION-->
+            <!--RECENT PROJECT 1 SECTION-->
             <div class="recentprojects_project">            
                 <img src="/assets/images/agenda-cac01.jpg" alt="" class="recentprojects_project_img">            
                 <h3 class="recentprojects_project_title">
@@ -196,7 +206,7 @@
                 </h3>
             </div>
 
-            <!--RECENT PROJECT 1 SECTION-->
+            <!--RECENT PROJECT 2 SECTION-->
             <div class="recentprojects_project">            
                 <img src="/assets/images/interactive_comments01.jpg" alt="" class="recentprojects_project_img">            
                 <h3 class="recentprojects_project_title">
@@ -207,7 +217,18 @@
                 </h3>
             </div>
 
-            <!--RECENT PROJECT 2 SECTION-->
+            <!--RECENT PROJECT 3 SECTION-->
+            <div class="recentprojects_project">            
+                <img src="/assets/images/memotest02.jpg" alt="" class="recentprojects_project_img">            
+                <h3 class="recentprojects_project_title">
+                    Juego de Memoria "MemoTest"
+                    <a href = "./projects/project_memotest.html" class="recentprojects_project_title_details">
+                        Ver más<i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </h3>
+            </div>
+
+            <!--RECENT PROJECT 2 SECTION
             <div class="recentprojects_project">            
                 <img src="/assets/images/todo_list_snapshot.png" alt="" class="recentprojects_project_img">            
                 <h3 class="recentprojects_project_title">
@@ -216,9 +237,9 @@
                         Ver más<i class="fa-solid fa-circle-arrow-right"></i>
                     </a>
                 </h3>
-            </div>
+            </div>-->
 
-            <!--RECENT PROJECT 3 SECTION-->
+            <!--RECENT PROJECT 3 SECTION
             <div class="recentprojects_project">
                 <img src="/assets/images/cronometer_snapshot.png" alt="" class="recentprojects_project_img">
                 <h3 class="recentprojects_project_title">
@@ -227,9 +248,9 @@
                         Ver más<i class="fa-solid fa-circle-arrow-right"></i>
                     </a>
                 </h3>
-            </div>
+            </div>-->
             
-            <!--RECENT PROJECT 4 SECTION-->
+            <!--RECENT PROJECT 4 SECTION
             <div class="recentprojects_project">
                 <img src="/assets/images/phrases_generator_snapshot.png" alt="" class="recentprojects_project_img">
                 <h3 class="recentprojects_project_title">
@@ -238,7 +259,7 @@
                         Ver más<i class="fa-solid fa-circle-arrow-right"></i>
                     </a>
                 </h3>
-            </div>         
+            </div> -->        
         </div>       
 
     </section>
@@ -301,5 +322,6 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="logros.js"></script>
 </body>
 </html>

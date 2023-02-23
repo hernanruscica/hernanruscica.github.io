@@ -9,7 +9,7 @@ const $topArrow = $d.getElementById('top_arrow');
 
 $d.addEventListener('click', (e) => {  
     
-    
+    //console.log(e.target.id);
     if (e.target.id == 'header__btn-menu-close'){
         console.log('click en el boton de cerrar el menu');
         $navbar.classList.toggle('navbar_show');
@@ -20,15 +20,21 @@ $d.addEventListener('click', (e) => {
         $navbar.classList.toggle('navbar_show')
         disableScroll();
     }
-    if (e.target.id.includes('header_navbar_link')){
-        console.log(e.target.id)
+    if (e.target.id.includes('header_navbar_link') || e.target.id.includes('header_navbar-desktop_link')){
+        //Se hizo click en algun enlace del menu desktop o mobile     
+        
+        /*sistema de logros*/
+        incrementarProgreso('menuClick');
+        console.log(progreso['menuClick']);
+        /*sistema de logros*/
+
         $navbar.classList.toggle('navbar_show');
         enableScroll();        
     }    
     if (e.target.id.includes('header_navbar-desktop_link')){
         $d.querySelectorAll('.header__navbar-desktop__list__item>a').forEach((item) => {            
             item.classList.remove('navbar-selected');
-            console.log(item)
+           // console.log(item)
         });            
 
         e.target.classList.add('navbar-selected');

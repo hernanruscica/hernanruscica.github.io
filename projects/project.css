@@ -10,7 +10,7 @@
     padding: 2em 0 0 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: center; 
     position: relative;   
 }
 
@@ -30,9 +30,9 @@
    /* filter: blur(1px);
     filter: brightness(70%);*/
     width: 100%;     
-    max-width: 400px;
+    max-width: 380px;
     height: 40vw;     
-    min-height: 250px;
+    
     max-height: 250px;
     align-self: center;
     border: var(--midnight-green) solid 2px;    
@@ -52,13 +52,14 @@
     font-size: 1em;
     font-weight: 500;
     margin:  0.6em 0.4em;
-    padding: 0.5em 0.6em;
+    padding: 0.7em 0.6em;
     width: 140px;
     border-radius: 5px;    
     display: flex;
     justify-content: space-between;
     background-color: var(--midnight-green);
-    color: var(--gray-light);    
+    color: var(--gray-light);   
+    border: solid grey 1px; 
     box-shadow: 6px 6px 10px -2px rgba(0,0,0,0.75);    
 }
 
@@ -115,6 +116,7 @@
     transition: color 0.3s ease-out;
 }
 
+
 .project_second_section_link:hover{
     color: var(--caribbean-green);
     transition: color 0.3s ease-out;
@@ -140,11 +142,11 @@
 
 
 
-/*figure zoom*/
+/*figure zoom
 figure.zoom {
     background-position: 50% 50%;
     position: relative;
-    /*width: 500px;*/
+    width: 500px;
     overflow: hidden;
     cursor: zoom-in;
   }
@@ -155,4 +157,4 @@ figure.zoom {
     transition: opacity 0.5s;
     display: block;
     width: 100%;
-  }/*# sourceMappingURL=zoom.css.map */
+  } */

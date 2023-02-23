@@ -232,6 +232,7 @@ shared styles
 
 .aboutme_title, .myskills_title, .recentprojects_title, .contactme_title{
     margin: 0.5em 1em;
+    padding-top: 2em;
     text-transform: uppercase;    
 }
 
@@ -274,8 +275,10 @@ aboutme
 }
 
 .aboutme__textcontent__more{    
-    padding:  0.8em  1.2em 0.8em 1.2em;
+    padding:  1.2em  1.2em 1.2em 1.2em;
     font-size: 1.2em;
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
 }
 
 .aboutme_link{
@@ -291,11 +294,14 @@ MY SKILLS
     color: var(--midnight-green);    
 }
 
+
+
 .myskills_skill_header{
     display: flex;
     justify-content: left;
     align-items: center;
     margin: 0.5em 1em;
+    padding-top: 4em;
 }
 
 .myskills_skill_header_icon{
@@ -314,12 +320,15 @@ MY SKILLS
     font-size: 1.6em;
 }
 
+/*Slider con las tecnologias*/
 .myskills_showcase{
     background-color: var(--gray-light);
-    padding: 1em 1em;
+    padding: 0.4em 1em;
+    margin: 0em 0 1.5em 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -328,23 +337,25 @@ MY SKILLS
 }
 
 .myskills_showcase_image{
-    width: auto;   
-    height: 70px;
-     padding-bottom: 1em;
+    width: 50px;   
+    height: auto;
+    
 }
 .myskills_showcase_image:hover{
-    /*
-    border-bottom: solid 4px var(--midnight-green);    
-    transform: scale(0.95);
-    */
+    
+    /*border-bottom: solid 4px var(--midnight-green);    */
+    transform: scale(1.05);
+    
 }
 
 .myskills_skill_textcontent, .recentprojects_textcontent{
     font-size: 1.2em;
     font-weight: 500;
-    line-height: 1.4em;
-    word-break: break-all;
+    line-height: 1.6em;
+    word-break: keep-all;
     margin: 0.6em 1em;
+    letter-spacing: 0.03em;
+    margin-bottom: 1em;
 }
 .myskills_skill_link{
     color: var(--midnight-green);    
@@ -375,7 +386,7 @@ RECENT PROJECTS SECTION
 
 .recentprojects_project{    
     width: 92%;
-    max-width: 400px;
+    max-width: 320px;
     height: 300px;
     margin: 0 auto;
     margin-bottom: 2em;
