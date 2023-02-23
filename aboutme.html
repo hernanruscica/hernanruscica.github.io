@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aboutme.css">
 </head>
 <body>    
     
@@ -86,22 +87,113 @@
     <a href="#" class="top_arrow" id="top_arrow">
         <i class="fa-solid fa-angles-up top_arrow_icon"></i>
     </a>
-    <!--ABOUT ME SECTION-->
+    <!--ABOUT ME SECTION   
     <section class="aboutme" id = "aboutme">
-        <h2 class="aboutme_title">Sobre mí.</h2>
+        <h2 class="aboutme_title">Sobre mí.</h2>        
         
+        <div class="aboutme__textcontent__more">
+            <p>
+                Durante el año 2021 terminé dos cursos de FreeCodeCamp, el primero fué “Diseño Web Responsivo” y el segundo, “Algoritmos y estructuras de datos en JavaScript”. Los cursos de FreeCodeCamp, además de ser gratuitos y 100% virtuales, son de mucha calidad. Tienen un nivel de exigencia bastante alto, con lo cual se alcanza a tener conocimientos sólidos sobre cada tema. 
+                Adjunto los enlaces a los certificados de los mismos: 
+                <a class="aboutme_link" href="https://www.freecodecamp.org/certification/chruscica/responsive-web-design" target = "_blank">
+                    Responsive web Design
+                </a><br>
+                <a class="aboutme_link"  href="https://www.freecodecamp.org/certification/chruscica/javascript-algorithms-and-data-structures" target = "_blank">
+                    Javascript Algorithms and Data Structures
+                </a>
+            </p>
+            <h3 class="aboutme_title">
+                English Current capabilities - Pearson Test
+            </h3>
+            <h3 class="aboutme_title">
+                CEFR score: B1 GSE range: 43-50
+            </h3>
+            
+            <p >            
+                The student has good control of basic structures and functions. They can use a range
+                of words, structures and simple collocations to deal with familiar topics and can use
+                functional language to deal with less familiar but everyday topics e.g. complaining,
+                refusing, inviting, etc but can only produce a very limited range of more complex
+                language. They can understand straightforward factual texts and basic types of standard
+                letters and emails. They can extract key details from a presentation, conversation or a
+                text and communicate with a series of simple connected clauses and sentences. They
+                can produce straightforward connected text on routine factual information or topics
+                which are familiar and of personal interest.
+            </p>
+        </div>
         
-        <p class="aboutme__textcontent__more">
-            Durante el año 2021 terminé dos cursos de FreeCodeCamp, el primero fué “Diseño Web Responsivo” y el segundo, “Algoritmos y estructuras de datos en JavaScript”. Los cursos de FreeCodeCamp, además de ser gratuitos y 100% virtuales, son de mucha calidad. Tienen un nivel de exigencia bastante alto, con lo cual se alcanza a tener conocimientos sólidos sobre cada tema. 
-            Adjunto los enlaces a los certificados de los mismos: 
-            <a class="aboutme_link" href="https://www.freecodecamp.org/certification/chruscica/responsive-web-design" target = "_blank">
-                Responsive web Design
-            </a><br>
-            <a class="aboutme_link"  href="https://www.freecodecamp.org/certification/chruscica/javascript-algorithms-and-data-structures" target = "_blank">
-                Javascript Algorithms and Data Structures
-            </a>
-        </p>
-    </section>
+    </section>--> 
+    <main class="aboutme-main">
+        <h1 class="aboutme-main__title">Sobre mí.</h1>
+        <section class="aboutme-main__column">
+            <h2 class="aboutme-main__column__title">Introducción</h2>
+            <p class="aboutme-main__column__paragraph">
+                Siempre fui un entusiasta de la tecnología. Me gusta aprender nuevos lenguajes de programación y profundizar en aquellos que más conozco.<br>                
+                Me gusta estar en los detalles hasta llegar a completar las tareas. Algunos ejemplos pueden ser mis trabajos en
+                frontmentor.io enlace: 
+                <a href="https://www.frontendmentor.io/profile/hernanruscica/solutions" class="aboutme-main__link" target="_blank">
+                    https://www.frontendmentor.io/profile/hernanruscica/solutions
+                </a>
+            </p>
+            <p class="aboutme-main__column__paragraph">
+                Tengo bases sólidas en programación. Ya que tengo la carrera de “Ingeniería en
+                Informática” sin terminar, avanzada hasta 2do año.<br>                
+                Nunca dejé de aprender por mi cuenta las tecnologías que me interesaron gracias a internet. Por fuera del desarrollo Full Stack, incursioné en:
+                Arduino; IoT; programación de videojuegos, generación de gráficos vectoriales en Inkscape y edición de video con Adobe
+                premiere.
+            </p>
+            <p class="aboutme-main__column__paragraph">
+                Creo en el aprendizaje autodidacta, y que una forma de fortalecer los conocimientos adquiridos es compartirlos. Por eso tengo un proyecto llamado “Demmake”, desde
+                el año 2018 (canal de YouTube). Con el cual además desarrollé mis habilidades para la creación de contenidos, diseño y edición
+                de videos. Enlace al canal de youtube: 
+                <a href="https://www.youtube.com/@deMMake" class="aboutme-main__link" target="_blank">
+                    https://www.youtube.com/@deMMake
+                </a>
+            </p>
+        </section>
+        <section class="aboutme-main__column">
+            <h2 class="aboutme-main__column__title">Estudios</h2>
+            <p class="aboutme-main__column__paragraph">
+                En Diciembre de 2022, terminé el curso de <strong>“Desarrollo Web Full stack”</strong> del programa <strong>“Codo a Codo 4.0”</strong> de la ciudad
+                autónoma de Buenos Aires. En el mismo, vemos el desarrollo frontend con HTML, CSS, Javascript y Bootstrap. Mientras que
+                para el backend, vemos Bases de datos mySql, servidores y Node.js. Para mas informacion, dejo un enlace al programa:
+                <a href="https://www.buenosaires.gob.ar/educacion/codocodo/el-programa" class="aboutme-main__link" target="_blank">
+                    https://www.buenosaires.gob.ar/educacion/codocodo/el-programa
+                </a>
+                
+                Como ejemplo de proyecto que pude realizar 100% por mí cuenta con este curso, tengo está agenda de contactos personales
+                [link a la página del proyecto]
+            </p>
+            <p class="aboutme-main__column__paragraph">
+                Durante el año 2021 terminé dos cursos de FreeCodeCamp, el primero fué “Diseño Web Responsivo” y el segundo, “Algoritmos
+                y estructuras de datos en JavaScript”. Los cursos de FreeCodeCamp, además de ser gratuitos y 100% virtuales, son de
+                mucha calidad. Tienen un nivel de exigencia bastante alto, con lo cual se alcanza a tener conocimientos sólidos sobre
+                cada tema.<br>
+                Adjunto los enlaces a los certificados de los mismos:<br>
+                https://www.freecodecamp.org/certification/chruscica/responsive-web-design
+                https://www.freecodecamp.org/certification/chruscica/javascript-algorithms-and-data-structures
+                Como ejemplos de proyectos realizados con este curso, tengo este juego de memoria y este simulador de caja registradora.
+            </p>
+        </section>
+        <section class="aboutme-main__column">
+            <h2 class="aboutme-main__column__title">Inglés: Actuales capacidades (Marzo 2023 - Pearson English)</h2>
+            <p class="aboutme-main__column__paragraph">
+                <strong>CEFR puntaje: B1 (GSE rango: 43-50)</strong><br>
+                El alumno tiene un buen control de las estructuras y funciones básicas. Pueden usar un rango
+                de palabras, estructuras y colocaciones simples para tratar temas familiares y puede usar
+                lenguaje funcional para tratar temas menos familiares pero cotidianos, p. quejumbroso,
+                rechazar, invitar, etc., pero solo puede producir una gama muy limitada de situaciones más complejas.
+                idioma. Pueden comprender textos fácticos sencillos y tipos básicos de estándares.
+                cartas y correos electrónicos. Pueden extraer detalles clave de una presentación, conversación o un
+                texto y comunicarse con una serie de cláusulas y oraciones simples conectadas. Ellos
+                puede producir un texto conectado directo sobre información o temas factuales de rutina
+                que son familiares y de interés personal.
+                <a href="/assets/documentos/pearsonLevelTest_23_02_2023.pdf" class="aboutme-main__link" target="_blank">
+                Enlace a los resultados</a>
+            </p>
+        </section>
+
+    </main>
   
 
     <!--CONTACT ME SECTION-->
