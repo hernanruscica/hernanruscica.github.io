@@ -19,6 +19,12 @@
     padding: 0rem;
 }
 
+.aboutme-main__column__title{
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
 .aboutme-main__column__paragraph{
     line-height: 1.6rem;
     letter-spacing: 0.02rem;
@@ -36,7 +42,9 @@
 @media (min-width: 1000px){
     .aboutme-main {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between;        
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     .aboutme-main__column{
         width: 30%;

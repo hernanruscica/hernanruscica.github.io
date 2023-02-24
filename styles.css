@@ -50,7 +50,14 @@ Header
 }
 .header__title{
     font-size: 2em;    
+    text-transform: capitalize;
+    font-weight: 300;
     text-align: center;
+}
+
+.header__title__link{
+    text-decoration: none;
+    color: inherit;
 }
 
 .header__btn-menu{
@@ -463,18 +470,30 @@ input, textarea {
     background-color: var(--blue-NCS);
     color: var(--gray-light);    
 }
+
+.contactme_title{
+    padding: 1.5rem 0 2rem 1rem;
+}
+
+.contactme_form{
+    padding-bottom: 2rem;
+}
+
 .contactme_form_input{
     /*margin: 0.2em 1em;    */
     display: flex;
     flex-direction: column;
-    margin:0em  auto 0.8em auto;
+    margin: 0.5rem auto 2rem auto;
     font-size: 1.4em;   
     width: 90%;     
     max-width: 600px;
 }
 
 .contactme_form_input_label{
-    margin-bottom: 0.2em;
+    margin-bottom: 0em;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0.1rem;
 }
 .contactme_form_input_input{
     padding: 0.4em 0.6em;
@@ -513,8 +532,8 @@ input, textarea {
 FOOTER SECTION
 ***********************/
 .footer{
-    min-height: 200px; 
-    padding: 2em 0em;
+    min-height: 180px; 
+    padding: 2em 1em;
     background-color: var(--midnight-green);
     color: var(--gray-light);
     display: flex;

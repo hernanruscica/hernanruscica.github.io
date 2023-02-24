@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cesar Hernan Ruscica</title>
+
+    <!--favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">    
+    <!--favicon -->
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
@@ -15,7 +27,11 @@
 
     <!--HEADER SECTIOn-->
     <header class="header" id = "header">
-        <h1 class="header__title">Cesar Hernan Ruscica</h1>
+        <h1 class="header__title">
+            <a href="/index.html"  class="header__title__link">
+                Cesar Hernan Ruscica
+            </a>            
+        </h1>
         <i class="fa-solid fa-bars header__btn-menu" id = "header__btn-menu-open"></i>
 
         <!--navbar mobile Empieza-->
@@ -94,7 +110,7 @@
             <div class="aboutme__image__container">
                 <img class="aboutme_image" src="/assets/images/foto-perfil.jpeg" alt="Foto de perfil de cesar hernan ruscica ">
                 <P class="aboutme_textcontent">
-                    Desarrollador FullStack, con sólidas bases de HTML, CSS y JAVASCRIPT. 
+                    Desarrollador FullStack, con sólidas bases de HTML, CSS, JAVASCRIPT y Figma. 
                     Backend de la mano de node.js, PHP, mysql y Python.
                     Detallista y metódico, me gusta el trabajo en equipo.
                     Estudiante de diseño UI/UX y de REACT.<br>
@@ -271,26 +287,25 @@
             
             <div class="contactme_form_input">
                 <label for="name" class="contactme_form_input_label">Nombre:</label>
-                <input type="text" name="name" class="contactme_form_input_input"
-                id="contactme_name" placeholder="Insert your name" required>
+                <input type="text" name="name" id="name" class="contactme_form_input_input"
+                    id="contactme_name" placeholder="Ingrese su nombre" required>
             </div>
 
             <div class="contactme_form_input">
-                <label for="email" class="contactme_form_input_label">Email:</label>
-                <input type="email" name="email"  class="contactme_form_input_input"
-                 id="contactme_email" placeholder="Insert your Email" pattern='\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b'  required>
+                <label for="email" class="contactme_form_input_label">Correo electrónico:</label>
+                <input type="email" name="email" id="email" class="contactme_form_input_input"
+                    id="contactme_email" placeholder="Ingrese su correo" pattern='\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b'  required>
             </div>
 
             <div class="contactme_form_input">
-                <label for="message" class="contactme_form_input_label">Mensaje:</label>
+                <label for="contactme_message" class="contactme_form_input_label">Mensaje:</label>
                 <textarea name="message"  class="contactme_form_input_message" required
-                    id="contactme_message" placeholder="Write your message"
-                    cols="200">
+                    id="contactme_message" placeholder="Deje su mensaje" cols="200">
                 </textarea> 
             </div>
 
             <div class="contactme_form_input">
-                <button class="contactme_form_btn">Send message</button>
+                <button class="contactme_form_btn">ENVIAR MENSAJE</button>
             </div>            
         </form>        
     </section>
