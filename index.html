@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cesar Hernan Ruscica</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <title>ruscica-code.ar - Home</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,36 +13,28 @@
 
     <!--HEADER SECTIOn-->
     <header class="header" id = "header">
-        <h1 class="header__title">Cesar Hernan Ruscica</h1>
+        <i class="fa-solid fa-code header__btn-menu"></i>
+        <h1 class="header__title">ruscica-code.ar</h1>
         <i class="fa-solid fa-bars header__btn-menu" id = "header__btn-menu-open"></i>
 
         <!--navbar mobile Empieza-->
-        <nav class="header__navbar-mobile" id = "header__navbar">            
+        <nav class="header__navbar-mobile" id = "header__navbar">                       
             <i class="fa-solid fa-xmark header__navbar-mobile__btn-menu-close" id = "header__btn-menu-close"></i>
-            <ol  class="header__navbar-mobile__list">
-                <!--eng / spa flags
-                <li class="0">   
-                    <a href="#aboutme" class="header_navbar_link header_navbar_link_selected" id = "header_navbar_link_1">
-                        <img src="/assets/icons/gb_flag.svg" alt="English flag" class="header_navbar_link_image">
-                        ENGLISH
-                    </a>
-                    <a href="#aboutme" class="header_navbar_link" id = "header_navbar_link_1">
-                        <img src="/assets/icons/es_flag.svg" alt="spanish flag" class="header_navbar_link_image">
-                        ESPAÑOL
-                    </a>
-                </li>
-                -->
+            <ol  class="header__navbar-mobile__list">                
                 <li class="header__navbar-mobile__list__item" id = "header_navbar_link_1">
-                    <a href="./index.html#aboutme" class="header__navbar-mobile__link" id = "header_navbar_link_1">Sobre mí</a>
+                    <a href="./index.html#aboutme" class="header__navbar-mobile__link" id = "header_navbar_link_1">Acerca de mí</a>
                 </li>
                 <li class="header__navbar-mobile__list__item">
-                    <a href="./index.html#myskills" class="header__navbar-mobile__link" id = "header_navbar_link_2">Skills</a>
+                    <a href="./index.html#myskills" class="header__navbar-mobile__link" id = "header_navbar_link_2">Habilidades</a>
                 </li>
                 <li class="header__navbar-mobile__list__item">
                     <a href="./index.html#recentprojects" class="header__navbar-mobile__link" id = "header_navbar_link_3">Proyectos</a>
                 </li>
                 <li class="header__navbar-mobile__list__item">
-                    <a href="./index.html#contactme" class="header__navbar-mobile__link" id = "header_navbar_link_4">Contactarme</a>
+                    <a href="./index.html#links" class="header__navbar-mobile__link" id = "header_navbar_link_3">Enlaces</a>
+                </li>
+                <li class="header__navbar-mobile__list__item">
+                    <a href="./index.html#contactme" class="header__navbar-mobile__link" id = "header_navbar_link_4">Contacto</a>
                 </li>
 
                 <!--social media links -->
@@ -66,16 +56,19 @@
         <nav class="header__navbar-desktop" id="header__navbar__desktop">
             <ol class="header__navbar-desktop__list">
                 <li class="header__navbar-desktop__list__item">
-                    <a href="./index.html#aboutme" class="header__navbar-desktop__link navbar-selected" id="header_navbar-desktop_link_1">Sobre mí</a>
+                    <a href="./index.html#aboutme" class="header__navbar-desktop__link navbar-selected" id="header_navbar-desktop_link_1">Acerca de mí</a>
                 </li>            
                 <li class="header__navbar-desktop__list__item">
-                    <a href="./index.html#myskills" class="header__navbar-desktop__link" id="header_navbar-desktop_link_2">Skills</a>
+                    <a href="./index.html#myskills" class="header__navbar-desktop__link" id="header_navbar-desktop_link_2">Habilidades</a>
                 </li>           
                 <li class="header__navbar-desktop__list__item">
                     <a href="./index.html#recentprojects" class="header__navbar-desktop__link" id="header_navbar-desktop_link_3">Proyectos</a>
+                </li>
+                <li class="header__navbar-mobile__list__item">
+                    <a href="./index.html#links" class="header__navbar-mobile__link" id = "header_navbar_link_3">Enlaces</a>
                 </li>            
                 <li class="header__navbar-desktop__list__item">
-                    <a href="./index.html#contactme" class="header__navbar-desktop__link" id="header_navbar-desktop_link_4">Contactarme</a>
+                    <a href="./index.html#contactme" class="header__navbar-desktop__link" id="header_navbar-desktop_link_4">Contacto</a>
                 </li>
             </ol>
         </nav>
@@ -89,31 +82,25 @@
 
     <!--ABOUT ME SECTION-->
     <section class="aboutme container" id = "aboutme">
-        <div class="aboutme__title__container">
-            <h2 class="aboutme_title">Sobre mí.</h2>
-            <div class="aboutme__image__container">
-                <img class="aboutme_image" src="/assets/images/foto-perfil.jpeg" alt="Foto de perfil de cesar hernan ruscica ">
-                <P class="aboutme_textcontent">
-                    Desarrollador FullStack, con sólidas bases de HTML, CSS y JAVASCRIPT. 
-                    Backend de la mano de node.js, PHP, mysql y Python.
-                    Detallista y metódico, me gusta el trabajo en equipo.
-                    Estudiante de diseño UI/UX y de REACT.<br>
-                    <a href="aboutme.html" class="aboutme_link">Más sobre mí</a>
-                    <a href="/assets/documentos/28470361CV.pdf" class="aboutme_link" target="_blank" style="font-size: 1rem; float: right;">
-                        <i class="fa-regular fa-file-pdf" style="font-size:1.6em; margin-right: 0.2em;"></i>
-                        Bajar CV
-                    </a>
-                </P>  
-            </div>      
+        <div class="aboutme__image__container">
+            <img class="aboutme_image" src="/assets/images/foto-perfil.jpeg" alt="Foto de perfil de cesar hernan ruscica ">     
+            <a href="#" class="btn aboutme_image__container-btn-download">
+                <i class="fa-solid fa-download icon"></i>
+                Bajar CV</a>       
         </div>
-        <p class="aboutme__textcontent__more">
-            <strong>Actualmente:</strong><br>
-            Desarrollando API REST con node.js. Me gusta hacer desafios del sitio <strong>frontendmentor.io</strong>
-            <a class="aboutme_link" href="https://www.frontendmentor.io/profile/hernanruscica"  target="_blank">Mi perfil en frontendmentor.io</a><br>
-            Hago videos educativos como los de este canal: 
-            <a class="aboutme_link" href="https://www.youtube.com/c/demmake" target="_blank">deMMAke.</a> donde hablo de electrónica y microcontroladores.<br>
-            Por otro lado voy dando mis primeros pasos con Flutter.            
-        </p>                       
+        <div class="aboutme__title__container">
+            <i class="fa-regular fa-user icon"></i>
+            <h2 class="aboutme_title">Acerca de mí.</h2>                  
+        </div>
+        <div class="aboutme__description__container">
+            <p>
+                Desarrollando API REST con node.js. Me gusta hacer desafios del sitio <strong>frontendmentor.io</strong>
+                <a class="aboutme_link" href="https://www.frontendmentor.io/profile/hernanruscica"  target="_blank">Mi perfil en frontendmentor.io</a><br>
+            </p>
+        </div>   
+        <div class="aboutme__buttons__container">
+            <a href="#" class="btn">ver más</a>
+        </div>                           
     </section>
 
     <!--MY SKILLS SECTION-->

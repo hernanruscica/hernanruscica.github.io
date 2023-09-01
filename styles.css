@@ -1,5 +1,12 @@
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/*
+font-family: 'Courier Prime', monospace;
+font-family: 'Montserrat', sans-serif;
+*/
+
 :root{
     --midnight-green: #073b4c;
     --blue-NCS: rgb(17, 138, 178);
@@ -8,6 +15,8 @@
     --yellow-crayola: #ffd166;
     --paradise-pink: #ef476f;    
     --gray-light: #eeeeee;
+
+    --ff-titles: 
 }
 *,
 *::after,
@@ -23,15 +32,19 @@ html {
 
 body{
     min-width: 360px;   
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Courier Prime', monospace; 
     padding-top: 50px;
+}
+
+.icon{
+    font-size: 1.4em;    
 }
 
 /******************************
 Header
 *****************************/
 .header{
-    height: 50px;
+    height: 70px;
     width: 100vw;
     background-color: var(--blue-NCS);
     display: flex;
@@ -49,14 +62,16 @@ Header
     box-shadow: 4px 4px 15px -2px rgba(0,0,0,0.75);
 }
 .header__title{
-    font-size: 2em;    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;    
     text-align: center;
+    text-transform: uppercase;
 }
 
 .header__btn-menu{
-    display: block;
-    font-size: 2.8em;
-    margin-right: 1em;
+    
+    padding: 0.5em;
+    font-size: 2.8em;    
     cursor: pointer;
 }
 
@@ -208,7 +223,7 @@ Header
 
 /******************************
 shared styles
-*****************************/
+****************************
 
 .aboutme,
 .myskills, 
@@ -234,7 +249,7 @@ shared styles
     margin: 0.5em 1em;
     padding-top: 2em;
     text-transform: uppercase;    
-}
+}*/
 
 /******************************
 aboutme
@@ -245,33 +260,73 @@ aboutme
     color: var(--gray-light);    
     display: flex;
     flex-direction: column;
+    padding: 1.2em 1.4em;
+    font-size: 1.2em;
 }
 
 .aboutme__image__container{
     width: 100%;
+    max-width: 400px;
     position: relative;
     display: flex;
-    justify-content: center;
+    align-self: center;
+    margin: 0.8em 0;
 }
 .aboutme_image{
     width: 100%;
     max-width: 400px;
-    height: 300px;
+    height: 240px;
     object-fit: cover;
     object-position: center;
+    border: #000000 solid 2px;
 }
 
-.aboutme_textcontent{
-    position: absolute;
-    bottom: 0;
-    font-size: 1.2em;
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8em;
+    background-color: #06D6A0;
+    color: #eeeeee;
+    
+}
+
+.aboutme_image__container-btn-download{
+    position: absolute;    
+    bottom: 0px;
+    right: 0px;
+    border: #eeeeee solid 2px;
+    border-bottom: none;
+    border-right: none;   
+    width: auto;
+}
+.aboutme__title__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0.8em 0;    
+}
+
+.aboutme_title{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    line-height: 1.6em;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+.aboutme__description__container{
+    
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.3em;
     word-break: keep-all;
     width: 100%;
-    max-width: 400px;
-    padding:  1.2em;
-    background-color: rgba(0,0,0,0.5);
+    
+    font-size: 1em;
+    margin: 0.8em 0; 
 }
 
 .aboutme__textcontent__more{    
