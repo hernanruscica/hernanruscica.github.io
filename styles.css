@@ -40,6 +40,17 @@ body{
     font-size: 1.4em;    
 }
 
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8em;
+    background-color: #06D6A0;
+    color: #eeeeee;    
+}
+
 /******************************
 Header
 *****************************/
@@ -255,7 +266,7 @@ shared styles
 aboutme
 *****************************/
 
-.aboutme{
+.section{
     background-color: var(--midnight-green);
     color: var(--gray-light);    
     display: flex;
@@ -264,7 +275,7 @@ aboutme
     font-size: 1.2em;
 }
 
-.aboutme__image__container{
+.section__image__container{
     width: 100%;
     max-width: 400px;
     position: relative;
@@ -272,7 +283,7 @@ aboutme
     align-self: center;
     margin: 0.8em 0;
 }
-.aboutme_image{
+.section_image{
     width: 100%;
     max-width: 400px;
     height: 240px;
@@ -281,19 +292,8 @@ aboutme
     border: #000000 solid 2px;
 }
 
-.btn{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.8em;
-    background-color: #06D6A0;
-    color: #eeeeee;
-    
-}
 
-.aboutme_image__container-btn-download{
+.section_image__container-btn-download{
     position: absolute;    
     bottom: 0px;
     right: 0px;
@@ -302,14 +302,14 @@ aboutme
     border-right: none;   
     width: auto;
 }
-.aboutme__title__container{
+.section__title__container{
     display: flex;
     flex-direction: row;
     justify-content: left;
     margin: 0.8em 0;    
 }
 
-.aboutme_title{
+.section_title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -317,7 +317,7 @@ aboutme
     margin-left: 1em;
 }
 
-.aboutme__description__container{
+.section__description__container{
     
     font-size: 1.2em;
     font-weight: 400;
@@ -329,50 +329,10 @@ aboutme
     margin: 0.8em 0; 
 }
 
-.aboutme__textcontent__more{    
-    padding:  1.2em  1.2em 1.2em 1.2em;
-    font-size: 1.2em;
-    line-height: 1.6em;
-    letter-spacing: 0.05em;
-}
-
-.aboutme_link{
-    color: var(--caribbean-green);    
-}
-
-/******************************
-MY SKILLS
-*****************************/
-
-.myskills{
-    background-color: var(--yellow-crayola);
-    color: var(--midnight-green);    
-}
-
-
-
-.myskills_skill_header{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 0.5em 1em;
-    padding-top: 4em;
-}
-
-.myskills_skill_header_icon{
-    background-color: rgba (0, 0, 0, 0);
-    color: var(--paradise-pink);
-    /*box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);*/
-    font-size: 1.6em;
-    padding: 0.3em 0.5em;
-    border-radius: 50%;
-    border: solid var(--paradise-pink) 6px;
-}
-
-.myskills_skill_header_title{
-    margin-left: 0.5em;
-    color: var(--paradise-pink);    
-    font-size: 1.6em;
+.section__btn{
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 /*Slider con las tecnologias*/
@@ -385,16 +345,14 @@ MY SKILLS
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    color: #06d6a0;
 }
 
-.myskills_showcase_link{
-    text-decoration: none;   
-}
 
 .myskills_showcase_image{
     width: 50px;   
     height: auto;
-    
+    color: #06d6a0;
 }
 .myskills_showcase_image:hover{
     
@@ -402,20 +360,6 @@ MY SKILLS
     transform: scale(1.05);
     
 }
-
-.myskills_skill_textcontent, .recentprojects_textcontent{
-    font-size: 1.2em;
-    font-weight: 500;
-    line-height: 1.6em;
-    word-break: keep-all;
-    margin: 0.6em 1em;
-    letter-spacing: 0.03em;
-    margin-bottom: 1em;
-}
-.myskills_skill_link{
-    color: var(--midnight-green);    
-}
-
 
 
 /*******************************
