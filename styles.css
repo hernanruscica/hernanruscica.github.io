@@ -363,19 +363,9 @@ aboutme
 
 
 /*******************************
-RECENT PROJECTS SECTION
+RECENT PROJECTS container
 *************************/
-
-.recentprojects{
-    background-color: var(--caribbean-green);
-    color: var(--midnight-green);    
-}
-
-.recentprojects_textcontent_link{
-    color: var(--paradise-pink);    
-}
-
-.recentprojects__projects{
+.recentprojects__container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;   
@@ -383,71 +373,53 @@ RECENT PROJECTS SECTION
     margin-top: 1rem;
 }
 
-.recentprojects_project{    
-    width: 92%;
+.recentprojects__project{    
+    width: 100%;
     max-width: 320px;
-    height: 300px;
-    margin: 0 auto;
-    margin-bottom: 2em;
+    height: auto;    
+    margin-bottom: 1em;
     border: var(--midnight-green) 2px solid;
+    border-radius: 10px;
     box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
     position: relative;
     overflow: hidden;
 }
 
-.recentprojects_project_img{
-    object-fit: contain;
+.recentprojects__project__img{
+    object-fit: cover;
     object-position: center;  
     width: 100%;
-    height: auto;
-    /* 
-    filter: blur(1px);*/
-    filter: brightness(80%); 
-    
+    height: 250px;
+    margin: 0;    
+    filter: brightness(70%);     
     border: var(--midnight-green);
 }
 
-.recentprojects_project_title{    
-    background-color: var(--gray-light);
-    opacity: 1;
+.recentprojects__project__title{    
+    background-color: var(--gray-light);    
     color: var(--midnight-green);        
-    padding:  0.6em 0.4em 0.4em 0.8em;  
+    padding:  0.4em 0.8em;
+    margin: 0;  
     width: 100%;
     text-transform: capitalize;
     letter-spacing: 0.2em;
-    line-height: 1.6em;
-    font-weight: 700;
-    position: absolute;
-    bottom: 0px;
+    line-height: 1.3em;
+    font-size: 0.85em;
+    font-weight: 400;    
     border-top: #073b4c solid 2px;
+    position: absolute;
+    bottom: 0;    
 }
 
-.recentprojects_project_title_details{
+.recentprojects__project__btn{
     position: absolute;
-    top: -2.2em;
-    right: 0em;    
-    background-color: var(--midnight-green);
-    color: var(--caribbean-green);
-    border: var(--gray-light) solid 2px;
-    opacity: 1;
-    padding: 0.5em 0.5em;
-    text-transform: uppercase;
-    width: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px 0px 0px 0px;
-    font-weight: 500;
+    bottom: 125px;
+    left: 90px;
+    background-color: rgba(0,0,0,0);
+    color: #073b4c;
+    font-weight: 600;
     font-size: 1.1em;
-    letter-spacing: -0.012em;
-    text-decoration: none;
-    transform: scale(1);
-    transition: all 0.04s ease-in-out;
-}
-.recentprojects_project_title_details:hover{    
-    color: var(--yellow-crayola);
-    transform: scale(1.1);
-    transition: all 0.04s ease-in-out;
+    filter: drop-shadow(4px 4px 2px rgb(255 255 255 / 0.7));
 }
 
 /*************************
@@ -458,51 +430,53 @@ input, textarea {
     all: unset;
   }
 
-.contactme{    
-    background-color: var(--blue-NCS);
+.contactme-form{    
+    /* background-color: var(--blue-NCS); */
     color: var(--gray-light);    
 }
-.contactme_form_input{
+.contactme-form__input{
     /*margin: 0.2em 1em;    */
     display: flex;
     flex-direction: column;
-    margin:0em  auto 0.8em auto;
-    font-size: 1.4em;   
-    width: 90%;     
+    margin:0.8em  auto 0.8em auto;      
+    
+    width: 100%;     
     max-width: 600px;
 }
 
-.contactme_form_input_label{
-    margin-bottom: 0.2em;
+.contactme-form__input__label{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0.1em;
 }
-.contactme_form_input_input{
-    padding: 0.4em 0.6em;
-    font-size: 0.8em;    
+.contactme-form__input__input{
+    padding: 0.4em 0.6em;        
     color: var(--midnight-green);
-    background-color: var(--gray-light);    
+    background-color: var(--gray-light);   
+    border-radius: 5px; 
+    padding: 0.4em 0.8em;
+    font-size: 0.9em;
     
 }
-.contactme_form_input_message{
-    height: 200px;    
-    text-align: left;
+.contactme-form__input__message{
+    border-radius: 5px;
+    min-height: 200px;        
     padding: 0.4em 1.2em;
-    font-size: 0.8em;    
+    font-size: 0.9em;    
     color: var(--midnight-green);
-    background-color: var(--gray-light);
-    text-align: left;
+    background-color: var(--gray-light);    
     resize: none;
 }
 
-.contactme_form_btn{
-    padding: 0.4em 0.6em;
-    font-size: 0.8em;
-    background-color: var(--midnight-green);
-    color: var(--gray-light);
+.contactme-form__btn{    
     cursor: pointer;
 }
 
-.contactme_form_input_input:focus,
-.contactme_form_input_message:focus{    
+.contactme-form__input__input:focus,
+.contactme-form__input__message:focus{    
     color: var(--midnight-green);
     background-color: #fff;
     text-align: left;
@@ -513,36 +487,48 @@ FOOTER SECTION
 ***********************/
 .footer{
     min-height: 200px; 
-    padding: 2em 0em;
-    background-color: var(--midnight-green);
+    padding:  1em;
+    background-color: var(--paradise-pink);
     color: var(--gray-light);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: 0.8em;
 }
 
-.footer_social{    
+.footer-social, .footer-direct-msgs, .footer-copyrights{    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    gap: 1em;
+    padding: 0.4em;
+    border-bottom: var(--caribbean-green) solid 2px;   
+}
+.footer-title{
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing:0.2em;
+}
+.footer-icons-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
-
-.footer_social_link{
+.footer-icons{
     color: var(--caribbean-green);
     font-size: 2em;
-    margin: 0 0.5em;    
+    margin: 0 0.5em;   
 }
 
-.footer_text{
-    text-align: center;
+.footer-paragraph{
+    width: 100%;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    word-wrap: break-word;
 }
-
-.footer_text_link{
-    color: var(--caribbean-green);
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
 
 /*view for bigger viewports */
 @media (min-width: 800px){

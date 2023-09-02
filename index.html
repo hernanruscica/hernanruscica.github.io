@@ -116,10 +116,17 @@
         </div>
         <div class="section__description__container">
             <p>
-                Desarrollando API REST con node.js. Me gusta hacer desafios del sitio <strong>frontendmentor.io</strong>
-                <a class="section_link" href="https://www.frontendmentor.io/profile/hernanruscica"  target="_blank">Mi perfil en frontendmentor.io</a><br>
+                Arriba estaran los iconos de las tenologias que manejo
+            </p>
+            <p>
+                Aca se detallan algunas de las habilidades y tecnologias que manejo y que he ido desarrollando a traves del tiempo !
             </p>
         </div>
+        <div class="section__buttons__container">            
+            <a href="#" class="btn section__btn">
+                <i class="fa-solid fa-plus"></i>
+                ver más</a>
+        </div>  
                  
     </section>  
 
@@ -129,12 +136,10 @@
             <i class="fa-regular fa-user icon"></i>
             <h2 class="section_title">Proyectos recientes.</h2>                  
         </div>
-        <P class="recentprojects_textcontent">
-            Estos algunos de los proyectos en los que estuve trabajando recientemente.
-            <!--
-            <a href="#" class="recentprojects_textcontent_link">Enlace de recent projects</a>            
-            -->
-        </P>
+        <div class="section__description__container">
+            <p> Estos algunos de los proyectos en los que estuve trabajando recientemente.</p>
+            
+        </div>
         <!--RECENT PROJECT 1 SECTION-->
         <!-- Datos necesarios:
             . nombre de la captura de pantalla del proyecto
@@ -142,100 +147,100 @@
             . url a la demo en github pages
             . url a la pagina del projecto dentro de mi sitio.
         -->
-        <div class="recentprojects__projects">
+        <div class="recentprojects__container">
             <!--RECENT PROJECT 1 SECTION-->
-            <div class="recentprojects_project">            
-                <img src="/assets/images/agenda-cac01.jpg" alt="" class="recentprojects_project_img">            
-                <h3 class="recentprojects_project_title">
-                    Agenda de contactos con node.js
-                    <a href = "./projects/project_agenda_cac.html" class="recentprojects_project_title_details">
-                        Ver más<i class="fa-solid fa-circle-arrow-right"></i>
-                    </a>
+            <div class="recentprojects__project">            
+                <img class="recentprojects__project__img" src="/assets/images/agenda-cac01.jpg" alt="" >            
+                <h3 class="recentprojects__project__title">
+                    Agenda de contactos con node.js                                       
                 </h3>
+                <a href = "./projects/project_agenda_cac.html" class="btn recentprojects__project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
             </div>
-
             <!--RECENT PROJECT 2 SECTION-->
-            <div class="recentprojects_project">            
-                <img src="/assets/images/interactive_comments01.jpg" alt="" class="recentprojects_project_img">            
-                <h3 class="recentprojects_project_title">
-                    Sección de comentarios interactivos
-                    <a href = "./projects/project_interactive_comments.html" class="recentprojects_project_title_details">
-                        Ver más<i class="fa-solid fa-circle-arrow-right"></i>
-                    </a>
+            <div class="recentprojects__project">            
+                <img class="recentprojects__project__img" src="/assets/images/memotest03.jpg" alt="" >            
+                <h3 class="recentprojects__project__title">
+                    Juego de memoria MEMOTEST                                       
                 </h3>
+                <a href = "./projects/project_agenda_cac.html" class="btn recentprojects__project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
             </div>
-
-            <!--RECENT PROJECT 3 SECTION
-            <div class="recentprojects_project">            
-                <img src="/assets/images/memotest02.jpg" alt="" class="recentprojects_project_img">            
-                <h3 class="recentprojects_project_title">
-                    Juego de Memoria "MemoTest"
-                    <a href = "./projects/project_memotest.html" class="recentprojects_project_title_details">
-                        Ver más<i class="fa-solid fa-circle-arrow-right"></i>
-                    </a>
-                </h3>
-            </div>-->
-
-                 
-        </div>       
-
+        </div>          
+        <div class="section__buttons__container">            
+            <a href="#" class="btn section__btn">
+                <i class="fa-solid fa-plus"></i>
+                ver más</a>
+        </div>  
     </section>
 
     <!--CONTACT ME SECTION-->
     <section class="section container" id = "contactme">
-        <h2 class="section_title">Hablemos</h2>
-        <form  action="https://formspree.io/f/mlevdjdk" method="post" class="contactme_form">
+        <div class="section__title__container">
+            <i class="fa-regular fa-user icon"></i>
+            <h2 class="section_title">Contactame.</h2>                  
+        </div>
+        <form  action="https://formspree.io/f/mlevdjdk" method="post" class="contactme-form">
             
-            <div class="contactme_form_input">
-                <label for="name" class="contactme_form_input_label">Nombre:</label>
-                <input type="text" name="name" class="contactme_form_input_input"
-                id="contactme_name" placeholder="Insert your name" required>
+            <div class="contactme-form__input">
+                <label for="name" class="contactme-form__input__label">Nombre:</label>
+                <input type="text" name="name" class="contactme-form__input__input"
+                id="contactme_name" placeholder="Ingrese su nombre" required>
             </div>
 
-            <div class="contactme_form_input">
-                <label for="email" class="contactme_form_input_label">Email:</label>
-                <input type="email" name="email"  class="contactme_form_input_input"
-                 id="contactme_email" placeholder="Insert your Email" pattern='\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b'  required>
+            <div class="contactme-form__input">
+                <label for="email" class="contactme-form__input__label">Email:</label>
+                <input type="email" name="email"  class="contactme-form__input__input"
+                 id="contactme_email" placeholder="Ingrese su email" pattern='\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b'  required>
             </div>
 
-            <div class="contactme_form_input">
-                <label for="message" class="contactme_form_input_label">Mensaje:</label>
-                <textarea name="message"  class="contactme_form_input_message" required
+            <div class="contactme-form__input">
+                <label for="message" class="contactme-form__input__label">Mensaje:</label>
+                <textarea name="message"  class="contactme-form__input__message" required
                     id="contactme_message" placeholder="Write your message"
                     cols="200">
                 </textarea> 
             </div>
 
-            <div class="contactme_form_input">
-                <button class="contactme_form_btn">Send message</button>
+            <div class="contactme-form__input">
+                <button class="btn contactme-form__btn">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    Enviar mensaje</button>
             </div>            
         </form>        
     </section>
 
     <!--FOOTER SECTION-->
-    <footer class="footer">
-        <div class="footer_social">
-            <a href="https://github.com/hernanruscica" class="footer_social_link">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/cesar-hernan-ruscica/" class="footer_social_link">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://www.freecodecamp.org/chruscica" class="footer_social_link">
-                <i class="fa-brands fa-free-code-camp"></i>                
-            </a>
-            <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link">
-                <i class="fa-regular fa-envelope"></i>
-            </a>
-            <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer_social_link">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+    <footer class="section container footer">
+        <div class="footer-social">
+            <h2 class="footer-title">Mis redes sociales</h2>
+            <div class="footer-icons-container">
+                <a href="https://github.com/hernanruscica" class="footer-icons">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cesar-hernan-ruscica/" class="footer-icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.freecodecamp.org/chruscica" class="footer-icons">
+                    <i class="fa-brands fa-free-code-camp"></i>                
+                </a>  
+            </div>          
         </div>
-        <p class="footer_text">Copyright 2022 <br>
-            Cesar Hernan Ruscica<br>
-            <a href="#" class="footer_text_link">Volver Arriba</a>
-            
-        </p>
+        <div class="footer-direct-msgs">
+            <h2 class="footer-title">Contacto directo</h2>
+            <div class="footer-icons-container">
+                <a href="mailto: cesarhernanruscica@gmail.com" class="footer-icons"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer-icons">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyrights">
+            <p class="footer-paragraph">
+                Este sitio web fue desarrollado por Cesar Hernan Ruscica en el año 2023. El codigo se puede encontrar en este
+                repositorio de Github. Se puede usar como plantilla para quien le sirva.
+                https://creativecommons.org/licenses/by-sa/3.0/igo/
+            </p>
+            <img src="/assets/icons/by-sa.svg" alt="">
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
