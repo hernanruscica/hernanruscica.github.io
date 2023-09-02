@@ -1,0 +1,148 @@
+/******************************
+Header
+*****************************/
+.header{
+    height: 70px;
+    width: 100vw;
+    background-color: var(--blue-NCS);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+    color: var(--gray-light);
+    font-size: 0.5em;    
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    position: fixed;    
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    box-shadow: 4px 4px 15px -2px rgba(0,0,0,0.75);
+}
+.header__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;    
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header__btn-menu{
+    
+    padding: 0.5em;
+    font-size: 2.8em;    
+    cursor: pointer;
+}
+
+.header__navbar-mobile{
+    position: fixed;
+    top: 0px;
+    left: 0px;    
+    z-index: 5;
+    background-color: #073b4c;
+    color: var(--gray-light);    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 4em;
+    translate: 100vw;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+.header__navbar-mobile__btn-menu-close{
+    position: absolute;
+    top: 0.33em;
+    right: 0.8em;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+.navbar_show{
+    translate: 0vw;
+    opacity: 0.9;
+    transition: all ease-in-out 0.5s;
+}
+
+.navbar_fixed{
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 5;
+    width: 100vw;
+    opacity: 0.9;    
+}
+
+.header__navbar-mobile__list{
+    list-style-type: none;
+    padding-top: 2em;
+}
+.header__navbar-mobile__list__item{
+    border-bottom: var(--caribbean-green) solid 2px;
+    margin-bottom: 0.3em;
+    font-size: 2.8em;
+}
+.header_navbar-mobile_social{
+    font-size: 0.6em;
+}
+
+.header__navbar-mobile__link{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.6em;    
+    color: var(--gray-light);
+}
+.header__navbar-mobile__link + .header__navbar-mobile__link{
+    margin-left: 1.4em;
+}
+.header_navbar_link_selected{
+    border: var(--caribbean-green) solid 2px;
+    background-color: none;
+}
+
+.header_navbar_link_image{
+    height: 16px;
+    width: auto;
+}
+
+.header_navbar_language{
+    font-size: 1em;
+}
+
+.header_navbar_lista_item:last-child,
+.header_navbar_lista_item:first-child{
+    border-bottom: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+/*navbar desktop starts*/
+.header__navbar-desktop{
+    
+    display: none;
+}
+
+.header__navbar-desktop__list{    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header__navbar-desktop__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--gray-light);
+    padding: 0.4em 0;
+    border-bottom: none;
+}
+
+.navbar-selected{
+    border-bottom: var(--gray-light) solid 3px;
+}
+
+/*navbar desktop finish*/

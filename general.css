@@ -1,0 +1,45 @@
+/* General Styles starts*/
+:root{
+    --midnight-green: #073b4c;
+    --blue-NCS: rgb(17, 138, 178);
+    --blue-NCS-transparent: rgba(17, 138, 178, 0.9);
+    --caribbean-green: #06d6a0;
+    --yellow-crayola: #ffd166;
+    --paradise-pink: #ef476f;    
+    --gray-light: #eeeeee;
+    --ff-titles: 
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    min-width: 360px;   
+    font-family: 'Courier Prime', monospace; 
+    padding-top: 50px;
+}
+
+.icon{
+    font-size: 1.4em;    
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8em;
+    background-color: #06D6A0;
+    color: #eeeeee;    
+}
+
+/* General Styles ends*/

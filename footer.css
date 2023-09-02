@@ -1,0 +1,47 @@
+/*************************
+FOOTER SECTION
+***********************/
+.footer{
+    min-height: 200px; 
+    padding:  1em;
+    background-color: var(--paradise-pink);
+    color: var(--gray-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.8em;
+}
+
+.footer-social, .footer-direct-msgs, .footer-copyrights{    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    gap: 1em;
+    padding: 0.4em;
+    border-bottom: var(--caribbean-green) solid 2px;   
+}
+.footer-title{
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing:0.2em;
+}
+.footer-icons-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.footer-icons{
+    color: var(--caribbean-green);
+    font-size: 1.8em;
+    margin: 0 0.5em;   
+}
+
+.footer-paragraph{
+    width: 100%;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}

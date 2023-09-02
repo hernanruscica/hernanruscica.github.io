@@ -1,0 +1,32 @@
+.top_arrow{
+    position: fixed;
+    bottom: 8vh;
+    right: 1.7em;
+    font-size: 0.7em;
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border: #073b4c solid 2px;
+    color: var(--midnight-green);
+    background-color: var(--gray-light);
+    z-index: 4;
+    text-decoration: none;
+    opacity: 0;
+    transform: scale(0);
+
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out    
+}
+.top_arrow_show{
+    opacity: 0.5;
+    transform: scale(1);
+
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out
+}
+
+.top_arrow_icon{
+    font-size: 2em;
+    
+}

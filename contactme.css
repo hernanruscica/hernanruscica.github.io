@@ -1,0 +1,60 @@
+
+/*************************
+CONTACTME SECTION
+***********************/
+
+input, textarea {
+    all: unset;
+  }
+
+.contactme-form{    
+    /* background-color: var(--blue-NCS); */
+    color: var(--gray-light);    
+}
+.contactme-form__input{
+    /*margin: 0.2em 1em;    */
+    display: flex;
+    flex-direction: column;
+    margin:0.8em  auto 0.8em auto;      
+    
+    width: 100%;     
+    max-width: 600px;
+}
+
+.contactme-form__input__label{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0.1em;
+}
+.contactme-form__input__input{
+    padding: 0.4em 0.6em;        
+    color: var(--midnight-green);
+    background-color: var(--gray-light);   
+    border-radius: 5px; 
+    padding: 0.4em 0.8em;
+    font-size: 0.9em;
+    
+}
+.contactme-form__input__message{
+    border-radius: 5px;
+    min-height: 200px;        
+    padding: 0.4em 1.2em;
+    font-size: 0.9em;    
+    color: var(--midnight-green);
+    background-color: var(--gray-light);    
+    resize: none;
+}
+
+.contactme-form__btn{    
+    cursor: pointer;
+}
+
+.contactme-form__input__input:focus,
+.contactme-form__input__message:focus{    
+    color: var(--midnight-green);
+    background-color: #fff;
+    text-align: left;
+}
