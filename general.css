@@ -1,11 +1,40 @@
 /* General Styles starts*/
 :root{
+    /*Basic colors*/
     --midnight-green: #073b4c;
-    --blue-NCS: rgb(17, 138, 178);
-    --blue-NCS-transparent: rgba(17, 138, 178, 0.9);
+    --blue-NCS: #118ab2;    
     --caribbean-green: #06d6a0;
     --yellow-crayola: #ffd166;
-    --paradise-pink: #ef476f;    
+    --paradise-pink: #ef476f; 
+    /*Basic colors*/
+
+    /*Basic colors*/
+    --section01-normal: #073b4c;
+    --section02-normal: #118ab2;    
+    --section03-normal: #06d6a0;
+    --section04-normal: #ffd166;
+    --section05-normal: #ef476f; 
+    /*Basic colors*/
+
+    /*light colors light to the 90% */
+    --section01-light: hsl(193, 80%, 95%);
+    --section02-light: hsl(195, 84%, 95%);
+    --section03-light: hsl(164, 96%, 95%);
+    --section04-light: hsl(42, 100%, 95%);
+    --section05-light: hsl(346, 84%, 95%); 
+    /*light colors light to the 90% */
+
+    /*dark colors light to the 10% */
+    --section01-dark: hsl(193, 80%, 10%);
+    --section02-dark: hsl(195, 84%, 10%);
+    --section02-darker: hsl(195, 84%, 2%);
+    --section03-dark: hsl(164, 96%, 10%);
+    --section04-dark: hsl(42, 100%, 10%);
+    --section05-dark: hsl(346, 84%, 10%); 
+    /*dark colors light to the 10% */
+
+
+    --blue-NCS-transparent: rgba(17, 138, 178, 0.9);
     --gray-light: #eeeeee;
     --ff-titles: 
 }
@@ -25,6 +54,7 @@ body{
     min-width: 360px;   
     font-family: 'Courier Prime', monospace; 
     padding-top: 50px;
+    background-color: var(--section02-darker);
 }
 
 .icon{
@@ -34,12 +64,14 @@ body{
 .btn{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0.8em;
-    background-color: #06D6A0;
-    color: #eeeeee;    
+    background-color: rgba(5, 37, 46, 0.1);    
+    color: #000; 
+    border: rgb(5, 37, 46) solid 2px; ;   
+    border-radius: 5px;
 }
 
 /* General Styles ends*/

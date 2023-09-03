@@ -1,3 +1,6 @@
+.aboutme{
+    background-color: var(--section01-light);
+}
 
 .aboutme-main__title{
     position: absolute;
@@ -8,7 +11,7 @@
 .aboutme-main{
     display: flex;
     flex-direction: column;
-    background-color: var(--midnight-green);
+    /* background-color: var(--midnight-green); */
     color: var(--gray-light);
     padding: 1rem;
     gap: 1.4rem;

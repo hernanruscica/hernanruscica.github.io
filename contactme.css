@@ -9,6 +9,7 @@ input, textarea {
 
 .contactme{
     flex-direction: column;
+    background-color: var(--section01-light);
 }
 
 .contactme-form{    

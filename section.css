@@ -1,11 +1,12 @@
 
 .section{
-    background-color: var(--midnight-green);
-    color: var(--gray-light);    
+     /* background-color: var(--midnight-green);  */
+    color: var(--section01-dark);    
     display: flex;
     flex-direction: column;
     padding: 1.2em 1.4em;
     font-size: 1.1em;
+    border-bottom: var(--section01-dark) solid 1px;
 }
 
 .section__image__container{
@@ -30,7 +31,9 @@
     position: absolute;    
     bottom: 0px;
     right: 0px;
-    border: #eeeeee solid 2px;
+    border: var(--section04-dark) solid 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius:  5px 0 0 0;
     border-bottom: none;
     border-right: none;   
     width: auto;

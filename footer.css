@@ -4,8 +4,8 @@ FOOTER SECTION
 .footer{
     min-height: 200px; 
     padding:  1em;
-    background-color: var(--paradise-pink);
-    color: var(--gray-light);
+    background-color: var(--section01-normal);
+    color: var(--section01-light);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@ FOOTER SECTION
     width: 100%;
     gap: 1em;
     padding: 0.4em 0;
-    border-bottom: var(--caribbean-green) solid 2px;  
+    border-bottom: var(--section03-normal) solid 1px;  
     
 }
 .footer-copyrights{
@@ -45,7 +45,7 @@ FOOTER SECTION
     align-items: center;    
 }
 .footer-icons{
-    color: var(--caribbean-green);
+    color: var(--section04-light);
     font-size: 1.8em;
     margin: 0 0.5em;   
 }
@@ -65,7 +65,7 @@ FOOTER SECTION
 
     .footer-rightside{
         width: 60%;
-        border-left: var(--caribbean-green) solid 2px;          
+        border-left: var(--section03-normal) solid 1px;          
     }
     .footer-paragraph{
         width: 100%;

@@ -3,6 +3,7 @@ RECENT PROJECTS container
 *************************/
 .projects{
     flex-direction: column;
+    background-color: var(--section04-light);
 }
 .recentprojects__container{
     display: flex;
