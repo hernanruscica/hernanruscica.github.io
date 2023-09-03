@@ -7,6 +7,10 @@ input, textarea {
     all: unset;
   }
 
+.contactme{
+    flex-direction: column;
+}
+
 .contactme-form{    
     /* background-color: var(--blue-NCS); */
     color: var(--gray-light);    

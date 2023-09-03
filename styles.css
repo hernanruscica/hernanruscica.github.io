@@ -2,7 +2,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
   @import url('general.css');
-  @import url('top_arrow');
+  @import url('top_arrow.css');
   @import url('header_and_navbar.css');
   @import url('section.css');
   @import url('projects.css');
@@ -13,10 +13,6 @@
 font-family: 'Courier Prime', monospace;
 font-family: 'Montserrat', sans-serif;
 */
-
-
-
-
 
 /*Slider con las tecnologias*/
 .myskills_showcase{
@@ -44,6 +40,10 @@ font-family: 'Montserrat', sans-serif;
     
 }
 
+.container{    
+    width: 100vw;    
+    /* box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75); */
+}
 
 /*view for bigger viewports */
 @media (min-width: 800px){
@@ -51,23 +51,11 @@ font-family: 'Montserrat', sans-serif;
         width: 80vw;
         min-width: 800px;
         margin: 0 auto;
-        padding: 2em;
-        box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+        padding: 2em;        
+        /* box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75); */
     }
 
-    .header__title{
-        width: 30%;
-        font-size: 2em;
-    }    
     
-    .header__navbar-mobile, .header__btn-menu{
-        display: none;
-    }    
-    .header__navbar-desktop{
-        width: 50%;
-        font-size: 1.4em;
-        display: block;
-    }
 
     .aboutme{
         flex-direction: row;

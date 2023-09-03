@@ -1,6 +1,9 @@
 /*******************************
 RECENT PROJECTS container
 *************************/
+.projects{
+    flex-direction: column;
+}
 .recentprojects__container{
     display: flex;
     flex-direction: row;

@@ -9,8 +9,13 @@ FOOTER SECTION
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;    
     gap: 0.8em;
+}
+.footer-leftside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer-social, .footer-direct-msgs, .footer-copyrights{    
@@ -19,12 +24,18 @@ FOOTER SECTION
     align-items: center; 
     width: 100%;
     gap: 1em;
-    padding: 0.4em;
-    border-bottom: var(--caribbean-green) solid 2px;   
+    padding: 0.4em 0;
+    border-bottom: var(--caribbean-green) solid 2px;  
+    
+}
+.footer-copyrights{
+    border: none;
+    
+    padding: 0 1.8em 0.5em 1.8em; 
 }
 .footer-title{
     font-family: 'Courier Prime', monospace;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 300;
     letter-spacing:0.2em;
 }
@@ -40,8 +51,32 @@ FOOTER SECTION
 }
 
 .footer-paragraph{
-    width: 100%;
-    font-size: 0.8em;
-    line-height: 1.3em;
+    width: 90%;
+    font-size: 0.9em;
+    line-height: 1.6em;
     word-wrap: break-word;
 }
+
+@media (min-width: 600px){
+    .footer{
+        flex-direction: row;  
+        align-items: flex-start;      
+    }
+
+    .footer-rightside{
+        width: 60%;
+        border-left: var(--caribbean-green) solid 2px;          
+    }
+    .footer-paragraph{
+        width: 100%;
+        font-size: 0.9em;
+        line-height: 1.8em;
+    }
+    .footer-leftside{
+        width: 38%;        
+    }
+    .footer-social, .footer-direct-msgs{
+        border: none;
+    }
+}
+

@@ -1,6 +1,13 @@
 /******************************
 Header
 *****************************/
+
+.header-container{
+    width: 100vw;        
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 .header{
     height: 70px;
     width: 100vw;
@@ -19,15 +26,25 @@ Header
     z-index: 5;
     box-shadow: 4px 4px 15px -2px rgba(0,0,0,0.75);
 }
-.header__title{
+.header__logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo-container__title{
     font-family: 'Montserrat', sans-serif;
     font-size: 2.4em;    
     text-align: center;
     text-transform: uppercase;
 }
 
-.header__btn-menu{
-    
+.header__logo-container__icon{    
+    padding: 0.5em;
+    font-size: 2.8em;        
+}
+
+.header__btn-menu{    
     padding: 0.5em;
     font-size: 2.8em;    
     cursor: pointer;
@@ -120,18 +137,24 @@ Header
 
 /*navbar desktop starts*/
 .header__navbar-desktop{
-    
+    min-width: 700px;
     display: none;
 }
 
 .header__navbar-desktop__list{    
     list-style-type: none;
-    display: flex;
-    justify-content: space-around;
+    display: flex;    
     width: 100%;
+    height: 100%;
+    justify-content: space-around;    
+    align-items: center;
 }
 
 .header__navbar-desktop__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;    
+    text-align: center;
+    font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -146,3 +169,26 @@ Header
 }
 
 /*navbar desktop finish*/
+
+@media (min-width: 800px){
+
+    .header-container{
+        width: 80vw;        
+        margin: 0 auto;
+    }
+
+    .header__title{
+        width: 30%;
+        font-size: 2em;
+    }    
+    
+    .header__navbar-mobile, .header__btn-menu{
+        display: none;
+    }    
+    .header__navbar-desktop{
+        width: 50%;
+        font-size: 1.4em;
+        display: block;
+    }
+
+}

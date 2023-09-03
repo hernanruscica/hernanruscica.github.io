@@ -10,21 +10,21 @@
 
 .section__image__container{
     width: 100%;
+    min-width: 300px;
     max-width: 400px;
     position: relative;
     display: flex;
-    align-self: center;
-    margin: 0.8em 0;
+    align-self: center;    
 }
 .section_image{
     width: 100%;
+    min-width: 300px;
     max-width: 400px;
     height: 240px;
     object-fit: cover;
     object-position: center;
     border: #000000 solid 2px;
 }
-
 
 .section_image__container-btn-download{
     position: absolute;    
@@ -35,6 +35,14 @@
     border-right: none;   
     width: auto;
 }
+
+.section__sidetext__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
 .section__title__container{
     display: flex;
     flex-direction: row;
@@ -66,4 +74,15 @@
     display: block;
     width: 100%;
     text-align: center;
+}
+
+@media (min-width: 800px){
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    .section__image__container{
+        width: 30%;
+        
+    }
 }

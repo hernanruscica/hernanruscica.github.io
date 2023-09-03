@@ -30,3 +30,10 @@
     font-size: 2em;
     
 }
+
+@media (min-width: 800px){
+    .top_arrow{
+        right: 4vw;
+        font-size: 1em;
+    }
+}
