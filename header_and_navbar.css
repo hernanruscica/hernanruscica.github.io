@@ -2,48 +2,53 @@
 Header
 *****************************/
 
+
+.header{
+    height: auto;
+    width: 100%;
+    position:sticky;    
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    box-shadow: 4px 4px 15px -2px rgba(0,0,0,0.75);
+
+    background-color: var(--section01-normal);
+    color: var(--section01-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 1em;
+    
+    font-size: 0.5em;    
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    
+}
+
 .header-container{
     width: 90vw;        
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.header{
-    height: 70px;
-    width: 100vw;
-    background-color: var(--section01-normal);
-    color: var(--section01-light);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0em 1em;
-    
-    font-size: 0.5em;    
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    position: fixed;    
-    top: 0px;
-    left: 0px;
-    z-index: 5;
-    box-shadow: 4px 4px 15px -2px rgba(0,0,0,0.75);
-}
+
 .header__logo-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-width: 280px;
+    min-width: 240px;
 }
 .header__logo-container__title{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.4em;    
+    font-size: 2em;    
     text-align: center;
     text-transform: uppercase;
 }
 
 .header__logo-container__icon{    
     padding: 0.5em;
-    font-size: 2.8em;        
+    font-size: 2.4em;        
 }
 
 .header__btn-menu{    
@@ -178,8 +183,9 @@ Header
 @media (min-width: 1000px){
 
     .header-container{
-        width: 80vw;        
+        width: 70vw;        
         margin: 0 auto;
+        
     }
 
     .header__title{

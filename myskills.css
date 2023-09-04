@@ -1,3 +1,40 @@
 .myskills{
     background-color: var(--section03-light);
 }
+/*Slider con las tecnologias*/
+.myskills_showcase{
+    background-color: #fff;
+    padding: 2em;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5em;
+    align-items: center;
+    flex-wrap: nowrap;    
+    border: none;
+    border-top: var(--section04-dark) solid 1px;
+    border-bottom: var(--section04-dark) solid 1px;
+    overflow-x: auto;    
+}
+
+
+.myskills_showcase_image{
+    width: 50px;   
+    height: auto;
+    color: #06d6a0;
+}
+.myskills_showcase_image:hover{
+    
+    /*border-bottom: solid 4px var(--midnight-green);    */
+    transform: scale(1.05);
+    
+}
+
+@media (min-width: 800px){
+    .myskills_showcase{
+        flex-wrap: wrap;
+        border: none;
+        border-left: var(--section04-dark) solid 1px;
+        border-right: var(--section04-dark) solid 1px;
+    }
+}

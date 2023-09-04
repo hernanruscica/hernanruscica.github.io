@@ -8,8 +8,9 @@ RECENT PROJECTS container
 .recentprojects__container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;   
-    gap: 1rem;
+    flex-wrap: wrap;  
+    justify-content: center;    
+    gap: 0.5rem;
     margin-top: 1rem;
 }
 

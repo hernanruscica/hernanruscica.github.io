@@ -51,14 +51,21 @@ html {
   }
 
 body{
-    min-width: 360px;   
-    font-family: 'Courier Prime', monospace; 
-    padding-top: 50px;
+     min-width: 360px;    
+    font-family: 'Courier Prime', monospace;     
     background-color: var(--section02-darker);
 }
 
 .icon{
     font-size: 1.4em;    
+}
+
+.icon-img-format{
+    width: 50px;
+    height: auto;
+}
+.color-light{
+    color: #fff!important;
 }
 
 .btn{
@@ -73,5 +80,7 @@ body{
     border: rgb(5, 37, 46) solid 2px; ;   
     border-radius: 5px;
 }
+
+
 
 /* General Styles ends*/
