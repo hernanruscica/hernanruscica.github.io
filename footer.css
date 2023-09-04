@@ -12,11 +12,14 @@ FOOTER SECTION
     justify-content: space-around;    
     gap: 0.8em;
 }
-.footer-leftside{
+.footer-leftside, .footer-rightside{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+
 
 .footer-social, .footer-direct-msgs, .footer-copyrights{    
     display: flex;
@@ -29,9 +32,8 @@ FOOTER SECTION
     
 }
 .footer-copyrights{
-    border: none;
-    
-    padding: 0 1.8em 0.5em 1.8em; 
+    border: none;    
+    padding: 0 0em 0.5em 0em; 
 }
 .footer-title{
     font-family: 'Courier Prime', monospace;
@@ -51,10 +53,13 @@ FOOTER SECTION
 }
 
 .footer-paragraph{
-    width: 90%;
+    width: 92%;
+    text-align: center;
     font-size: 0.9em;
-    line-height: 1.6em;
+    line-height: 1.6em;  
+    padding: 0.5em;  
     word-wrap: break-word;
+    word-break: keep-all;
 }
 
 @media (min-width: 600px){

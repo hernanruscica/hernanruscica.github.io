@@ -200,19 +200,19 @@
         <form  action="https://formspree.io/f/mlevdjdk" method="post" class="contactme-form">
             
             <div class="contactme-form__input">
-                <label for="name" class="contactme-form__input__label">Nombre:</label>
+                <label for="contactme_name" class="contactme-form__input__label">Nombre:</label>
                 <input type="text" name="name" class="contactme-form__input__input"
                 id="contactme_name" placeholder="Ingrese su nombre" required>
             </div>
 
             <div class="contactme-form__input">
-                <label for="email" class="contactme-form__input__label">Email:</label>
+                <label for="contactme_email" class="contactme-form__input__label">Email:</label>
                 <input type="email" name="email"  class="contactme-form__input__input"
                  id="contactme_email" placeholder="Ingrese su email" pattern='\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b'  required>
             </div>
 
             <div class="contactme-form__input">
-                <label for="message" class="contactme-form__input__label">Mensaje:</label>
+                <label for="contactme_message" class="contactme-form__input__label">Mensaje:</label>
                 <textarea name="message"  class="contactme-form__input__message" required
                     id="contactme_message" placeholder="Write your message"
                     cols="200" rows="20" wrap="hard">
@@ -256,11 +256,11 @@
         </div>
         <div class="footer-rightside">
             <div class="footer-copyrights">
-                <p class="footer-paragraph">
+                <div class="footer-paragraph">
                     Este sitio web fue desarrollado por Cesar Hernan Ruscica en el año 2023. El codigo se puede encontrar en este
                     repositorio de Github. Se puede usar como plantilla para quien le sirva.
                     https://creativecommons.org/licenses/by-sa/3.0/igo/
-                </p>
+                </div> 
                 <img src="/assets/icons/by-sa.svg" alt="">
             </div>
         </div>
