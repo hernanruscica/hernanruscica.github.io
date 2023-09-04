@@ -73,6 +73,7 @@ Header
     padding-top: 4em;
     translate: 100vw;
     opacity: 0;
+    
     transition: all ease-in-out 0.5s;
 }
 .header__navbar-mobile__btn-menu-close{
@@ -85,7 +86,7 @@ Header
 
 .navbar_show{
     translate: 0vw;
-    opacity: 0.9;
+    opacity: 0.9;        
     transition: all ease-in-out 0.5s;
 }
 

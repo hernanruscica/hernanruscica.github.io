@@ -48,10 +48,11 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100vw;
   }
 
-body{
-     min-width: 360px;    
+body{        
+      
     font-family: 'Courier Prime', monospace;     
     background-color: var(--section02-darker);
 }
