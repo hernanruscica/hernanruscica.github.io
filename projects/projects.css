@@ -1,13 +1,22 @@
+
+.project-main{
+    background-color: var(--section01-light);
+    padding: 2em 1.2em;
+
+}
+
 .project{
     display: flex;
-    flex-direction: column;    
+    flex-direction: row;    
+    flex-wrap: wrap;
 }
 
 .project_first_section{
-    background-color: var(--caribbean-green);
-    min-height: 300px;
+    /* background-color: var(--caribbean-green); */
+    min-height: 250px;
     width: 100%;
-    padding: 2em 0 0 0;
+    max-width: 400px;
+    padding: 1em 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -15,11 +24,13 @@
 }
 
 .project_first_section_title{
-    margin: 1.4em 0em 1em 0.4em;
-    color: var(--midnight-green);    
+    margin: 0.7em 0em 1em 0.4em;
+    color: var(--section01-normal);  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: 1.2em;
     letter-spacing: 0.1em;
-    font-weight: 700;
+    
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -86,26 +97,36 @@
 }
 
 .project_second_section{
-    background-color: var(--yellow-crayola);
+    background-color: rgba(0,0,0,0);
     color: var(--midnight-green);
     min-height: 300px;    
     padding: 1em 0.5em 1em 1.2em;
     width: 100%;
+    max-width: 400px;
 }
 
 .project_second_section_title{
     margin: 0.6em 0;
-    font-weight: 700;
+    color: var(--section01-normal);  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;    
     text-decoration: none;
 }
 
 .project_second_section_paragraph, .project_second_section_list{
-    line-height: 1.6em;
-    letter-spacing: 0.03em;
+    line-height: 1.7em;
+    letter-spacing: 0.04em;
     margin-bottom: 1em;
 }
 .project_second_section_list{
     padding: 0.2em 0.5em 0em 1.2em;
+}
+
+.project_second_section_list_item{
+    margin-bottom: 1em;
+    line-height: 1.5em;
 }
 
 .project_second_section_link{
@@ -122,20 +143,22 @@
     transition: color 0.3s ease-out;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1000px){
     .project {
         flex-direction: row;
-        width: 80vw;
+        width: 100%;
         margin: 0 auto;
     }
     .project_first_section,
     .project_second_section{
-        width: 50%;        
+        width: 50%;      
+        max-width: 2000px;  
     }
     .project_first_section{
         padding: 2em 1em 1em 1em;
+        
     }
     .project_second_section{
-        padding: 4em 1em 1.5em 2em;
+        padding: 1em;
     }
 }

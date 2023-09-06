@@ -1,6 +1,6 @@
 .slider-container {
     position: relative;
-    max-width: 375px;
+    max-width: 300px;
     height: auto;    
     overflow: hidden;
   }
@@ -31,7 +31,7 @@
   }
   
   .thumbnail {    
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
     margin: 0 10px;
     border: 2px solid #ccc;

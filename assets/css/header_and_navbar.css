@@ -38,6 +38,7 @@ Header
     justify-content: center;
     align-items: center;
     min-width: 240px;
+    text-decoration: none;
 }
 .header__logo-container__title{
     font-family: 'Montserrat', sans-serif;
@@ -48,7 +49,8 @@ Header
 
 .header__logo-container__icon{    
     padding: 0.5em;
-    font-size: 2.4em;        
+    font-size: 2.4em;    
+    color: var(--section01-light);    
 }
 
 .header__btn-menu{    

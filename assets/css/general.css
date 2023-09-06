@@ -88,6 +88,29 @@ body{
     transition: background-color 0.25s ease-in-out;
 }
 
+.breadcrumb {
+    padding: 0 .5rem;
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+    
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: "→";
+}
 
 
 /* General Styles ends*/
