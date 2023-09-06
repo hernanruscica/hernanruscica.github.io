@@ -1,18 +1,21 @@
-.top_arrow{
+.btn-floating{
     position: fixed;
-    bottom: 8vh;
-    right: 1.7em;
-    font-size: 0.7em;
     padding: 0.7em 1em;
     border-radius: 5px;
+    font-size: 0.7em;
     border: #073b4c solid 2px;
     color: var(--midnight-green);
     background-color: var(--gray-light);
     z-index: 4;
     text-decoration: none;
+}
+
+
+.top_arrow{    
+    bottom: 8vh;
+    right: 1.7em;    
     opacity: 0;
     transform: scale(0);
-
     transition-property: transform, opacity;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out    
@@ -26,9 +29,15 @@
     transition-timing-function: ease-in-out
 }
 
-.top_arrow_icon{
+.top_arrow_icon, .left_arrow_icon{
     font-size: 2em;
     
+}
+
+.left_arrow{
+    top: 6em;
+    left: 1.7em; 
+    opacity: 0.5;  
 }
 
 @media (min-width: 800px){
