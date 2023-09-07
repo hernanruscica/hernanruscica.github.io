@@ -6,7 +6,7 @@ Header
 .header{
     height: auto;
     width: 100vw;
-    position:sticky;    
+    position: fixed;    
     top: 0px;
     left: 0px;
     z-index: 5;

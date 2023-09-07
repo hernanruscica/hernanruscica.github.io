@@ -48,7 +48,7 @@
 
 html {
     scroll-behavior: smooth;
-    width: 100vw;
+    width: 100vw;    
   }
 
 body{        
@@ -89,7 +89,7 @@ body{
 }
 
 .breadcrumb {
-    padding: 0 .5rem;
+    padding: 0rem;
 }
 
 .breadcrumb ul {
@@ -97,8 +97,8 @@ body{
     flex-wrap: wrap;
     list-style: none;
     gap: 0.5em;
-    margin: 0;
-    padding: 0;
+    margin: 2.5em 0 2em 0em ;
+    padding: 4em 0 0 0 ;
 }
 
 .breadcrumb li{

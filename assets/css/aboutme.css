@@ -1,11 +1,12 @@
 .aboutme{
     background-color: var(--section01-light);
+    padding-top: 4em;
 }
 
 .aboutme-main__title{
     position: absolute;
     width: 100%;
-    top: 4.5rem;
+    top: 4rem;
     text-align: center;    
 }
 .aboutme-main{
@@ -15,7 +16,7 @@
     color: var(--gray-light);
     padding: 1rem;
     gap: 1.4rem;
-    padding-top: 4rem;
+    padding-top: 4.5rem;
 }
 
 .aboutme-main__column{
@@ -37,9 +38,11 @@
 
 
 @media (min-width: 1000px){
+    
     .aboutme-main {
         flex-direction: row;
         justify-content: space-between;
+        
     }
     .aboutme-main__column{
         width: 30%;
