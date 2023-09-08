@@ -194,6 +194,10 @@ Header
 .navbar-selected{
     border-bottom: var(--section04-light) solid 3px;
 }
+.navbar-mobile-selected{
+    color: var(--section03-normal) ;
+    
+}
 
 /*navbar desktop finish*/
 

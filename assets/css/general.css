@@ -89,7 +89,7 @@ body{
 }
 
 .breadcrumb {
-    padding: 0rem;
+    padding-left: 3rem;
 }
 
 .breadcrumb ul {
@@ -97,13 +97,19 @@ body{
     flex-wrap: wrap;
     list-style: none;
     gap: 0.5em;
-    margin: 2.5em 0 2em 0em ;
+    margin: 1em 0 1em 0em ;
     padding: 4em 0 0 0 ;
 }
 
 .breadcrumb li{
     font-size: 1.2em;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1em;    
+}
+.breadcrumb a {
+    color: var(--section01-normal);
 }
     
 .breadcrumb li:not(:last-child)::after {
