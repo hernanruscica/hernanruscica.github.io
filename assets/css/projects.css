@@ -36,7 +36,7 @@ RECENT PROJECTS container
     border: var(--midnight-green);
 }
 
-.recentprojects__project__title{    
+.recentprojects__project-info__title{    
     background-color: var(--gray-light);    
     color: var(--midnight-green);        
     padding:  0.4em 0.8em;
@@ -51,6 +51,10 @@ RECENT PROJECTS container
     position: absolute;
     bottom: 0;    
 }
+
+.recentprojects__project-info__tags-container {}
+
+.tecnology-tag {}
 
 .recentprojects__project__btn{
     position: absolute;
