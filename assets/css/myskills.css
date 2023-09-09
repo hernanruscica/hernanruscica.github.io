@@ -1,5 +1,6 @@
 .myskills{
     background-color: var(--section03-light);
+    flex-direction: column-reverse;
 }
 /*Slider con las tecnologias*/
 .myskills_showcase{
@@ -31,8 +32,11 @@
 }
 
 @media (min-width: 800px){
+    .myskills{
+        flex-direction: row;
+    }
     .myskills_showcase{
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
         border: none;
         border-left: var(--section04-dark) solid 1px;
         border-right: var(--section04-dark) solid 1px;

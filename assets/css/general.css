@@ -97,8 +97,8 @@ body{
     flex-wrap: wrap;
     list-style: none;
     gap: 0.5em;
-    margin: 1em 0 1em 0em ;
-    padding: 4em 0 0 0 ;    
+    margin: 0em 0 1em 0em ;
+    padding: 2em 0 0 0 ;    
 }
 
 .breadcrumb li{

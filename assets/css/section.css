@@ -4,7 +4,7 @@
     color: var(--section01-dark);    
     display: flex;
     flex-direction: column;
-    padding: 1.2em 1.4em;
+    padding: 3em 1.4em 1em 1.4em;
     font-size: 1.1em;
     border-bottom: var(--section01-dark) solid 1px;
 }
