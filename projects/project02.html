@@ -87,7 +87,10 @@
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><span aria-current="page"><a href="index.html">proyectos</a></span></li>   
+                <li><a href="index.html">proyectos</a></li>                
+                <li><span aria-current="page">
+                    <h1 class="project_first_section_title">Juego de memoria "Memotest"</h1>
+                </span></li> 
             </ul>
         </nav>    
         
@@ -97,73 +100,74 @@
         </a>      
 
         <section class="project ">
-
-            <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">
-                <i class="fa-solid fa-arrow-left left_arrow_icon"></i>
-            </a>  
             
-            <!--RECENT PROJECTS Container-->        
-        <div class="recentprojects__container">
-
-            <!--RECENT PROJECT 1 SECTION-->
-            <div class="recentprojects-project">   
-                <div class="recentprojects-project__img-container">
-                    <img class="recentprojects-project__img-container__img" src="/assets/images/agenda-cac01.jpg" alt="captura de pantalla del proyecto" >            
-                    <a href = "project01.html" class="btn recentprojects-project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
-                </div>       
-                <div class="recentprojects-project-info">
-                    <h3 class="recentprojects-project-info__title">
-                        Agenda de contactos con node.js                                      
-                    </h3>
-                    <div class="recentprojects-project-info__tags-container">
-                        <span class="tecnology-tag">HTML</span>
-                        <span class="tecnology-tag">Express</span>
-                        <span class="tecnology-tag">MySql</span>
-                        <span class="tecnology-tag">CRUD</span>
-                    </div>
-                </div>    
-            </div>   
-            <!--RECENT PROJECT 2 SECTION-->
-            <div class="recentprojects-project">   
-                <div class="recentprojects-project__img-container">
-                    <img class="recentprojects-project__img-container__img" src="/assets/images/memotest02.jpg" alt="captura de pantalla del proyecto" >            
-                    <a href = "project02.html" class="btn recentprojects-project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
-                </div>       
-                <div class="recentprojects-project-info">
-                    <h3 class="recentprojects-project-info__title">
-                        Juego de memoria "Memotest"                                      
-                    </h3>
-                    <div class="recentprojects-project-info__tags-container">
-                        <span class="tecnology-tag">HTML</span>
-                        <span class="tecnology-tag">CSS</span>
-                        <span class="tecnology-tag">Javascript</span>
-                        <span class="tecnology-tag">DOM API</span>
-                    </div>
-                </div>    
-            </div>      
-            <!--RECENT PROJECT 3 SECTION-->
-            <div class="recentprojects-project">   
-                <div class="recentprojects-project__img-container">
-                    <img class="recentprojects-project__img-container__img" src="/assets/images/interactive_comments01.jpg" alt="captura de pantalla del proyecto" >            
-                    <a href = "project03.html" class="btn recentprojects-project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
-                </div>       
-                <div class="recentprojects-project-info">
-                    <h3 class="recentprojects-project-info__title">
-                        Comentarios interactivos                                      
-                    </h3>
-                    <div class="recentprojects-project-info__tags-container">                        
-                        <span class="tecnology-tag">Javascript</span>
-                        <span class="tecnology-tag">Responsivo</span>
-                        <span class="tecnology-tag">DOM API</span>
-                        <span class="tecnology-tag">Local storage</span>
-                        <span class="tecnology-tag">BEN</span>
-                        
-                    </div>
-                </div>    
-            </div>      
-        </div>   
-        <!--RECENT PROJECTS Container-->           
+        
+            <!--PROJECT PAGE FIRST SECTION-->
+            <section class="project_first_section" id = "project_first_section">
+                
+                <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">
+                    <i class="fa-solid fa-arrow-left left_arrow_icon"></i>
+                </a>             
             
+
+                <!--empieza la imagen y los thumbnails-->
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                    <img src="/assets/images/memotest02.jpg" alt="Image 1" />
+                    <img src="/assets/images/memotest01.jpg" alt="Image 2" />
+                    <img src="/assets/images/memotest03.jpg" alt="Image 3" />                    
+                    </div>
+                    <div class="thumbnail-wrapper">
+                    <img src="/assets/images/memotest02.jpg" alt="Image 1" class="thumbnail" />
+                    <img src="/assets/images/memotest01.jpg" alt="Image 2" class="thumbnail" />
+                    <img src="/assets/images/memotest03.jpg" alt="Image 3" class="thumbnail" />                    
+                    </div>
+                </div>
+                <!--termina la imagen y los thumbnails-->
+
+                <div class="project_first_section__links">
+                <a href="https://github.com/hernanruscica/memotest" target="_blank" class="project_first_section_link">    
+                    Ver Código<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a href="https://hernanruscica.github.io/memotest/" target="_blank" class="project_first_section_link">    
+                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                </div>            
+
+                
+
+            </section>
+            <!--PROJECT PAGE SECOND SECTION-->
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Descripción:</h2>
+                <p class="project_second_section_paragraph">
+                    Simple juego de memoria, estilo "MemoTest", hecho con <strong>puro javascript, CSS, HTML</strong> y programación estructurada.
+                    Dinámicamente genera los <strong>elementos del DOM</strong> para hacer las cartas y ponerlas en el correcto lugar.
+                    Simple <strong>animación con CSS</strong> para "dar vuelta" las cartas. Usa la función <strong>"setTimeOut"</strong> para contar el tiempo.
+                </p>
+            </section>
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Características:</h2>
+                <p class="project_second_section_paragraph">                
+                    <ul class="project_second_section_list">
+                        <li class="project_second_section_list_item">Puedes Jugar al juego de memoria.</li>
+                        <li class="project_second_section_list_item">Puedes Traducir la interfaz y los mensajes hacia el usuario. [Ingles y Español]</li>
+                        <li class="project_second_section_list_item">Puedes Reiniciar el juego</li>
+                        <li class="project_second_section_list_item">El jugador es controlado por tiempo, además se cuenta su puntaje e intentos restantes</li>                                            
+                    </ul>
+                </p>
+            </section>
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Habilidades:</h2>
+                <ul class="project_second_section_list">                   
+                    <li class="project_second_section_list_item">Document Object Model </li>
+                    <li class="project_second_section_list_item">HTML, CSS y Javascript</li>
+                    <li class="project_second_section_list_item">Diseño responsivo</li>
+                    <li class="project_second_section_list_item">Animaciones CSS</li>                
+                    <li class="project_second_section_list_item">Manejo del tiempo con setTimeOut</li>     
+                </ul>
+            </section>
         </section>
 
     </main>

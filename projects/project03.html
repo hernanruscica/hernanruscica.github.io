@@ -87,7 +87,10 @@
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><span aria-current="page"><a href="index.html">proyectos</a></span></li>   
+                <li><a href="index.html">proyectos</a></li>                
+                <li><span aria-current="page">
+                    <h1 class="project_first_section_title">Comentarios interactivos </h1>
+                </span></li> 
             </ul>
         </nav>    
         
@@ -97,73 +100,80 @@
         </a>      
 
         <section class="project ">
-
-            <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">
-                <i class="fa-solid fa-arrow-left left_arrow_icon"></i>
-            </a>  
             
-            <!--RECENT PROJECTS Container-->        
-        <div class="recentprojects__container">
-
-            <!--RECENT PROJECT 1 SECTION-->
-            <div class="recentprojects-project">   
-                <div class="recentprojects-project__img-container">
-                    <img class="recentprojects-project__img-container__img" src="/assets/images/agenda-cac01.jpg" alt="captura de pantalla del proyecto" >            
-                    <a href = "project01.html" class="btn recentprojects-project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
-                </div>       
-                <div class="recentprojects-project-info">
-                    <h3 class="recentprojects-project-info__title">
-                        Agenda de contactos con node.js                                      
-                    </h3>
-                    <div class="recentprojects-project-info__tags-container">
-                        <span class="tecnology-tag">HTML</span>
-                        <span class="tecnology-tag">Express</span>
-                        <span class="tecnology-tag">MySql</span>
-                        <span class="tecnology-tag">CRUD</span>
-                    </div>
-                </div>    
-            </div>   
-            <!--RECENT PROJECT 2 SECTION-->
-            <div class="recentprojects-project">   
-                <div class="recentprojects-project__img-container">
-                    <img class="recentprojects-project__img-container__img" src="/assets/images/memotest02.jpg" alt="captura de pantalla del proyecto" >            
-                    <a href = "project02.html" class="btn recentprojects-project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
-                </div>       
-                <div class="recentprojects-project-info">
-                    <h3 class="recentprojects-project-info__title">
-                        Juego de memoria "Memotest"                                      
-                    </h3>
-                    <div class="recentprojects-project-info__tags-container">
-                        <span class="tecnology-tag">HTML</span>
-                        <span class="tecnology-tag">CSS</span>
-                        <span class="tecnology-tag">Javascript</span>
-                        <span class="tecnology-tag">DOM API</span>
-                    </div>
-                </div>    
-            </div>      
-            <!--RECENT PROJECT 3 SECTION-->
-            <div class="recentprojects-project">   
-                <div class="recentprojects-project__img-container">
-                    <img class="recentprojects-project__img-container__img" src="/assets/images/interactive_comments01.jpg" alt="captura de pantalla del proyecto" >            
-                    <a href = "project03.html" class="btn recentprojects-project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
-                </div>       
-                <div class="recentprojects-project-info">
-                    <h3 class="recentprojects-project-info__title">
-                        Comentarios interactivos                                      
-                    </h3>
-                    <div class="recentprojects-project-info__tags-container">                        
-                        <span class="tecnology-tag">Javascript</span>
-                        <span class="tecnology-tag">Responsivo</span>
-                        <span class="tecnology-tag">DOM API</span>
-                        <span class="tecnology-tag">Local storage</span>
-                        <span class="tecnology-tag">BEN</span>
-                        
-                    </div>
-                </div>    
-            </div>      
-        </div>   
-        <!--RECENT PROJECTS Container-->           
+        
+            <!--PROJECT PAGE FIRST SECTION-->
+            <section class="project_first_section" id = "project_first_section">
+                
+                <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">
+                    <i class="fa-solid fa-arrow-left left_arrow_icon"></i>
+                </a>             
             
+
+                <!--empieza la imagen y los thumbnails-->
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                    <img src="/assets/images/interactive_comments01.jpg" alt="Image 1" />
+                    <img src="/assets/images/interactive_comments02.jpg" alt="Image 2" />
+                    <img src="/assets/images/interactive_comments03.jpg" alt="Image 3" />                    
+                    </div>
+                    <div class="thumbnail-wrapper">
+                    <img src="/assets/images/interactive_comments01.jpg" alt="Image 1" class="thumbnail" />
+                    <img src="/assets/images/interactive_comments02.jpg" alt="Image 2" class="thumbnail" />
+                    <img src="/assets/images/interactive_comments03.jpg" alt="Image 3" class="thumbnail" />                    
+                    </div>
+                </div>
+                <!--termina la imagen y los thumbnails-->
+
+                <div class="project_first_section__links">
+                <a href="https://github.com/hernanruscica/Frontend_mentor_Interactive-comments-section" target="_blank" class="project_first_section_link">    
+                    Ver Código<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a href="https://hernanruscica.github.io/Frontend_mentor_Interactive-comments-section/" target="_blank" class="project_first_section_link">    
+                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                </div>            
+
+                
+
+            </section>
+            <!--PROJECT PAGE SECOND SECTION-->
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Descripción:</h2>
+                <p class="project_second_section_paragraph">
+                    Una sección de comentarios interactivos hecho con <strong>puro javascript, CSS, y HTML.</strong> Al desafio original de 
+                    <a href="https://www.frontendmentor.io/solutions/comments-and-replies-w-vanilla-js-localstorage-dom-and-responsive-owDoG5J22U"
+                    class="project_second_section_link"
+                    target="_blank">
+                        "Frontend Mentor": Interactive comments section
+                    </a>
+                    , yo le agregué la característica de almacenamiento en el <strong>local Storage</strong>, para
+                    mantener los datos de prueba, entre sesiones.                       
+                </p>
+            </section>
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Características:</h2>
+                <p class="project_second_section_paragraph">                
+                    <ul class="project_second_section_list">
+                        <li class="project_second_section_list_item">Puedes agregar un comentario, borrarlo o editarlo.</li>
+                        <li class="project_second_section_list_item">Puedes responder un comentario, borrarlo o editarlo</li>
+                        <li class="project_second_section_list_item">Puedes votar los comentarios o respuestas</li>
+                        <li class="project_second_section_list_item">Guardado del estado en el local storage del navegador</li>                                                     
+                    </ul>
+                </p>
+            </section>
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Habilidades:</h2>
+                <ul class="project_second_section_list">
+                    <li class="project_second_section_list_item">HTML, CSS</li>
+                    <li class="project_second_section_list_item">Javascript/li>
+                    <li class="project_second_section_list_item">Diseño responsivo</li>
+                    <li class="project_second_section_list_item">Nomenclatura BEN</li>  
+                    <li class="project_second_section_list_item">Document Object Model </li>
+                                  
+                </ul>
+            </section>
         </section>
 
     </main>
