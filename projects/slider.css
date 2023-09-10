@@ -1,6 +1,6 @@
 .slider-container {
     position: relative;
-    max-width: 300px;
+    max-width: 350px;
     height: auto;    
     overflow: hidden;
   }
@@ -45,5 +45,6 @@
   @media (min-width: 800px){
   .slider-container {
     width: 95%;
+    max-width: 450px;
   } 
   }

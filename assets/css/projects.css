@@ -16,7 +16,7 @@ RECENT PROJECTS container
 
 .recentprojects-project{    
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     height: auto;    
     margin-bottom: 1em;
     border: var(--midnight-green) 3px solid;
@@ -80,7 +80,7 @@ RECENT PROJECTS container
 .recentprojects-project__btn{
     position: absolute;
     bottom: 50px;
-    left: 68px;    
+    left: 100px;    
     color: var(--section04-light);
     background-color: rgba(0,0,0,0.2); 
     letter-spacing: 0.2em;
@@ -94,6 +94,9 @@ RECENT PROJECTS container
 }
 
 @media (min-width: 1000px){
+    .recentprojects-project{
+        max-width: 330px;
+    }
 
 .recentprojects__container{
     justify-content: space-around;
