@@ -31,7 +31,7 @@
 
 .aboutme-main__link{    
     color: var(--section02-normal);
-    word-break: break-all;
+    word-break:keep-all;
     font-weight: 700;
 }
 
