@@ -29,11 +29,10 @@
     font-weight: 300;
 }
 
-.aboutme-main__link{
-    font-size: 0.9em;
-    color: var(--yellow-crayola);
+.aboutme-main__link{    
+    color: var(--section02-normal);
     word-break: break-all;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 
