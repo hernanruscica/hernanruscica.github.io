@@ -1,4 +1,5 @@
 .aboutme{
+    
     background-color: var(--section01-light);
     padding-top: 4em;
 }
@@ -12,8 +13,8 @@
 .aboutme-main{
     display: flex;
     flex-direction: column;
-    /* background-color: var(--midnight-green); */
-    color: var(--gray-light);
+    background-color: var(--section01-light); 
+    color: var(--section01-dark);
     padding: 1rem;
     gap: 1.4rem;
     padding-top: 4.5rem;
@@ -39,7 +40,7 @@
 @media (min-width: 1000px){
     
     .aboutme-main {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         
     }
