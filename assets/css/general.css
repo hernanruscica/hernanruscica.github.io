@@ -1,24 +1,24 @@
 /* General Styles starts*/
 :root{
     /*Basic colors*/
-    --midnight-green: #073b4c;
-    --blue-NCS: #118ab2;    
+    --midnight-green: hsl(195, 83%, 16%);
+    --blue-NCS: hsl(195, 83%, 38%);    
     --caribbean-green: #06d6a0;
     --yellow-crayola: #ffd166;
     --paradise-pink: #ef476f; 
     /*Basic colors*/
 
     /*Basic colors*/
-    --section01-normal: #073b4c;
-    --section02-normal: #118ab2;    
-    --section03-normal: #06d6a0;
+    --section01-normal: hsl(195, 83%, 16%);
+    --section02-normal: hsl(195, 83%, 38%);    
+    --section03-normal: hsl(164, 95%, 43%);
     --section04-normal: #ffd166;
     --section05-normal: #ef476f; 
     /*Basic colors*/
 
     /*light colors light to the 90% */
-    --section01-light: hsl(193, 80%, 95%);
-    --section02-light: hsl(195, 84%, 95%);
+    --section01-light: hsl(193, 80%, 90%);
+    --section02-light: hsl(195, 85%, 95%);
     --section03-light: hsl(164, 96%, 95%);
     --section04-light: hsl(42, 100%, 95%);
     --section05-light: hsl(346, 84%, 95%); 

@@ -62,6 +62,10 @@ FOOTER SECTION
     word-break: keep-all;
 }
 
+.footer-link{
+    color: var(--section04-normal);    
+}
+
 @media (min-width: 600px){
     .footer{
         flex-direction: row;  

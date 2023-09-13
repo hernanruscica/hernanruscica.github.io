@@ -1,0 +1,5 @@
+.mylinks{
+    background-color: var(--section02-light);
+    display: flex;
+    flex-direction: column;
+}
