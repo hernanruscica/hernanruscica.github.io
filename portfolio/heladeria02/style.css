@@ -1,7 +1,90 @@
-.my_header{
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:wght@300;400;600&display=swap');
+/*
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.my_header, .my_navbar{
     background-color: #D4A373;
+}
+
+.my_navbar_link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
 }
 
 .my_body{
     background-color: #FEFAE0;
 }
+
+.my_section_header{
+    
+    text-transform: uppercase;
+}
+
+.my_section_title_container_img{
+    max-height: 300px;
+}
+
+
+.my_section_title_container_paragraph{
+    line-height: 187%;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-indent: 0.2em;
+}
+
+.my_section_title_container_paragraph::first-letter {
+    initial-letter: 2;
+    margin-right: 0.4em;
+  }
+
+  .my_section_cards_container{
+    background-image: url('./assets/imgs/heladofrutilla.png');
+    background-size: cover;
+    background-position: center;    
+  }
+
+  .my_card{
+    background-color: rgba(255,255,255,0.6);
+    border:none;    
+  }
+
+.card-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+
+#carouselExampleCaptions .carousel-item img {  
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height:30vh;
+  }
+  
+  #carouselExampleCaptions .carousel-item:before {
+    content: "";
+    background-image:
+      linear-gradient(
+        to bottom,
+        transparent, rgba(0,0,0,0.5)
+      );
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 30vh;
+  }
+
+  

@@ -10,57 +10,65 @@
 </head>
 <body>
     <header class="container-fluid my_header">
-        <div class="container ">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <i class="fa-solid fa-ice-cream"></i>
-                    Delizia Fresca                    
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container ">       
+            <!--navbar-->     
+            <nav class="navbar navbar-expand-lg fixed-top my_navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-solid fa-ice-cream"></i>
+                        Delizia Fresca
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Donde estamos?</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Sabores
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Chocolates</a></li>
-                          <li><a class="dropdown-item" href="#">Frutales</a></li>
-                          <li><a class="dropdown-item" href="#">Postres</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    </button>
+                    <div class="offcanvas offcanvas-end my_navbar" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                        <div class="offcanvas-header  ">                                                            
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <i class="fa-solid fa-ice-cream"></i>Delizia Fresca
+                            </h5>                                  
+                            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 ps-2 fs-3">
+                                <li class="nav-item">
+                                    <a class="nav-link my_navbar_link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link my_navbar_link" href="#">Contacto</a>
+                                </li>
+                                <li class="nav-item my_navbar_link">
+                                    <a class="nav-link" href="#">Donde estamos?</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link my_navbar_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sabores
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item my_navbar_link" href="#">Chocolates</a></li>
+                                        <li><a class="dropdown-item my_navbar_link" href="#">Frutales</a></li>
+                                        <li><a class="dropdown-item my_navbar_link" href="#">Postres</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                          </ul>
+                    </div>
                 </div>
-              </nav>
-
-        </div>
-        
+            </nav>
+        </div>        
     </header>
     <div class="container my_body">
-        <div id="carouselExampleCaptions" class="carousel slide">
+
+        <!--img carousel-->
+        <div id="carouselExampleCaptions" class="carousel slide ">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -82,7 +90,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/imgs/comparativa-helado-cacao.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/imgs/helado-de-menta.webp" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Some representative placeholder content for the third slide.</p>
@@ -98,7 +106,82 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptas, numquam, voluptatibus architecto, a quisquam alias labore minus ducimus dignissimos cum. Nam animi, dolor quidem autem hic vitae eum officiis?</p>
+
+        <!--Section historia-->
+        <section class="my_section">
+            <div class="my_section_title_container">
+                <h3 class="pt-2 fs-3 my_section_header">
+                    Nuestra historia
+                </h3>
+                <hr class="border border-secondary border-3 my_hr">
+            </div>            
+            <div class="row text-center py-4">
+                <div class="col-12 col-md-4 mt-3">
+                    <img src="./assets/imgs/_6ac0b252-8d0a-44ec-9f51-0b44c8b60674.jfif" 
+                        class="img-fluid p-2 my_section_title_container_img" 
+                        alt="imagen del fundador de la heladeria">
+                </div>
+                <div class="col-12 col-md-4 text-start px-3 mt-3">
+                    <p class="my_section_title_container_paragraph">
+                        La heladería "Delizia Fresca" es un tesoro gastronómico en el corazón de un pintoresco pueblo de la provincia de Buenos
+                        Aires, Argentina, llamado "Villabella". Fundada en 1945 por el inmigrante italiano, Giovanni Rossi, y su familia, este
+                        icónico establecimiento ha sido un faro de delicias artesanales durante generaciones.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 text-start px-3 mt-3 ">
+                    <p class="my_section_title_container_paragraph">
+                        Giovanni, originario del encantador pueblo italiano de "DolceSorrento", trajo consigo secretos ancestrales y pasión
+                        por el helado. Con su habilidad innata para combinar los sabores más exquisitos, Giovanni transformó su modesta
+                        heladería en un destino imperdible para los lugareños y visitantes por igual.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section sabores-->
+        <section class="my_section">
+            <div class="my_section_title_container">
+                <h3 class="pt-2 fs-3 my_section_header">
+                    cremas
+                </h3>
+                <hr class="border border-secondary border-3 ">
+            </div> 
+            <div class="container d-flex flex-row flex-wrap mb-3 p-2 justify-content-center my_section_cards_container">
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">Frutilla a la crema</h5>
+                        <p class="card-text">Crema elaborada con frutillas naturales y trozos de frutillas.</p>
+                        <!--
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        -->
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">MENTA GRANIZADA</h5>
+                        <p class="card-text">Crema con base de menta y trocitos de chocolate amargo.</p>
+                        
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">MASCARPONE</h5>
+                        <p class="card-text">Elaborado con queso mascarpone artesanal y sembrado con amarena italiana.</p>
+                        
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">MARROC</h5>
+                        <p class="card-text">Crema de pasta de maní, crema de chocolate y trocitos de bombones Marroc.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
