@@ -49,9 +49,17 @@ h1, h2, h3, h5 {
   }
 
   .my_section_cards_container{
-    background-image: url('./assets/imgs/heladofrutilla.png');
+    
     background-size: cover;
     background-position: center;    
+  }
+
+  #card_container_cremas{
+    background-image: url('./assets/imgs/heladofrutilla.png');
+  }
+
+  #card_container_chocolates{
+    background-image: url('./assets/imgs/comparativa-helado-cacao.jpg');
   }
 
   .my_card{
@@ -63,6 +71,12 @@ h1, h2, h3, h5 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1em;
+}
+
+.logo_gluten{
+    height: auto;
+    width: 50px;     
+    margin: 0; 
 }
 
 
