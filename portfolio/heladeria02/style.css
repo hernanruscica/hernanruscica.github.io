@@ -18,9 +18,15 @@ h1, h2, h3, h5 {
 }
 
 .my_navbar_link{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif;    
+    text-transform: uppercase;
+    color: #FEFAE0;
 }
+
+/* .my_nav-icon{
+  font-size: 1.8em;
+  
+} */
 
 .my_body{
     background-color: #FEFAE0;
