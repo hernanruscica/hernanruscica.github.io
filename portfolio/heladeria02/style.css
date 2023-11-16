@@ -90,7 +90,7 @@ h1, h2, h3, h5 {
     object-fit: cover;
     object-position: center;
     overflow: hidden;
-    height:30vh;
+    height:60vh;
   }
   
   #carouselExampleCaptions .carousel-item:before {
@@ -104,7 +104,25 @@ h1, h2, h3, h5 {
     position: absolute;
     top: 0;
     width: 100vw;
-    height: 30vh;
+    height: 60vh;
+  }
+
+  .my_footer {
+    background-color: #754C24;
+    color: #FEFAE0;
+  }
+
+  .my_footer_logo{
+    font-size: 4em;
   }
 
   
+
+  @media (max-width: 576px) {
+
+    #carouselExampleCaptions .carousel-item img,
+    #carouselExampleCaptions .carousel-item img:before{
+        height: 30vh;
+    }
+    
+  }
