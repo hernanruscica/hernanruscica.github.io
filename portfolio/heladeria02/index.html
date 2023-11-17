@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="myskills.css">
 </head>
 <body>
-    <header class="container-fluid my_header">
+    <header class="container-fluid my_header" id="top">
         <div class="container ">       
             <!--navbar-->     
             <nav class="navbar navbar-expand-lg fixed-top justify-content-center my_navbar">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <i class="fa-solid fa-ice-cream"></i>
+                        <i class="fa-solid fa-ice-cream me-2"></i>
                         Delizia Fresca
                     </a>
                     <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
@@ -31,32 +31,29 @@
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1  fs-6">
-                                <li class="nav-item">
-                                    <a class="nav-link my_navbar_link active" aria-current="page" href="#">Inicio</a>
+                                <li class="nav-item" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link my_navbar_link active" aria-current="page" 
+                                        href="#">Inicio</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link my_navbar_link" href="#">Contacto</a>
+                                <li class="nav-item" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link my_navbar_link" 
+                                        href="#donde_estamos" >Contacto</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link my_navbar_link" href="#">Donde estamos?</a>
+                                <li class="nav-item" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link my_navbar_link" 
+                                     href="#donde_estamos">Donde estamos?</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link my_navbar_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Sabores
-                                    </a>
-                                    <ul class="dropdown-menu my_navbar">
-                                        <li><a class="dropdown-item my_navbar_link" href="#card_container_cremas">Cremas</a></li>
-                                        <li><a class="dropdown-item my_navbar_link" href="#card_container_chocolates">Chocolates</a></li>                                                                                
-                                        <li><a class="dropdown-item my_navbar_link" href="#">Postres</a></li>
-                                    </ul>
+                                <li class="nav-item" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link my_navbar_link" 
+                                     href="#sabores">Sabores</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                <li class="nav-item" >
+                                    <a href="github.com" class="nav-link" target="_blank">
                                         <i class="fa-brands fa-instagram  fs-3"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="github.com" class="nav-link" target="_blank">
                                         <i class="fa-brands fa-facebook  fs-3"></i>
                                     </a>
                                 </li>
@@ -69,7 +66,7 @@
     <div class="container my_body">
 
         <!--img carousel-->
-        <div id="carouselExampleCaptions" class="carousel slide ">
+        <div id="carouselExampleCaptions" class="carousel slide "  data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -77,14 +74,14 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/imgs/comparativa-helado-cacao.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/imgs/chocolate_en_batea_background.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>Some representative placeholder content for the first slide.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/imgs/heladofrutilla.png" class="d-block w-100" alt="...">
+                <img src="./assets/imgs/frutilla_background.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>Some representative placeholder content for the second slide.</p>
@@ -110,30 +107,37 @@
 
         <!--sabores deslizables-->
         <section class="my_section">
+            <div class="my_section_title_container">
+                <h3 class="pt-2 fs-3 my_section_header" id="sabores_slider">
+                    Sabores
+                </h3>                
+            </div> 
             <div class="myskills_showcase" >            
                 <!-- skills showcase -->
                 <div class="myskills_showcase_item">
-                    <img src="../../assets/icons/html-5-svgrepo-com.svg" class="myskills_showcase_image" alt="">
-                    <span>Chocolates</span>
+                    <a href="#card_container_chocolates" class="myskills_showcase_link">
+                        <img src="./assets/imgs/chocolates_thumbnail.jpg" class="myskills_showcase_image" alt="helado de chocolate">                    
+                        <span class="fw-bold">Chocolates</span>
+                    </a>
                 </div>
                 <div class="myskills_showcase_item">
-                    <img src="../../assets/icons/css-3-svgrepo-com.svg" class="myskills_showcase_image" alt="">
-                    <span>Cremas</span>
+                    <a href="#card_container_chocolates" class="myskills_showcase_link">
+                        <img src="./assets/imgs/cremas_thumbnail.jpg" class="myskills_showcase_image" alt="Helado de crema">
+                        <span class="fw-bold">Cremas</span>
+                    </a>
                 </div>
                 <div class="myskills_showcase_item">
-                    <img src="../../assets/icons/javascript-svgrepo-com.svg" class="myskills_showcase_image" alt="">
-                    <span>Postres</span>
+                    <a href="#card_container_chocolates" class="myskills_showcase_link">
+                        <img src="./assets/imgs/postres_thumbnail.jpg" class="myskills_showcase_image" alt="Helado de postre">
+                        <span class="fw-bold">Postres</span>
+                    </a>
                 </div>
                 <div class="myskills_showcase_item">
-                    <img src="../../assets/icons/git-icon-svgrepo-com.svg" class="myskills_showcase_image" alt="">
-                    <span>Frutales</span>
-                </div>
-                <div class="myskills_showcase_item">
-                    <img src="../../assets/icons/css-3-svgrepo-com.svg" class="myskills_showcase_image" alt="">
-                </div>
-                <div class="myskills_showcase_item">
-                    <img src="../../assets/icons/Node.js_logo.svg" class="myskills_showcase_image" alt="">
-                </div>
+                    <a href="#card_container_chocolates" class="myskills_showcase_link">
+                        <img src="./assets/imgs/frutales_thumbnail.jpg" class="myskills_showcase_image" alt="Helado de frutillas">
+                        <span class="fw-bold">Frutales</span>
+                    </a>
+                </div>                
                 
             </div>
         </section>
@@ -146,9 +150,9 @@
                 </h3>
                 <hr class="border border-secondary border-3 my_hr">
             </div>            
-            <div class="row text-center py-4">
+            <div class="row text-center py-1">
                 <div class="col-12 col-md-4 mt-3">
-                    <img src="./assets/imgs/fundador.jpg" 
+                    <img src="./assets/imgs/fundador_small.jpg" 
                         class="img-fluid p-2 my_section_title_container_img" 
                         alt="imagen del fundador de la heladeria">
                 </div>
@@ -170,13 +174,16 @@
         </section>
 
         <!-- Section sabores -->
-        <section class="my_section">
+        <section class="my_section" id="sabores">
             <div class="my_section_title_container">
-                <h3 class="pt-2 fs-3 my_section_header">
-                    cremas
-                </h3>
-                <hr class="border border-secondary border-3 ">
+                <h2 class="pt-2 fs-3 my_section_header" >
+                    Sabores
+                </h2>
+                <hr class="border border-secondary border-3 my_hr">
             </div> 
+            <h3 class="pt-2 fs-5 my_section_header" id="cremas">
+                Cremas
+            </h3>
             <div class="container d-flex flex-row flex-wrap mb-3 p-2 justify-content-center my_section_cards_container" id="card_container_cremas">
                 <div class="card m-3 my_card" style="width: 18rem;">
                     <div class="card-body">
@@ -211,12 +218,9 @@
                     </div>
                 </div>
             </div>
-            <div class="my_section_title_container">
-                <h3 class="pt-2 fs-3 my_section_header">
-                    chocolates
-                </h3>
-                <hr class="border border-secondary border-3 ">
-            </div>
+            <h3 class="pt-2 fs-5 my_section_header">
+                chocolates
+            </h3>
             <div class="container d-flex flex-row flex-wrap mb-3 p-2 justify-content-center my_section_cards_container" id="card_container_chocolates">
                 <div class="card m-3 my_card" style="width: 18rem;">
                     <div class="card-body">
@@ -253,16 +257,16 @@
         </section>
 
         <!--Section Donde estamos-->
-        <section class="my_section">
+        <section class="my_section" id="donde_estamos">
             <div class="my_section_title_container">
                 <h2 class="pt-2 fs-2 my_section_header">
                     ¿Dónde estamos?
                 </h2>
-                <hr class="border border-secondary border-3 ">
-                <div class="row text-center py-4">
+                <hr class="border border-secondary border-3 my_hr">
+                <div class="row text-center pt-1 pb-3">
                     <div class="col-12 col-md-4 mt-3">
                         <h3 class="pt-2 fs-4 my_section_header">Nuestro local</h3> 
-                        <img src="./assets/imgs/delizia-fresca-local.jpg" alt="Foto del frente de nuestro local" class="img-fluid w-75">
+                        <img src="./assets/imgs/delizia-fresca-local_small.jpg" alt="Foto del frente de nuestro local" class="img-fluid w-75">
                     </div>                        
                     <div class="col-12 col-md-4 mt-3">
                         <h3 class="pt-2 fs-4 my_section_header">Dirección</h3>
@@ -294,7 +298,7 @@
     </div>
 
     <footer class="container-fluid my_section my_footer">
-        <div class="row text-center py-4">
+        <div class="row text-center pt-1 pb-4">
             <div class="col-12 col-md-4 mt-3">
                 <i class="fa-solid fa-ice-cream  my_footer_logo "></i> 
                 <p>
@@ -322,11 +326,11 @@
                 <h3 class="pt-2 fs-6 my_section_header">Nuestras redes</h3>
                 <div class="row justify-content-center  fs-6">
                     
-                        <a href="" class="nav-link col-2">
+                        <a href="github.com" class="nav-link col-2">
                             <i class="fa-brands fa-instagram  fs-1"></i>
                         </a>                   
                     
-                        <a href="" class="nav-link col-2">
+                        <a href="github.com" class="nav-link col-2">
                             <i class="fa-brands fa-facebook  fs-1"></i>
                         </a>
                     
@@ -334,6 +338,26 @@
             </div>    
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtener todos los enlaces de navegación
+            var navLinks = document.querySelectorAll('.nav-link');
+    
+            // Agregar un listener de clic a cada enlace
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Eliminar la clase 'active' de todos los enlaces
+                    navLinks.forEach(function (navLink) {
+                        navLink.classList.remove('active');
+                    });
+    
+                    // Agregar la clase 'active' solo al enlace clicado
+                    link.classList.add('active');
+                });
+            });
+        });
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

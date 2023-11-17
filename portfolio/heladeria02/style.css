@@ -31,10 +31,17 @@ h1, h2, h3, h5 {
 .my_body{
     background-color: #FEFAE0;
 }
+.my_section{
+    padding-top: 3em;
+}
 
 .my_section_header{
     
     text-transform: uppercase;
+}
+
+.my_hr{
+    margin: 0;
 }
 
 .my_section_title_container_img{
@@ -61,11 +68,11 @@ h1, h2, h3, h5 {
   }
 
   #card_container_cremas{
-    background-image: url('./assets/imgs/heladofrutilla.png');
+    background-image: url('./assets/imgs/frutilla_background.jpg');
   }
 
   #card_container_chocolates{
-    background-image: url('./assets/imgs/comparativa-helado-cacao.jpg');
+    background-image: url('./assets/imgs/chocolate_en_batea_background.jpg');
   }
 
   .my_card{
@@ -110,6 +117,7 @@ h1, h2, h3, h5 {
   .my_footer {
     background-color: #754C24;
     color: #FEFAE0;
+    padding: 1em;
   }
 
   .my_footer_logo{
