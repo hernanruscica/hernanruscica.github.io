@@ -75,6 +75,14 @@ h1, h2, h3, h5 {
     background-image: url('./assets/imgs/chocolate_en_batea_background.jpg');
   }
 
+  #card_container_postres{
+    background-image: url('./assets/imgs/postres_en_bateas_background.jpg');
+  }
+
+  #card_container_frutales{
+    background-image: url('./assets/imgs/heladobanana500.jpg');
+  }
+
   .my_card{
     background-color: rgba(255,255,255,0.6);
     border:none;    
@@ -130,7 +138,18 @@ h1, h2, h3, h5 {
 
     #carouselExampleCaptions .carousel-item img,
     #carouselExampleCaptions .carousel-item img:before{
-        height: 30vh;
+        height: 40vh;
     }
     
   }
+
+   /* Estilo para el botón flotante */
+   #scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: rgba(117, 77, 36, 0.7);
+    border: none;
+}

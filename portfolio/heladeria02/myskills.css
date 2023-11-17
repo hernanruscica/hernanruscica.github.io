@@ -30,7 +30,7 @@
     margin: 1em;
     height: auto;    
     border-radius: 60px;
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3); */
 }
 
 .myskills_showcase_link{
