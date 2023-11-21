@@ -21,6 +21,7 @@ h1, h2, h3, h5 {
     font-family: 'Montserrat', sans-serif;    
     text-transform: uppercase;
     color: #FEFAE0;
+    
 }
 
 /* .my_nav-icon{
@@ -136,12 +137,22 @@ h1, h2, h3, h5 {
 
   @media (max-width: 576px) {
 
+    
+
+    
+
     #carouselExampleCaptions .carousel-item img,
     #carouselExampleCaptions .carousel-item img:before{
         height: 40vh;
     }
     
+    
   }
+.nav-social-icon::before{
+        font-size: 0.8em;    
+        margin: 0 1em;   
+    }
+  
 
    /* Estilo para el botón flotante */
    #scrollTopBtn {
@@ -152,4 +163,20 @@ h1, h2, h3, h5 {
     z-index: 99;
     background-color: rgba(117, 77, 36, 0.7);
     border: none;
+}
+
+
+
+.fa-brands{
+    font-size: 2em;
+}
+.brand-icon{
+    color: #754C24;   
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+.brand-text{
+    font-family: 'Montserrat', sans-serif;    
+    text-transform: uppercase;
+    color: #754C24;
 }

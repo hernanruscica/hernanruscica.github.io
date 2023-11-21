@@ -15,7 +15,7 @@
             <!--navbar-->     
             <nav class="navbar navbar-expand-lg fixed-top justify-content-center my_navbar">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./index.html">
                         <i class="fa-solid fa-ice-cream brand-icon"></i>
                         <span class="brand-text">Delizia Fresca</span>
                     </a>
@@ -31,10 +31,10 @@
                             <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body text-center">
-                            <ul class="navbar-nav justify-content-center  align-items-center  flex-grow-1  fs-4">
+                            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1  fs-4">
                                 <li class="nav-item " data-bs-dismiss="offcanvas">
                                     <a class="nav-link my_navbar_link active" aria-current="page" 
-                                        href="#">Inicio</a>
+                                        href="./index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item" data-bs-dismiss="offcanvas">
                                     <a class="nav-link my_navbar_link" 
@@ -46,14 +46,14 @@
                                 </li>
                                 <li class="nav-item" data-bs-dismiss="offcanvas">
                                     <a class="nav-link my_navbar_link" 
-                                     href="./sabores.html">Sabores</a>
+                                     href="#sabores">Sabores</a>
                                 </li>
                                 <li class="nav-item row justify-content-center" >
                                     <a href="github.com" class="nav-link col-3" target="_blank">
-                                        <i class="fa-brands fa-instagram  nav-social-icon "></i>
+                                        <i class="fa-brands fa-instagram  nav-social-icon"></i>
                                     </a>                                
                                     <a href="github.com" class="nav-link col-3" target="_blank">
-                                        <i class="fa-brands fa-facebook   nav-social-icon"></i>
+                                        <i class="fa-brands fa-facebook  nav-social-icon "></i>
                                     </a>
                                 </li>
                           </ul>
@@ -141,75 +141,157 @@
             </div>
         </section>
 
-        <!--Section historia-->
-        <section class="my_section">
+        
+        <!-- Section sabores -->
+        <section class="my_section" id="sabores">
             <div class="my_section_title_container">
-                <h3 class="pt-2 fs-3 my_section_header">
-                    Nuestra historia
-                </h3>
-                <hr class="border border-secondary border-3 my_hr">
-            </div>            
-            <div class="row text-center py-1">
-                <div class="col-12 col-md-4 mt-3">
-                    <img src="./assets/imgs/fundador_small.jpg" 
-                        class="img-fluid p-2 my_section_title_container_img" 
-                        alt="imagen del fundador de la heladeria">
-                </div>
-                <div class="col-12 col-md-4 text-start px-3 mt-3">
-                    <p class="my_section_title_container_paragraph">
-                        La heladería "Delizia Fresca" es un tesoro gastronómico en el corazón de un pintoresco pueblo de la provincia de Buenos
-                        Aires, Argentina, llamado "Villabella". Fundada en 1945 por el inmigrante italiano, Giovanni Rossi, y su familia, este
-                        icónico establecimiento ha sido un faro de delicias artesanales durante generaciones.
-                    </p>
-                </div>
-                <div class="col-12 col-md-4 text-start px-3 mt-3 ">
-                    <p class="my_section_title_container_paragraph">
-                        Giovanni, originario del encantador pueblo italiano de "DolceSorrento", trajo consigo secretos ancestrales y pasión
-                        por el helado. Con su habilidad innata para combinar los sabores más exquisitos, Giovanni transformó su modesta
-                        heladería en un destino imperdible para los lugareños y visitantes por igual.
-                    </p>
-                </div>
-            </div>
-        </section>        
-
-        <!--Section Donde estamos-->
-        <section class="my_section" id="donde_estamos">
-            <div class="my_section_title_container">
-                <h2 class="pt-2 fs-2 my_section_header">
-                    ¿Dónde estamos?
+                <h2 class="pt-2 fs-3 my_section_header" >
+                    Sabores
                 </h2>
                 <hr class="border border-secondary border-3 my_hr">
-                <div class="row text-center pt-1 pb-3">
-                    <div class="col-12 col-md-4 mt-3">
-                        <h3 class="pt-2 fs-4 my_section_header">Nuestro local</h3> 
-                        <img src="./assets/imgs/delizia-fresca-local_small.jpg" alt="Foto del frente de nuestro local" class="img-fluid w-75">
-                    </div>                        
-                    <div class="col-12 col-md-4 mt-3">
-                        <h3 class="pt-2 fs-4 my_section_header">Dirección</h3>
-                        <p>
-                            Av. Almirante Dordoni 5470.<br>
-                            Villabella, Buenos Aires.
-                        </p>
-                        <h3 class="pt-2 fs-4 my_section_header">Contáctenos</h3>
-                            <p>
-                                TEL.: (0248)487-2594<br>
-                                <a href="mailto:info@dolcetentazione.com.ar">info@dolcetentazione.com.ar</a>                                
-                            </p>
-                        <h3 class="pt-2 fs-4 my_section_header">Horarios</h3>     
-                        <p>
-                            Lunes a Viernes de 9 a 20 Hs.<br>
-                            Sábado y Domingo de 11 a 24 Hs.
-                        </p>                   
-                    </div>    
-                    <div class="col-12 col-md-4 mt-3">
-                        <h3 class="pt-2 fs-4 my_section_header">¿Cómo llegar?</h3>
-                        <img src="./assets/imgs/googlemaps-square.png" alt="Mapa de nuestro local" class="img-fluid">
-                    </div>    
-                </div>
             </div> 
+            <h3 class="pt-2 fs-5 my_section_header" id="sabores_chocolates">
+                chocolates
+            </h3>
+            <div class="container d-flex flex-row flex-wrap mb-3 p-2 justify-content-center my_section_cards_container" id="card_container_chocolates">
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">CHOCOLATE AMARGO</h5>
+                        <p class="card-text">Cacaos de primer nivel y chocolate amargo reemplazando con delicadeza a la manteca de cacao.</p>
+                        <!--
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        -->
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">CHOCOLATE CON ALMENDRAS</h5>
+                        <p class="card-text">Base de helado de chocolate y la mejor selección de almendras tostadas.</p>
+                        
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">CHOCOLATE SUIZO</h5>
+                        <p class="card-text">Helado de chocolate, ron y chocolate granizado.</p>
+                        
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">CHOCOLATE</h5>
+                        <p class="card-text">Con los mejores y más naturales cacaos de Brasil y Sudáfrica.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <h3 class="pt-2 fs-5 my_section_header" id="sabores_cremas">
+                Cremas
+            </h3>
+            <div class="container d-flex flex-row flex-wrap mb-3 p-2 justify-content-center my_section_cards_container" id="card_container_cremas">
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">Frutilla a la crema</h5>
+                        <p class="card-text">Crema elaborada con frutillas naturales y trozos de frutillas.</p>
+                        <!--
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        -->
+                        <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten">
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">MENTA GRANIZADA</h5>
+                        <p class="card-text">Crema con base de menta y trocitos de chocolate amargo.</p>
+                        
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">MASCARPONE</h5>
+                        <p class="card-text">Elaborado con queso mascarpone artesanal y sembrado con amarena italiana.</p>
+                        
+                    </div>
+                </div>
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">MARROC</h5>
+                        <p class="card-text">Crema de pasta de maní, crema de chocolate y trocitos de bombones Marroc.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <h3 class="pt-2 fs-5 my_section_header" id="sabores_postres">
+                Postres
+            </h3>
+            <div class="container d-flex flex-row flex-wrap mb-3 p-2 justify-content-center my_section_cards_container" id="card_container_postres">
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">BOMBÓN ESCOCÉS</h5>
+                        <p class="card-text">Postre de Bombón Escocés por 6 Unidades.</p>                        
+                        <!-- <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten"> -->
+                    </div>
+                </div>            
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">ALMENDRADO</h5>
+                        <p class="card-text">Postre Almendrado por 2000 cm3 y 1400 cm3</p>                        
+                        <!-- <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten"> -->
+                    </div>
+                </div>            
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">TIRAMISÚ</h5>
+                        <p class="card-text">Postre Tiramisú por 2000 cm3 y 1400 cm3.</p>                        
+                        <!-- <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten"> -->
+                    </div>
+                </div>            
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">TRICOLOR</h5>
+                        <p class="card-text">Postre Tricolor por 2000 cm3 y 1400 cm3.</p>                        
+                        <!-- <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten"> -->
+                    </div>
+                </div>  
+            </div>      
+            <h3 class="pt-2 fs-5 my_section_header" id="sabores_frutales">
+                Frutales
+            </h3>
+            <div class="container d-flex flex-row flex-wrap mb-3 p-2 justify-content-center my_section_cards_container" id="card_container_frutales">
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">MOUSSE DE LIMÓN</h5>
+                        <p class="card-text">Crema de helado de limón, sometida a un batido específico, logrando una suave crema aireada.</p>                        
+                         <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten"> 
+                    </div>
+                </div>            
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">HIGOS A LA CREMA CON COÑAC</h5>
+                        <p class="card-text">Crema a base de higos con coñac e higos en almíbar.</p>                        
+                         <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten"> 
+                    </div>
+                </div>            
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">BANADUL</h5>
+                        <p class="card-text">A una base de helado de banana, agregamos dulce de leche natural.</p>                        
+                         <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten"> 
+                    </div>
+                </div>            
+                <div class="card m-3 my_card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title ">MOUSSE DE MARACUYÁ</h5>
+                        <p class="card-text">Suave crema helada de maracuyá, batida y marmolada con salsa de maracuyá natural con semillas.</p>                        
+                         <img src="./assets/imgs/sintacc.svg" alt="logo de libre de gluten" class="logo_gluten"> 
+                    </div>
+                </div>  
+            </div>           
         </section>
 
-        
+               
         
     </div>
 
