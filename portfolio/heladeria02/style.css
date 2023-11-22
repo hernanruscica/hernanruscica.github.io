@@ -19,9 +19,10 @@ h1, h2, h3, h5 {
 
 .my_navbar_link{
     font-family: 'Montserrat', sans-serif;    
+    font-size: 0.6em;
+    margin: 0 0.3em;
     text-transform: uppercase;
-    color: #FEFAE0;
-    
+    color: #FEFAE0;    
 }
 
 /* .my_nav-icon{
@@ -33,7 +34,7 @@ h1, h2, h3, h5 {
     background-color: #FEFAE0;
 }
 .my_section{
-    padding-top: 3em;
+    padding-top: 4em;
 }
 
 .my_section_header{
@@ -134,11 +135,8 @@ h1, h2, h3, h5 {
   }
 
   
-
-  @media (max-width: 576px) {
-
-    
-
+/*MOBILE*/
+  @media (max-width: 576px) {    
     
 
     #carouselExampleCaptions .carousel-item img,
@@ -146,12 +144,16 @@ h1, h2, h3, h5 {
         height: 40vh;
     }
     
-    
-  }
-.nav-social-icon::before{
-        font-size: 0.8em;    
-        margin: 0 1em;   
+    .nav-social-icon::before{
+        font-size: 1.3em;           
+        padding: 0.2em;        
     }
+
+    .my_navbar_link{
+        font-size: 0.8em;
+    }
+  }
+
   
 
    /* Estilo para el botón flotante */
@@ -161,7 +163,7 @@ h1, h2, h3, h5 {
     bottom: 20px;
     right: 20px;
     z-index: 99;
-    background-color: rgba(117, 77, 36, 0.7);
+    background-color: rgba(212, 163, 115, 0.7);
     border: none;
 }
 
@@ -169,6 +171,7 @@ h1, h2, h3, h5 {
 
 .fa-brands{
     font-size: 2em;
+    
 }
 .brand-icon{
     color: #754C24;   
@@ -179,4 +182,8 @@ h1, h2, h3, h5 {
     font-family: 'Montserrat', sans-serif;    
     text-transform: uppercase;
     color: #754C24;
+}
+
+.nav-social-icon{
+    font-size: 1.6em;    
 }
