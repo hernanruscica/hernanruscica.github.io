@@ -24,17 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
       return response.json();
     })
     .then(data => {
-      // Ahora, 'data' contiene el objeto JavaScript con el contenido del archivo JSON      
-      
+      // Ahora, 'data' contiene el objeto JavaScript con el contenido del archivo JSON            
       const projects =  data;
 
-      //creo la card de un solo proyecto
-      const currentProjectCard = createCard(projects[0]);
 
-      const $projectsContainer = document.getElementById("projects_container");
-
-      $projectsContainer.append(currentProjectCard);
-      //console.log(currentProjectCard);
+      const $projectsContainer = document.getElementById("projects_container");   
+      projects.forEach(project => {
+        //creo la card de un solo proyecto
+        const currentProjectCard = createCard(project);
+        $projectsContainer.append(currentProjectCard);        
+      });
+      
     })
     .catch(error => {
       console.error('Error al leer el archivo:', error.message);      

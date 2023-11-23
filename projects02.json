@@ -1,6 +1,5 @@
 [
-    {
-      
+    {      
     "id": 1,
     "name": "Juego de memoria 'Memotest'",
     "description": "Juego de memoria, estilo 'MemoTest', hecho con <strong>puro javascript, CSS, HTML</strong> y programación estructurada.Dinámicamente genera los <strong>elementos del DOM</strong> para crear las cartas y ponerlas en el correcto lugar. Creacion de  <strong>animación con CSS</strong> para 'dar vuelta' las cartas. El juego usa la función <strong>'setTimeOut'</strong> para contar el tiempo y crear el flujo del juego.",
@@ -33,6 +32,83 @@
         ],
     "repository": "https://github.com/hernanruscica/memotest",
     "demo": "https://hernanruscica.github.io/memotest/"
+    },
+    {      
+    "id": 2,
+    "name": "Agenda de contactos con node.js",
+    "description": "Aplicación estilo CRUD hecha con <strong>node.js</strong> y <strong>mysql</strong> para administrar contactos en una agenda.<br> Este proyecto está creado como muestra de trabajo práctico integrador de los conceptos aprendidos en el curso de  <a href='https://buenosaires.gob.ar/educacion/codo-codo-40' class='project_second_section_link' target='_blank'> Codo A Codo </a> 4.0 edición 2022. En dicho curso se enseña el Desarrollo Web Fullstack, orientado a Javascript. Se vé tanto el frontend como backend. <br> La frontend de esta aplicación esta construída con <strong>Bootstrap</strong> y prototipo hecho con <strong>Figma</strong>, antes de hacer el curso de Diseño UX/UI. <a href='https://www.figma.com/file/eeiidyltU6h7gC1VL3r0wj'  class='project_second_section_link'  target='_blank'>Agenda Telefonica_@_FIGMA</a>",
+    "features": [
+                    "Podrá registrarse en la aplicación para poder usarla y tener sus contactos personales guardados en su agenda.",
+                    "Restablecer la contraseña en el caso de olvido u otro motivo.",
+                    "Agregar un nuevo contacto, con sus correspondientes datos como: nombres, apellidos, teléfono, correo y una foto.",
+                    "Editar un contacto, para corregir un error o actualizar los datos.",
+                    "Eliminar algún contacto, si es necesario.",
+                    "Buscar en la agenda por nombre y/o apellido."
+                ],
+    "skills":  [
+                    "Node.js",
+                    "Express.js",
+                    "MySQL",
+                    "DOM API",
+                    "HTML",
+                    "Diseño responsivo",
+                    "BEM"
+                ],
+    "images": [
+        {
+            "src": "/assets/images/agenda-cac01.jpg",
+            "alt": "captura de Agenda de contactos con node.js"
+        },
+        {
+            "src": "/assets/images/agenda-cac02.jpg",
+            "alt": "captura de Agenda de contactos con node.js"
+        },
+        {
+            "src": "/assets/images/agenda-cac03.jpg",
+            "alt": "captura de Agenda de contactos con node.js"
+        },
+        {
+            "src": "/assets/images/agenda-cac04.jpg",
+            "alt": "captura de Agenda de contactos con node.js"
+        }
+        ],
+    "repository": "https://github.com/hernanruscica/integrador_cac_alumnos",
+    "demo": "https://agenda-cac.onrender.com/"
+    },    
+    {      
+    "id": 3,
+    "name": "Sitio Web Heladeria 'Delizia Fresca'",
+    "description": "Sitio Web <strong>diseñado desde cero</strong>, pensando colores, tipografias e iconos acordes a la tematica. Separado en componentes reutilizables, <strong>utilizando Figma.</strong> <a href='https://www.figma.com/file/RYNCAD9FqHiEtmhlEllroF' class='project_second_section_link' target='_blank'>Proyecto en FIGMA</a>El maquetado fue hecho con <strong>Bootstrap y CSS</strong> personalizado, utilizando HTML semántico.<br>La parte frontend de esta aplicación esta construída con <strong>Bootstrap</strong> y prototipo hecho con <strong>Figma</strong>.",        
+    "features": [
+                "Diseño responsivo (Mobile y PC escritorio)",
+                "Diseño UX con Figma",
+                "Archivos optimizados para una carga rápida en todos las velocidades de internet.",
+                "HTML semántico para mejorar posicionamiento del sitio"
+            ],
+    "skills":  [
+                    "HTML",
+                    "CSS",
+                    "BOOTSTRAP",                    
+                    "JAVASCRIPT",
+                    "Diseño responsivo",
+                    "BEM"
+                ],
+    "images": [
+        {
+            "src": "/assets/images/delicia_fresca_slider_small.jpg",
+            "alt": "captura de Sitio Web Heladeria 'Delizia Fresca"
+        },
+        {
+            "src": "/assets/images/delicia_fresca_navbar_small.jpg",
+            "alt": "captura de Sitio Web Heladeria 'Delizia Fresca"
+        },
+        {
+            "src": "/assets/images/delicia_fresca_footer_small.jpg",
+            "alt": "captura de Sitio Web Heladeria 'Delizia Fresca"
+        }
+        ],
+    "repository": "https://github.com/hernanruscica/hernanruscica.github.io/tree/master/portfolio/heladeria02",
+    "demo": "https://hernanruscica.github.io/portfolio/heladeria02/"
     }
 ]
 

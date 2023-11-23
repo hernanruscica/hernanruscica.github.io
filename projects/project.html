@@ -87,7 +87,10 @@
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><span aria-current="page"><a href="index.html">proyectos</a></span></li>   
+                <li><a href="index.html">proyecto</a></li>                
+                <li><span aria-current="page">
+                    <h1 class="project_first_section_title">Proyecto cargado por id</h1>
+                </span></li> 
             </ul>
         </nav>    
         
@@ -97,18 +100,84 @@
         </a>      
 
         <section class="project ">
+            
         
-            <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">
-                <i class="fa-solid fa-arrow-left left_arrow_icon"></i>
-            </a>
-        
-            <!--RECENT PROJECTS Container-->
-            <div class="recentprojects__container" id="projects_container">
-        
-        
-            </div>
-            <!--RECENT PROJECTS Container-->
-        
+            <!--PROJECT PAGE FIRST SECTION-->
+            <section class="project_first_section" id = "project_first_section">
+                
+                <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">
+                    <i class="fa-solid fa-arrow-left left_arrow_icon"></i>
+                </a>             
+            
+
+                <!--empieza la imagen y los thumbnails-->
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                    <img src="/assets/images/delicia_fresca_slider_small.jpg" alt="Image 1" />
+                    <img src="/assets/images/delicia_fresca_navbar_small.jpg" alt="Image 2" />
+                    <img src="/assets/images/delicia_fresca_footer_small.jpg" alt="Image 3" />                    
+                    </div>
+                    <div class="thumbnail-wrapper">
+                    <img src="/assets/images/delicia_fresca_slider_small.jpg" alt="Image 1" class="thumbnail" />
+                    <img src="/assets/images/delicia_fresca_navbar_small.jpg" alt="Image 2" class="thumbnail" />
+                    <img src="/assets/images/delicia_fresca_footer_small.jpg" alt="Image 3" class="thumbnail" />                    
+                    </div>
+                </div>
+                <!--termina la imagen y los thumbnails-->
+
+                <div class="project_first_section__links">
+                <a href="https://github.com/hernanruscica/hernanruscica.github.io/tree/master/portfolio/heladeria02" target="_blank" class="project_first_section_link">    
+                    Ver Código<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a href="https://hernanruscica.github.io/portfolio/heladeria02/" target="_blank" class="project_first_section_link">    
+                    Live Demo<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                </div>            
+
+                
+
+            </section>
+            <!--PROJECT PAGE SECOND SECTION-->
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Descripción:</h2>
+                <p class="project_second_section_paragraph">
+                    Sitio Web <strong>diseñado desde cero</strong>, pensando colores, tipografias e iconos acordes a la tematica. 
+                    Separado en componentes reutilizables, <strong>utilizando Figma.</strong> 
+                    <a href="https://www.figma.com/file/RYNCAD9FqHiEtmhlEllroF" 
+                        class="project_second_section_link" 
+                        target="_blank">
+                        Proyecto en FIGMA
+                    </a>
+                </p>
+                <p class="project_second_section_paragraph">
+                El maquetado fue hecho con <strong>Bootstrap y CSS</strong> personalizado, utilizando HTML semántico.<br>                 
+                La parte frontend de esta aplicación esta construída con <strong>Bootstrap</strong> y prototipo hecho con <strong>Figma</strong>.
+                </p>                   
+                
+            </section>
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Características:</h2>
+                <p class="project_second_section_paragraph">                
+                    <ul class="project_second_section_list">
+                        <li class="project_second_section_list_item">Diseño responsivo (Mobile y PC escritorio)</li>
+                        <li class="project_second_section_list_item">Diseño UX con Figma</li>
+                        <li class="project_second_section_list_item">Archivos optimizados para una carga rápida en todos las velocidades de internet.</li>
+                        <li class="project_second_section_list_item">HTML semántico para mejorar posicionamiento del sitio</li>
+                        
+                </p>
+            </section>
+            <section class="project_second_section"  id = "project_second_section">
+                <h2 class="project_second_section_title">Habilidades:</h2>
+                <ul class="project_second_section_list">
+                    <li class="project_second_section_list_item">HTML</li>
+                    <li class="project_second_section_list_item">CSS</li>
+                    <li class="project_second_section_list_item">BOOTSTRAP</li>
+                    <li class="project_second_section_list_item">JAVASCRIPT</li>                    
+                    <li class="project_second_section_list_item">Diseño responsivo</li>
+                    <li class="project_second_section_list_item">Nomenclatura BEN</li>                
+                </ul>
+            </section>
         </section>
 
     </main>
@@ -162,10 +231,32 @@
 
     <script src="../scripts.js"></script>
     <script src="../logros.js"></script>     
-    <script type="module" src="./projects.js"></script>
-    
-    
+    <!-- <script type="module" src="projects.js"></script> -->
+    <script src="slider.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Función para obtener el valor del parámetro 'id' de la URL
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return "";
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
 
-    <!-- <script src="slider.js"></script> -->
+            // Obtener el valor del parámetro 'id'
+            var projectId = getParameterByName("id");
+            console.log(`viendo el proyecto con id ${projectId}`);
+            // Aquí deberías cargar los detalles del proyecto según el 'projectId'
+            // Puedes usar el valor de 'projectId' para hacer una solicitud a tu servidor
+            // y obtener la información del proyecto correspondiente.
+
+            // Ejemplo de cómo mostrar el 'projectId' en la página
+            // var projectDetailsElement = document.getElementById("project-details");
+            // projectDetailsElement.innerHTML = `<h1>Detalles del Proyecto ${projectId}</h1>`;
+        });
+    </script>
 </body>
 </html>
