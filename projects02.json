@@ -1,0 +1,39 @@
+[
+    {
+      
+    "id": 1,
+    "name": "Juego de memoria 'Memotest'",
+    "description": "Juego de memoria, estilo 'MemoTest', hecho con <strong>puro javascript, CSS, HTML</strong> y programación estructurada.Dinámicamente genera los <strong>elementos del DOM</strong> para crear las cartas y ponerlas en el correcto lugar. Creacion de  <strong>animación con CSS</strong> para 'dar vuelta' las cartas. El juego usa la función <strong>'setTimeOut'</strong> para contar el tiempo y crear el flujo del juego.",
+    "features": [
+                    "Puedes Jugar al juego de memoria.",
+                    "Puedes Traducir la interfaz y los mensajes hacia el usuario. [Ingles y Español]",
+                    "Puedes Reiniciar el juego",
+                    "El jugador es controlado por tiempo, además se cuenta su puntaje e intentos restantes"
+                ],
+    "skills":  [
+                "DOM",
+                "HTML",
+                "CSS",
+                "JAVASCRIPT",
+                "setTimeOut"
+            ],
+    "images": [
+        {
+            "src": "/assets/images/memotest01.jpg",
+            "alt": "captura de Juego de memoria 'Memotest"
+        },
+        {
+            "src": "/assets/images/memotest02.jpg",
+            "alt": "captura de Juego de memoria 'Memotest"
+        },
+        {
+            "src": "/assets/images/memotest03.jpg",
+            "alt": "captura de Juego de memoria 'Memotest"
+        }
+        ],
+    "repository": "https://github.com/hernanruscica/memotest",
+    "demo": "https://hernanruscica.github.io/memotest/"
+    }
+]
+
+

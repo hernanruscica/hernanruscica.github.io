@@ -1,17 +1,53 @@
+import { createCard } from "./project_card.js";
+
 console.log("desde projects.js");
 
-function zoom(e){
-  //console.log(e.target);
-    var zoomer = e.currentTarget;
-    /*
-    e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
-    e.offsetY ? offsetY = e.offsetY : offsetY = e.touches[0].pageX
-    */
-    offsetX = e.offsetX;
-    offsetY = e.offsetY;
-    x = offsetX/zoomer.offsetWidth*100
-    y = offsetY/zoomer.offsetHeight*100
-    zoomer.style.backgroundPosition = x + '% ' + y + '%';
-  }
+
+
+
+const loadJson = () => {
+  
+
+}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  const urlArchivoJSON = '../projects02.json';
+
+  fetch(urlArchivoJSON)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Error de red - ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Ahora, 'data' contiene el objeto JavaScript con el contenido del archivo JSON      
+      
+      const projects =  data;
+
+      //creo la card de un solo proyecto
+      const currentProjectCard = createCard(projects[0]);
+
+      const $projectsContainer = document.getElementById("projects_container");
+
+      $projectsContainer.append(currentProjectCard);
+      //console.log(currentProjectCard);
+    })
+    .catch(error => {
+      console.error('Error al leer el archivo:', error.message);      
+    });
+
+  
+})
+
+
+
+
+
+
+
 
   
