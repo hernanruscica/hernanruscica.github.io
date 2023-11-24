@@ -5,13 +5,6 @@ console.log("desde projects.js");
 
 
 
-const loadJson = () => {
-  
-
-}
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   
   const urlArchivoJSON = '../projects02.json';
@@ -26,15 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       // Ahora, 'data' contiene el objeto JavaScript con el contenido del archivo JSON            
       const projects =  data;
-
+      localStorage.setItem('projects', JSON.stringify(projects));
 
       const $projectsContainer = document.getElementById("projects_container");   
+     
       projects.forEach(project => {
         //creo la card de un solo proyecto
         const currentProjectCard = createCard(project);
         $projectsContainer.append(currentProjectCard);        
       });
-      
+ /*
+      const projectsToShow =  2;
+      for (let i = 0; i < projectsToShow; i++ ){
+        const currentProjectCard = createCard(projects[i]);
+        $projectsContainer.append(currentProjectCard);    
+      }
+      */
     })
     .catch(error => {
       console.error('Error al leer el archivo:', error.message);      

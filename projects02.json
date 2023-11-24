@@ -109,6 +109,40 @@
         ],
     "repository": "https://github.com/hernanruscica/hernanruscica.github.io/tree/master/portfolio/heladeria02",
     "demo": "https://hernanruscica.github.io/portfolio/heladeria02/"
+    },
+    {      
+    "id": 4,
+    "name": "Comentarios interactivos",
+    "description": "Una sección de comentarios interactivos hecho con <strong>puro javascript, CSS, y HTML.</strong> Al desafío original de <a href='https://www.frontendmentor.io/solutions/comments-and-replies-w-vanilla-js-localstorage-dom-and-responsive-owDoG5J22U' class='project_second_section_link' target='_blank'>Frontend Mentor: Interactive comments section</a>, yo le agregué la característica de almacenamiento en el <strong>local Storage</strong>, para mantener los datos de prueba, entre sesiones.",        
+    "features": [
+                    "Puedes agregar un comentario, borrarlo o editarlo.",
+                    "Puedes responder un comentario, borrarlo o editarlo.",
+                    "Puedes votar los comentarios o respuestas.",
+                    "Guardado del estado en el local storage del navegador."
+                ],
+    "skills":  [
+                    "HTML, CSS",
+                    "Javascript",
+                    "Diseño responsivo",
+                    "Nomenclatura BEN",
+                    "DOM"
+                ],
+    "images": [
+        {
+            "src": "/assets/images/interactive_comments01.jpg",
+            "alt": "captura de Comentarios interactivos"
+        },
+        {
+            "src": "/assets/images/interactive_comments02.jpg",
+            "alt": "captura de Comentarios interactivos"
+        },
+        {
+            "src": "/assets/images/interactive_comments03.jpg",
+            "alt": "captura de Comentarios interactivos"
+        }
+        ],
+    "repository": "https://github.com/hernanruscica/Frontend_mentor_Interactive-comments-section",
+    "demo": "https://hernanruscica.github.io/Frontend_mentor_Interactive-comments-section/"
     }
 ]
 
