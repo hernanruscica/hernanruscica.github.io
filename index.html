@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ruscica-code.ar - Home</title>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-6.4.2-web/css/all.css"   rel="stylesheet"/>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>  
@@ -17,7 +17,7 @@
 
             <a href="#" class="header__logo-container">                
                 <i class="fa-solid fa-code header__logo-container__icon"></i>                
-                <h1 class="header__logo-container__title"><span style="color: var(--section04-normal)">ruscica</span><span style="color: var(--section03-normal)">-code</span><span style="color: var(--section02-normal)">.ar</span>
+                <h1 class="header__logo-container__title"><span style="color: var(--section04-normal)">ruscica</span><span style="color: var(--section03-normal)">-code</span><span style="color: var(--section02-light)">.ar</span>
                 </h1>
             </a>
             
@@ -88,7 +88,10 @@
     <section class=" container section aboutme" id = "aboutme">        
         
         <div class="section__image__container">
-            <img class="section_image" src="/assets/images/foto-perfil-extraSmall.jpg" alt="Foto de perfil de cesar hernan ruscica ">     
+            <img class="section_image" src="/assets/images/foto-perfil-extraSmall.jpg" 
+                srcset="/assets/images/foto-perfil-mobile.jpg 400w" 
+                alt="Foto de perfil de cesar hernan ruscica ">   
+
             <a href="./assets/documentos/CV28470361.pdf" class="btn section_image__container-btn-download">
                 <i class="fa-solid fa-download icon"></i>
                 Bajar CV</a>       
@@ -294,13 +297,13 @@
             <div class="footer-social">
                 <h2 class="footer-title">Mis redes sociales</h2>
                 <div class="footer-icons-container">
-                    <a href="https://github.com/hernanruscica" class="footer-icons" target="_blank">
+                    <a href="https://github.com/hernanruscica" class="footer-icons" target="_blank" aria-label="Mi perfil de Github">
                         <i class="fa-brands fa-github"></i>                         
                     </a>
-                    <a href="https://www.linkedin.com/in/cesar-hernan-ruscica/" class="footer-icons" target="_blank">
+                    <a href="https://www.linkedin.com/in/cesar-hernan-ruscica/" class="footer-icons" target="_blank" aria-label="Mi perfil de Linkedin">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="https://www.freecodecamp.org/chruscica" class="footer-icons" target="_blank">
+                    <a href="https://www.freecodecamp.org/chruscica" class="footer-icons" target="_blank" aria-label="Mi perfil de Free Code Camp">
                         <i class="fa-brands fa-free-code-camp"></i>                
                     </a>  
                 </div>          
@@ -308,8 +311,8 @@
             <div class="footer-direct-msgs">
                 <h2 class="footer-title">Contacto directo</h2>
                 <div class="footer-icons-container">
-                    <a href="mailto: cesarhernanruscica@gmail.com" class="footer-icons"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer-icons" target="_blank">
+                    <a href="mailto: cesarhernanruscica@gmail.com" class="footer-icons" aria-label="Mi correo electronico"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer-icons" aria-label="Mi Whatsapp" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
