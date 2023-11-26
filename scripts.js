@@ -24,8 +24,8 @@ $d.addEventListener('click', (e) => {
         //Se hizo click en algun enlace del menu desktop o mobile     
         console.log('click en  id = "mobile_navbar_link"')
         /*sistema de logros*/
-        incrementarProgreso('menuClick');
-        console.log(progreso['menuClick']);
+        //incrementarProgreso('menuClick');
+        //console.log(progreso['menuClick']);
         /*sistema de logros*/
 
         $navbar.classList.toggle('navbar_show');

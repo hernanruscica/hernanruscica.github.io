@@ -3,8 +3,10 @@ export function createCard(project) {
     const projectHTML = `         
             
             <div class="recentprojects-project__img-container">
-                <img class="recentprojects-project__img-container__img" src="${project.images[0].src}" alt="${project.images[0].alt}">            
-                <a href="project.html?id=${project.id}" class="btn recentprojects-project__btn"><i class="fa-solid fa-plus"></i>Ver más</a>                   
+                <img class="recentprojects-project__img-container__img" 
+                src="${project.images[0].src}" alt="${project.images[0].alt}">            
+                <a href="project.html?id=${project.id}" class="btn recentprojects-project__btn">
+                Ver más</a>                   
             </div>
             
             <div class="recentprojects-project-info">

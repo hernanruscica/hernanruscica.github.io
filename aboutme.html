@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ruscica-code.ar - Home</title>
+    <meta name="description" content="Sitio web personal de Cesar Hernan Ruscica, datos de contacto, habilidades profesionales y servicios ofrecidos. Esta es la pagina de sobre mi, donde cuento que estudio y a que me dedico en la programacion y el desarrollo de software">
+    <title>ruscica-code.ar - Sobre mi</title>    
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>  
@@ -15,17 +15,22 @@
     <header class="header " id = "header">             
         <div class="header-container">
 
-            <a href="#" class="header__logo-container">                
-                <i class="fa-solid fa-code header__logo-container__icon"></i>                
-                <h1 class="header__logo-container__title"><span style="color: var(--section04-normal)">ruscica</span><span style="color: var(--section03-normal)">-code</span><span style="color: var(--section02-normal)">.ar</span>
+            <a href="#" class="header__logo-container">                                                
+                <img src="./assets/icons/fontawesome-custom/code-light.svg" class="header__logo-container__icon" alt="Icono en formato svg de codigo">
+                <h1 class="header__logo-container__title">
+                    <span style="color: var(--section04-normal)">ruscica</span><span style="color: var(--section03-normal)">-code</span>
+                    <span style="color: var(--section02-light)">.ar</span>
                 </h1>
-            </a>
+            </a>            
             
-            <i class="fa-solid fa-bars header__btn-menu" id = "header__btn-menu-open"></i>
+            <img src="./assets/icons/fontawesome-custom/bars-light.svg" class="header__btn-menu" 
+                id = "header__btn-menu-open" alt="Icono en formato svg de unas barras">
+                
 
             <!--navbar mobile Empieza-->
-            <nav class="header__navbar-mobile" id = "header__navbar">                       
-                <i class="fa-solid fa-xmark header__navbar-mobile__btn-menu-close" id = "header__btn-menu-close"></i>
+            <nav class="header__navbar-mobile" id = "header__navbar">                                       
+                <img src="./assets/icons/fontawesome-custom/xmark-light.svg" class="header__navbar-mobile__btn-menu-close"
+                    id = "header__btn-menu-close" alt="icono del boton de cerrar menu">
                 <ol  class="header__navbar-mobile__list">                
                     <li class="header__navbar-mobile__list__item " id = "header_navbar_link">
                         <a href="./index.html#aboutme" class="header__navbar-mobile__link " id = "aboutme_mobile_navbar_link">Acerca de mí</a>
@@ -42,16 +47,21 @@
                     <li class="header__navbar-mobile__list__item">
                         <a href="./index.html#contactme" class="header__navbar-mobile__link" id = "contactme_mobile_navbar_link">Contacto</a>
                     </li>
-                    <!-- social media links 
+                    <!-- social media links -->
                     <li class="header__navbar-mobile__list__item">
-                        <a href="https://github.com/hernanruscica" class="footer_social_link">
-                            <i class="fa-brands fa-github header_navbar-mobile_social"></i></a>              
-                        <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link">
-                            <i class="fa-regular fa-envelope header_navbar-mobile_social"></i></a>
-                        <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer_social_link">
-                            <i class="fa-brands fa-whatsapp header_navbar-mobile_social"></i>
+                        <a href="https://github.com/hernanruscica" class="footer_social_link" target="_blank">                                          
+                            <img src="./assets/icons/fontawesome-custom/github-light.svg" alt="icono de github"
+                                class="header_navbar-mobile_social" />
+                        <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link"  target="_blank">                            
+                            <img src="./assets/icons/fontawesome-custom/envelope-light.svg" alt="icono de correo electronico"
+                                class="header_navbar-mobile_social" />
                         </a>
-                    </li> -->
+                        <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work"  target="_blank"
+                            class="footer_social_link">                            
+                            <img src="./assets/icons/fontawesome-custom/whatsapp-light.svg" alt="icono de whatsapp"
+                                class="header_navbar-mobile_social" />
+                        </a>
+                    </li> 
                 </ol>
             </nav>
             <!--navbar mobile Termina-->
@@ -78,24 +88,29 @@
             </nav>
             <!--navbar Desktop Termina-->  
         </div>     
-    </header>     
+    </header>      
 
-    <a href="#" class="btn btn-floating top_arrow" id="top_arrow">
-        <i class="fa-solid fa-arrow-up top_arrow_icon"></i>
+    <a href="#" class="btn btn-floating top_arrow" id="top_arrow">        
+        <img src="./assets/icons/fontawesome-custom/arrow-up.svg" class="top_arrow_icon"
+            alt="icono de flecha para arriba">
     </a>
 
     <!--ABOUT ME SECTION-->   
     <section class=" container section aboutme-main" id = "aboutme">        
         
         <div class="section__image__container">
-            <img class="section_image" src="/assets/images/foto-perfil-extraSmall.jpg" alt="Foto de perfil de cesar hernan ruscica ">     
-            <a href="./assets/documentos/CV28470361.pdf" class="btn section_image__container-btn-download">
-                <i class="fa-solid fa-download icon"></i>
-                Bajar CV</a>       
+            <img class="section_image" src="/assets/images/foto-perfil-extraSmall.jpg" 
+                srcset="/assets/images/foto-perfil-mobile.jpg 400w" 
+                alt="Foto de perfil de cesar hernan ruscica ">   
+
+            <a href="./assets/documentos/CV28470361.pdf" class="btn section_image__container-btn-download">                
+                <img src="./assets/icons/fontawesome-custom/download.svg"  class="section__btn__icon" alt="icono de download">
+                <span>Bajar CV</span></a>       
         </div>
         <div class="section__sidetext__container">
             <div class="section__title__container">
-                <i class="fa-regular fa-user icon"></i>
+                <img src="./assets/icons/fontawesome-custom/user.svg" class="section__title__container__icon"
+                    alt="icono de usuario">
                 <h2 class="section_title">Acerca de mí.</h2>                  
             </div>
             <div class="section__description__container">                
@@ -247,23 +262,33 @@
             <div class="footer-social">
                 <h2 class="footer-title">Mis redes sociales</h2>
                 <div class="footer-icons-container">
-                    <a href="https://github.com/hernanruscica" class="footer-icons" target="_blank">
-                        <i class="fa-brands fa-github"></i>                         
+                    <a href="https://github.com/hernanruscica" class="footer-icons" target="_blank" aria-label="Mi perfil de Github">
+                                                 
+                        <img src="./assets/icons/fontawesome-custom/github-light.svg" class="header_navbar-mobile_social" 
+                            alt="icono de github">
                     </a>
-                    <a href="https://www.linkedin.com/in/cesar-hernan-ruscica/" class="footer-icons" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/cesar-hernan-ruscica/" class="footer-icons" target="_blank" aria-label="Mi perfil de Linkedin">
+                        
+                        <img src="./assets/icons/fontawesome-custom/linkedin-light.svg" class="header_navbar-mobile_social" 
+                            alt="icono de github">
                     </a>
-                    <a href="https://www.freecodecamp.org/chruscica" class="footer-icons" target="_blank">
-                        <i class="fa-brands fa-free-code-camp"></i>                
+                    <a href="https://www.freecodecamp.org/chruscica" class="footer-icons" target="_blank" aria-label="Mi perfil de Free Code Camp">
+                        
+                        <img src="./assets/icons/fontawesome-custom/free-code-camp-light.svg" class="header_navbar-mobile_social" 
+                            alt="icono de github">
                     </a>  
                 </div>          
             </div>
             <div class="footer-direct-msgs">
                 <h2 class="footer-title">Contacto directo</h2>
                 <div class="footer-icons-container">
-                    <a href="mailto: cesarhernanruscica@gmail.com" class="footer-icons"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer-icons" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
+                    <a href="mailto: cesarhernanruscica@gmail.com" class="footer-icons" aria-label="Mi correo electronico">
+                        <img src="./assets/icons/fontawesome-custom/envelope-light.svg" class="header_navbar-mobile_social" 
+                            alt="icono de github">
+                    </a>
+                    <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work" class="footer-icons" aria-label="Mi Whatsapp" target="_blank">
+                        <img src="./assets/icons/fontawesome-custom/whatsapp-light.svg" class="header_navbar-mobile_social" 
+                            alt="icono de github">
                     </a>
                 </div>
             </div>
@@ -283,7 +308,8 @@
                     </a>
                     
                 </div> 
-                <img src="/assets/icons/by-sa.svg" alt="">
+                <img src="/assets/icons/by-sa.svg" style="width: 120px; height: 42px;"
+                alt="logo de creative commons">
             </div>
         </div>
     </footer>

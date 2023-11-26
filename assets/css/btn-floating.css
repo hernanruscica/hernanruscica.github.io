@@ -14,7 +14,7 @@
 .top_arrow{    
     bottom: 8vh;
     right: 1.7em;    
-    padding: 0.5em 1em;
+    padding: 0.8em 0.5em;
     opacity: 0;
     transform: scale(0);
     transition-property: transform, opacity;
@@ -32,18 +32,19 @@
 
 .top_arrow_icon {    
     height: 35px;    
-    width: auto;
+    width: 35px;
 }
 
  .left_arrow_icon{
-    font-size: 2em;    
-    width: auto;
+    height: 35px;    
+    width: 35px;
 }
 
 .left_arrow{
     top: 7em;
     left: 1em; 
     opacity: 0.5;  
+    padding: 0.3em  0.8em;
 }
 
 @media (min-width: 800px){

@@ -2,8 +2,8 @@
 
 
 let idSection01 = 'aboutme';
-let idSection03 = 'myskills';
-let idSection02 = 'recentprojects';    
+let idSection03 = 'recentprojects';
+let idSection02 = 'myskills';    
 let idSection04 = 'links';
 let idSection05 = 'contactme';        
 let idFooter = 'footer';

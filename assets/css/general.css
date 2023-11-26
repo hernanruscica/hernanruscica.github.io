@@ -81,6 +81,7 @@ body{
     border: rgb(5, 37, 46) solid 2px; ;   
     border-radius: 5px;
     transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: rgba(5, 37, 46, 0.4);
