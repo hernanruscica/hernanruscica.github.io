@@ -62,7 +62,7 @@
 
 .section__title__container__icon{
     width: 25px;
-    height: auto;    
+    height: 25px;    
 }
 
 .section_title{
@@ -94,7 +94,7 @@
 }
 .section__btn__icon{
     width: 20px;
-    height: auto;    
+    height: 20px;    
 }
 
 @media (min-width: 800px){
