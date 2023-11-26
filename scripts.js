@@ -15,7 +15,7 @@ $d.addEventListener('click', (e) => {
         $navbar.classList.toggle('navbar_show');
         enableScroll();
     }
-    if (e.target.id == 'header__btn-menu-open'){
+    if (e.target.id == 'header__btn-menu-open' ){
         console.log('click en el boton de abrir el menu');
         $navbar.classList.toggle('navbar_show')
         disableScroll();

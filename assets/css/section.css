@@ -27,6 +27,7 @@
     border: #000000 solid 2px;
 }
 
+
 .section_image__container-btn-download{
     position: absolute;    
     bottom: 0px;
@@ -36,7 +37,12 @@
     border-radius:  5px 0 0 0;
     border-bottom: none;
     border-right: none;   
-    width: auto;
+    width: auto;  
+    padding: 0.5;  
+}
+.section_image__container-btn-download img {
+    width: 20px;
+    height: auto;
 }
 
 .section__sidetext__container{
@@ -52,6 +58,11 @@
     justify-content: left;
     align-items: center;
     margin: 0.8em 0;    
+}
+
+.section__title__container__icon{
+    width: 25px;
+    height: auto;    
 }
 
 .section_title{
@@ -75,9 +86,15 @@
 }
 
 .section__btn{
-    display: block;
+    display: flex;
     width: 100%;
-    text-align: center;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+.section__btn__icon{
+    width: 20px;
+    height: auto;    
 }
 
 @media (min-width: 800px){
