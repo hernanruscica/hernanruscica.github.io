@@ -50,7 +50,7 @@ Header
 .header__logo-container__icon{    
     padding: 1em 1.5em;
     /* font-size: 2.4em;     */
-    width: auto;
+    width: 70px;
     height: 35px;
     fill: white;
 }
@@ -62,7 +62,7 @@ Header
 .header__btn-menu{    
     padding: 0em;
     /* font-size: 2.8em;     */
-    width: auto;
+    width: 30px;
     height: 30px;
     cursor: pointer;
      
@@ -91,7 +91,7 @@ Header
     position: absolute;
     top: 1.4em;
     right: 2.6em;
-    width: auto;
+    width: 40px;
     height: 40px;
     cursor: pointer;
 }
@@ -156,7 +156,7 @@ Header
 
 .header_navbar_link_image{
     height: 16px;
-    width: auto;
+    width: 16px;
 }
 
 .header_navbar_language{
