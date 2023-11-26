@@ -40,9 +40,9 @@
     width: auto;  
     padding: 0.5;  
 }
-.section_image__container-btn-download img {
+.section__btn__icon {
     width: 20px;
-    height: auto;
+    height: 20px;
 }
 
 .section__sidetext__container{
@@ -92,10 +92,7 @@
     justify-content: center;
     align-items: center;
 }
-.section__btn__icon{
-    width: 20px;
-    height: 20px;    
-}
+
 
 @media (min-width: 800px){
     .section{
