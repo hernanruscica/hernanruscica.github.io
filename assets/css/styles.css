@@ -463,16 +463,15 @@ Header ends
 
 .section__image__container{
    width: 100%;   
-   min-width: 300px;   
+   min-width: 300px;
+   position: relative;
    display: flex;
-   flex-direction: column;   
    align-self: center;    
-   margin-bottom: 1.5em;
 }
 .section_image{
    width: 100%;   
    min-width: 300px;
-   height: 200px;
+   height: 240px;
    object-fit: cover;
    filter: brightness(70%);
    object-position: center;
@@ -485,15 +484,17 @@ Header ends
 }
 
 .section_image__container-btn-download{
-   /*position: absolute;    
+   position: absolute;    
    bottom: 0px;
-   right: 0px;*/
+   right: 0px;
    min-width: 130px;
    border: var(--section04-dark) solid 2px;
    background-color: rgba(255, 255, 255, 0.7);
-   border-radius:  0 0 5px 5px;
-   border-top: none;    
-   text-align: center;      
+   border-radius:  5px 0 0 0;
+   border-bottom: none;
+   border-right: none;      
+   padding: 0.5;  
+   
 }
 .section__btn__icon {
    width: 20px;
