@@ -17,7 +17,45 @@
 font-family: 'Courier Prime', monospace;
 font-family: 'Montserrat', sans-serif;
 */
-
+/* Courier Prime */
+@font-face {
+    font-family: 'Courier Prime';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Courier Prime'), local('CourierPrime-Regular'), url(./Courier_Prime-Montserrat/Courier_Prime/CourierPrime-Regular.ttf) format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Courier Prime';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Courier Prime Bold'), local('CourierPrime-Bold'), url(./Courier_Prime-Montserrat/Courier_Prime/CourierPrime-Bold.ttf) format('ttf');
+  }
+  
+  /* Montserrat */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Montserrat Light'), local('Montserrat-Light'), url(./Courier_Prime-Montserrat/Montserrat/static/Montserrat-Light.ttf) format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(./Courier_Prime-Montserrat/Montserrat/static/Montserrat-Regular.ttf) format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(./Courier_Prime-Montserrat/Montserrat/static/Montserrat-SemiBold.ttf) format('ttf');
+  }
+  
+  /* Puedes ajustar la ruta (url) de las fuentes según la ubicación de tus archivos de fuente en tu proyecto. */
+  
 /* General Styles starts*/
 :root{
     /*Basic colors*/
