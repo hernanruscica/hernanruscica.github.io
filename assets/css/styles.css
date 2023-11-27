@@ -463,12 +463,14 @@ Header ends
 
 .section__image__container{
    width: 100%;   
+   min-width: 300px;
    position: relative;
    display: flex;
    align-self: center;    
 }
 .section_image{
    width: 100%;   
+   min-width: 300px;
    height: 240px;
    object-fit: cover;
    object-position: center;
@@ -484,12 +486,14 @@ Header ends
    position: absolute;    
    bottom: 0px;
    right: 0px;
+   min-width: 130px;
    border: var(--section04-dark) solid 2px;
    background-color: rgba(255, 255, 255, 0.7);
    border-radius:  5px 0 0 0;
    border-bottom: none;
    border-right: none;      
    padding: 0.5;  
+   
 }
 .section__btn__icon {
    width: 20px;
