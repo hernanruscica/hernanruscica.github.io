@@ -1,4 +1,4 @@
-
+/* Section.css starts*/
 .section{
      /* background-color: var(--midnight-green);  */
     color: var(--section01-dark);    
@@ -104,3 +104,5 @@
         align-self: flex-start;
     }
 }
+
+/* Section.css ends*/

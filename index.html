@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sitio web personal de Cesar Hernan Ruscica, datos de contacto, habilidades profesionales y servicios ofrecidos. Esta es la pagina de inicio, la landing page, donde puede recorrer las diferentes secciones">
     <title>ruscica-code.ar - Home</title>   
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/foto-perfil-mobile.jpg" type="image/webp">
 </head>
 <body> 
     <!--HEADER SECTIOn-->
@@ -372,8 +375,9 @@
         </div>
     </footer>
 
-    <script src="./scripts.js"></script>    
-    <script src="scroll_sections.js"></script>
+    <script src="./scripts.min.js"></script>    
+    <!--<script src="./scripts.js"></script> 
+     <script src="scroll_sections.js"></script> -->
     
 </body>
 </html>

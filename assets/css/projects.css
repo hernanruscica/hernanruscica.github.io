@@ -1,5 +1,5 @@
 /*******************************
-RECENT PROJECTS container
+RECENT PROJECTS container starts
 *************************/
 .projects{
     flex-direction: column;    
@@ -102,3 +102,7 @@ RECENT PROJECTS container
     justify-content: space-around;
 }
 }
+
+/*******************************
+RECENT PROJECTS container ends
+*************************/

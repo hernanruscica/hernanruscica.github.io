@@ -1,3 +1,5 @@
+/*Myskills starts*/
+
 .myskills{
     background-color: var(--section03-light);
     flex-direction: column-reverse;
@@ -42,3 +44,5 @@
         border-right: var(--section04-dark) solid 1px;
     }
 }
+
+/*Myskills ends*/
