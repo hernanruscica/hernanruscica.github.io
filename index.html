@@ -10,20 +10,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_io/favicon-32x32.png">    
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon_io/favicon-16x16.png">
-    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-        rel="preload"
-        as="style"
-        crossorigin
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet"> -->
-     <link rel="stylesheet" href="./assets/css/styles.css"> 
-    <!--<link rel="stylesheet" href="./assets/css/styles.min.css">-->
-    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    
+    <link rel="preload" fetchpriority="high" as="style" href="./assets/css/styles.min.css?v=1.0" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/styles.min.css?v=1.0">
+    </noscript>
+    
+
     <link rel="preload" fetchpriority="high" as="image" href="/assets/images/foto-perfil-mobile.jpg" type="image/webp">
 </head>
 <body> 
