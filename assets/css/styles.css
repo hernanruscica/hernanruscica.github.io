@@ -252,24 +252,12 @@ Header starts
 }
 
 .header__logo-container__icon{    
-    padding: 1em 1.5em;
-    /* font-size: 2.4em;     */
-    width: 70px;
-    height: 35px;
-    fill: white;
-}
-
-.header__logo-container__icon svg{
-    fill: var(--section01-light);
+    padding: 1em 1.5em;    
 }
 
 .header__btn-menu{    
-    padding: 0em;
-    /* font-size: 2.8em;     */
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-     
+    padding: 0em;    
+    cursor: pointer;     
 }
 
 .header__navbar-mobile{
@@ -600,9 +588,9 @@ RECENT PROJECTS container starts
 .recentprojects-project__img-container__img{
     object-fit: cover;
     object-position: center;  
-    width: 100%;
-    max-width: inherit;
     height: 200px;
+    width: 100%;
+    max-width: inherit;    
     margin: 0;    
     filter: brightness(80%);     
     border: var(--midnight-green);
