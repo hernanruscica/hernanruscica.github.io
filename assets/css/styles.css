@@ -275,7 +275,7 @@ Header starts
 .header__navbar-mobile{
     position: fixed;
     top: 0px;
-    left: 0px;    
+    left: 100vw;    
     z-index: 5;
     background-color: var(--section02-dark);
     color: var(--section02-light);    
@@ -286,7 +286,7 @@ Header starts
     align-items: center;
     justify-content: flex-start;
     padding-top: 4em;    
-    translate: 100vw;
+    /*translate: 100vw;*/
     opacity: 0;
     
     transition: all ease-in-out 0.5s;
@@ -301,8 +301,9 @@ Header starts
 }
 
 .navbar_show{
-    translate: 0vw;
+    /*translate: 0vw;*/
     opacity: 0.9;        
+    left: 0vw;
     transition: all ease-in-out 0.5s;
 }
 
