@@ -15,11 +15,17 @@
     
     <link rel="preload" fetchpriority="high" as="style" href="./assets/css/styles.min.css?v=1.0" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="./assets/css/styles.min.css?v=1.0">
+        <link rel="stylesheet" href="./assets/css/styles.min.css?v=1.1">
     </noscript>
     
 
-    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/foto-perfil-mobile.jpg" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/foto-perfil-mobile.jpg?v=1.1" type="image/jpeg">
+    <noscript><script src="/assets/images/foto-perfil-mobile.jpg?v=1.1" defer></script></noscript>
+
+    <!-- Preload del archivo JavaScript con versión y atributos adicionales -->
+    <link rel="preload" href="/scripts.min.js?v=1.1" as="script" crossorigin="anonymous" importance="high" integrity="tu_valor_de_integridad" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='script'">
+    <noscript><script src="/scripts.min.js?v=1.1" defer></script></noscript>
+
 </head>
 <body> 
     <!--HEADER SECTIOn-->
