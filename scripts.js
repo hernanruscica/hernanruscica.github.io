@@ -72,7 +72,7 @@ function enableScroll() {
 }
 
 
-
+/*
 
 let idSection01 = 'aboutme';
 let idSection03 = 'recentprojects';
@@ -159,4 +159,4 @@ window.addEventListener('scroll', () => {
     $d.getElementById(`${currentPos}_mobile_navbar_link`).classList.add('navbar-mobile-selected');    
      
 
-});
+});*/

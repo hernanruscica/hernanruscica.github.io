@@ -2,8 +2,8 @@
 
 
 let idSection01 = 'aboutme';
-let idSection03 = 'recentprojects';
 let idSection02 = 'myskills';    
+let idSection03 = 'recentprojects';
 let idSection04 = 'links';
 let idSection05 = 'contactme';        
 let idFooter = 'footer';
@@ -41,8 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('scroll', () => {            
     
     
+    let tolerance = null;//   mobile
+    if (window.innerWidth > 1000){
+        tolerance = 0;
+    }else {
+        tolerance = 120;
+    }
+
+    console.log(tolerance, window.innerWidth)
+
     let scroollPosY = window.scrollY;
-    let tolerance = 150;   
     
 
     if  (scroollPosY > ySection01 - 20){
@@ -59,17 +67,7 @@ window.addEventListener('scroll', () => {
     }
     if  (scroollPosY > ySection05 - tolerance ){
         currentPos = idSection05;
-    }
-
-
-    //  console.clear();      
-    //  console.log(idSection01, ySection01);  
-    //  console.log(idSection02, ySection02);  
-    //  console.log(idSection03, ySection03);  
-    //  console.log(idSection04, ySection04);  
-    //  console.log(idFooter, yFooter);  
-    //  console.log(`Posicion de Y: ${scroollPosY}. tipo de dato: ${typeof scroollPosY}`);
-    //  console.log(`seccion actual : ${currentPos}`);
+    }   
 
 
     $d.querySelectorAll('.header__navbar-desktop__list__item>a').forEach((item) => {            

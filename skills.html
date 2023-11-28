@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sitio web personal de Cesar Hernan Ruscica, datos de contacto, habilidades profesionales y servicios ofrecidos. Esta es la pagina de habilidades, donde explico con mas detalle, que tecnologias, habilidades, etc. manejo actualmente">
     <title>ruscica-code.ar - Habilidades</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_io/favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon_io/favicon-16x16.png">
+
+    <link rel="preload" fetchpriority="high" as="style" href="./assets/css/styles.min.css?v=1.5" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <!-- <link rel="stylesheet" href="./assets/css/styles.min.css?v=1.4"> -->
+        <link rel="stylesheet" href="./assets/css/styles.min.css?v=1.5">
+    </noscript>
 </head>
 <body>  
 
@@ -14,21 +23,22 @@
     <header class="header " id = "header">             
         <div class="header-container">
 
-            <a href="#" class="header__logo-container">                                                
-                <img src="./assets/icons/fontawesome-custom/code-light.svg" class="header__logo-container__icon" alt="Icono en formato svg de codigo">
+            <a href="./index.html" class="header__logo-container">                                                
+                <img src="./assets/icons/fontawesome-custom/code-light.svg" class="header__logo-container__icon" 
+                style="width: 70px; height: 35px;" alt="Icono en formato svg de codigo">
                 <h1 class="header__logo-container__title">
                     <span style="color: var(--section04-normal)">ruscica</span><span style="color: var(--section03-normal)">-code</span>
                     <span style="color: var(--section02-light)">.ar</span>
                 </h1>
             </a>            
             
-            <img src="./assets/icons/fontawesome-custom/bars-light.svg" class="header__btn-menu" 
+            <img src="./assets/icons/fontawesome-custom/bars-light.svg" style="width: 30px; height: 30px;" class="header__btn-menu" 
                 id = "header__btn-menu-open" alt="Icono en formato svg de unas barras">
                 
 
             <!--navbar mobile Empieza-->
             <nav class="header__navbar-mobile" id = "header__navbar">                                       
-                <img src="./assets/icons/fontawesome-custom/xmark-light.svg" class="header__navbar-mobile__btn-menu-close"
+                <img src="./assets/icons/fontawesome-custom/xmark-light.svg" style="width: 30px; height: 30px;" class="header__navbar-mobile__btn-menu-close"
                     id = "header__btn-menu-close" alt="icono del boton de cerrar menu">
                 <ol  class="header__navbar-mobile__list">                
                     <li class="header__navbar-mobile__list__item " id = "header_navbar_link">
@@ -49,15 +59,15 @@
                     <!-- social media links -->
                     <li class="header__navbar-mobile__list__item">
                         <a href="https://github.com/hernanruscica" class="footer_social_link" target="_blank">                                          
-                            <img src="./assets/icons/fontawesome-custom/github-light.svg" alt="icono de github"
+                            <img src="./assets/icons/fontawesome-custom/github-light.svg" style="width: 40px; height: 40px;" alt="icono de github"
                                 class="header_navbar-mobile_social" />
                         <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link"  target="_blank">                            
-                            <img src="./assets/icons/fontawesome-custom/envelope-light.svg" alt="icono de correo electronico"
+                            <img src="./assets/icons/fontawesome-custom/envelope-light.svg"  style="width: 40px; height: 40px;" alt="icono de correo electronico"
                                 class="header_navbar-mobile_social" />
                         </a>
                         <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work"  target="_blank"
                             class="footer_social_link">                            
-                            <img src="./assets/icons/fontawesome-custom/whatsapp-light.svg" alt="icono de whatsapp"
+                            <img src="./assets/icons/fontawesome-custom/whatsapp-light.svg"  style="width: 40px; height: 40px;" alt="icono de whatsapp"
                                 class="header_navbar-mobile_social" />
                         </a>
                     </li> 
@@ -87,18 +97,16 @@
             </nav>
             <!--navbar Desktop Termina-->  
         </div>     
-    </header>     
+    </header>   
 
-    <a href="#" class="btn btn-floating top_arrow" id="top_arrow">
-        
+    <a href="#" class="btn btn-floating top_arrow" id="top_arrow">        
         <img src="./assets/icons/fontawesome-custom/arrow-up.svg" class="top_arrow_icon"
-            alt="icono de flecha para arriba">
-    </a>   
-
+            style="height: 35px; width: 35px;" alt="icono de flecha para arriba">
+    </a>
     <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">
         
         <img src="./assets/icons/fontawesome-custom/arrow-left.svg" class="left_arrow_icon"
-         alt="icono de flecha para la izquierda">
+         alt="icono de flecha para la izquierda" style="height: 35px; width: 35px;">
     </a>  
 
     <!--ABOUT ME SECTION   -->
@@ -199,8 +207,8 @@
         </div>
     </footer>
 
-    <script src="./scripts.js"></script>
-    <script src="logros.js"></script>
+    <script src="./scripts.min.js?v=1.1"></script>
+    
     <!-- <script src="../scroll_sections.js"></script> -->
 </body>
 </html>
