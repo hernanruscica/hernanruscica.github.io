@@ -230,14 +230,12 @@ body{
             align-items: center;
             gap: 0.6rem;
             list-style: none; 
-                        
-            
         }
         .header__navbar-mobile__list__item{
             text-align: center;
-            width: 100%;
+            width: 100%;                        
             border-bottom: var(--section01-light) solid 2px;   
-            padding-bottom: 1em;
+            padding-bottom: 0.5em;
         }
 
         .header__navbar-mobile__list__item:last-child{
@@ -246,15 +244,17 @@ body{
 
         .header__navbar-mobile__link{
             text-decoration: none;
-            font-size: 1.2em;
-            display: block;    
-            padding: 0em ;      
+            font-size: 1.2em;                
             font-family: 'Montserrat', sans-serif;;
             text-transform: uppercase;
             color: var(--section01-light);
+            padding: 0;
         }
 
-        
+        .navbar-selected{
+          color: var(--section03-normal) ;          
+      }
+      
         @media (min-width: 768px){
             
             
@@ -265,7 +265,7 @@ body{
                position: static;     
                transition: none;                   
                justify-content: center;                   
-               padding-top: 0; 
+               
             }   
             #header__btn-menu-close{
                 display: none;                
@@ -276,16 +276,24 @@ body{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            gap: 1.5em;
             padding-right: 4em;
         }
         .header__navbar-mobile__list__item{
-            border-bottom: none;
-            padding: 0;
+            border-bottom: none;     
         }
-
         #social__links__navbar {
             display: none;
         }
+
+        .navbar-selected{
+          color: var(--section03-normal) ;
+          border-bottom: var(--section04-light) solid 3px;          
+      }
+
+      .header__navbar-mobile__link{
+        padding: 0.2em;
+      }
             
         }
         /*header and navbar ends*/

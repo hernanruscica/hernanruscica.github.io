@@ -28,7 +28,7 @@ $d.addEventListener('click', (e) => {
         //console.log(progreso['menuClick']);
         /*sistema de logros*/
 
-        $navbar.classList.toggle('navbar_show');
+        //$navbar.classList.toggle('navbar_show');        
         enableScroll();        
     }    
     // if (e.target.id.includes('header_navbar-desktop_link')){
