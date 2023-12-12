@@ -20,25 +20,14 @@ $d.addEventListener('click', (e) => {
         //$navbar.classList.toggle('navbar_show')
         disableScroll();
     }
-    if (e.target.id.includes('mobile_navbar_link') || e.target.id.includes('header_navbar-desktop_link')){
+    if (e.target.id.includes('mobile_navbar_link') ){
         //Se hizo click en algun enlace del menu desktop o mobile     
-        console.log('click en  id = "mobile_navbar_link"')
-        /*sistema de logros*/
-        //incrementarProgreso('menuClick');
-        //console.log(progreso['menuClick']);
-        /*sistema de logros*/
+        console.log('click en  id = "mobile_navbar_link"');         
+        $d.getElementById("menu-toggle").checked = !$d.getElementById("menu-toggle").checked;
 
         //$navbar.classList.toggle('navbar_show');        
         enableScroll();        
-    }    
-    // if (e.target.id.includes('header_navbar-desktop_link')){
-    //     $d.querySelectorAll('.header__navbar-desktop__list__item>a').forEach((item) => {            
-    //         item.classList.remove('navbar-selected');
-    //        // console.log(item)
-    //     });            
-
-    //     e.target.classList.add('navbar-selected');
-    // }    
+    }       
 }
 );
 window.addEventListener('scroll', (e) => {
