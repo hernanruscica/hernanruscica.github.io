@@ -271,9 +271,9 @@ Header starts
             opacity: 0.8;
             width: 100vw;
             height: 100%;     
-            transition: all 0.5s ease-in-out;       
+            transition: all 0.5s ease-in-out;      
             
-        }
+        }        
 
         #menu-toggle{
             display: none;            
@@ -282,8 +282,9 @@ Header starts
             left: 0;
             transition: all 0.5s ease-in-out;
         }
-        #header__btn-menu-close{  
-                  
+        
+        
+        #header__btn-menu-close{                    
             margin-left: 85vw;
         }
         
@@ -322,7 +323,7 @@ Header starts
         @media (min-width: 768px){
             
             
-            #header__btn-menu-menu{
+            #header__btn-menu-open{
                 display: none;
             }
             .header__navbar{                          

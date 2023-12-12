@@ -12,12 +12,12 @@ $d.addEventListener('click', (e) => {
     //console.log(e.target.id);
     if (e.target.id == 'header__btn-menu-close'){
         console.log('click en el boton de cerrar el menu');
-        $navbar.classList.toggle('navbar_show');
+        //$navbar.classList.toggle('navbar_show');
         enableScroll();
     }
     if (e.target.id == 'header__btn-menu-open' ){
         console.log('click en el boton de abrir el menu');
-        $navbar.classList.toggle('navbar_show')
+        //$navbar.classList.toggle('navbar_show')
         disableScroll();
     }
     if (e.target.id.includes('mobile_navbar_link') || e.target.id.includes('header_navbar-desktop_link')){
@@ -53,7 +53,7 @@ window.addEventListener('scroll', (e) => {
 )
 
 function disableScroll() {
-    // Get the current page scroll position
+    // Get the current page scroll position         
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
   
