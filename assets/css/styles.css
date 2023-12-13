@@ -396,7 +396,8 @@ Header ends
 .section_image{
    width: 100%;   
    min-width: 300px;
-   height: 240px;
+   height: 100%;
+   max-height: 250px;
    object-fit: cover;
    filter: brightness(70%);
    object-position: center;
@@ -484,6 +485,17 @@ Header ends
        width: 100%;
        align-self: flex-start;
    }
+
+   .section_image{
+    width: 100%;   
+    min-width: 300px;
+    min-height: 400px;
+    
+    object-fit: cover;
+    filter: brightness(60%);
+    object-position: center;
+    border: #000000 solid 2px;
+ }
 }
 
 /* Section.css ends*/
