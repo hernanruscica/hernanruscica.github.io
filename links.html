@@ -11,101 +11,82 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_io/favicon-32x32.png">    
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon_io/favicon-16x16.png">
     
-    <link rel="preload" fetchpriority="high" as="style" href="./assets/css/styles.min.css?v=1.5" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" fetchpriority="high" as="style" href="./assets/css/styles.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <!-- <link rel="stylesheet" href="./assets/css/styles.min.css?v=1.4"> -->
-        <link rel="stylesheet" href="./assets/css/styles.min.css?v=1.5">
+        <!-- <link rel="stylesheet" href="./assets/css/styles.css?v=1.4"> -->
+        <link rel="stylesheet" href="./assets/css/styles.css">
     </noscript>
 </head>
 <body>  
 
     <!--HEADER SECTIOn-->
-    <header class="header " id = "header">             
-        <div class="header-container">
-
+    <header class="header" id="header">
+        <div class="header-container">                
             <a href="./index.html" class="header__logo-container">                                                
                 <img src="./assets/icons/fontawesome-custom/code-light.svg" class="header__logo-container__icon" 
-                style="width: 70px; height: 35px;" alt="Icono en formato svg de codigo">
+                alt="Icono en formato svg de codigo">
                 <h1 class="header__logo-container__title">
                     <span style="color: var(--section04-normal)">ruscica</span><span style="color: var(--section03-normal)">-code</span>
                     <span style="color: var(--section02-light)">.ar</span>
                 </h1>
-            </a>            
-            
-            <img src="./assets/icons/fontawesome-custom/bars-light.svg" style="width: 30px; height: 30px;" class="header__btn-menu" 
-                id = "header__btn-menu-open" alt="Icono en formato svg de unas barras">
-                
-
-            <!--navbar mobile Empieza-->
-            <nav class="header__navbar-mobile" id = "header__navbar">                                       
-                <img src="./assets/icons/fontawesome-custom/xmark-light.svg" style="width: 30px; height: 30px;" class="header__navbar-mobile__btn-menu-close"
-                    id = "header__btn-menu-close" alt="icono del boton de cerrar menu">
-                <ol  class="header__navbar-mobile__list">                
-                    <li class="header__navbar-mobile__list__item " id = "header_navbar_link">
-                        <a href="./index.html#aboutme" class="header__navbar-mobile__link " id = "aboutme_mobile_navbar_link">Acerca de mí</a>
+            </a>                  
+    
+            <input type="checkbox" id="menu-toggle" >
+            <label for="menu-toggle" class="checkbtn" >
+                <img src="./assets/icons/fontawesome-custom/bars-light.svg" 
+                class="header__logo-container__icon"   id="header__btn-menu-open"
+                style="width: 20px;" alt="boton de menu" >
+            </label>
+    
+            <nav class="header__navbar" id="header__navbar">
+                <label for="menu-toggle" class="checkbtn">
+                    <img src="./assets/icons/fontawesome-custom/xmark-light.svg" 
+                        class="header__logo-container__icon" id="header__btn-menu-close" 
+                        style="width: 20px;"                    
+                        alt="icono del boton de cerrar menu">
+                </label>
+                <ul class="header__navbar-mobile__list">
+                    <li class="header__navbar-mobile__list__item"  id="mobile_navbar_link">
+                        <a href="./index.html#aboutme" class="header__navbar-mobile__link navbar-selected" id="aboutme_mobile_navbar_link">Sobre_mi</a>
+                    </li>
+                    <li class="header__navbar-mobile__list__item"  id="mobile_navbar_link">
+                        <a href="./index.html#myskills" class="header__navbar-mobile__link" id="myskills_mobile_navbar_link">Habilidades</a>
                     </li>
                     <li class="header__navbar-mobile__list__item">
-                        <a href="./index.html#myskills" class="header__navbar-mobile__link" id = "myskills_mobile_navbar_link">Habilidades</a>
+                        <a href="./index.html#recentprojects" class="header__navbar-mobile__link" id="recentprojects_mobile_navbar_link">Proyectos</a>
                     </li>
                     <li class="header__navbar-mobile__list__item">
-                        <a href="./index.html#recentprojects" class="header__navbar-mobile__link" id = "recentprojects_mobile_navbar_link">Proyectos</a>
+                        <a href="./index.html#myLinks" class="header__navbar-mobile__link"  id="myLinks_mobile_navbar_link">Enlaces</a>
                     </li>
                     <li class="header__navbar-mobile__list__item">
-                        <a href="./index.html#links" class="header__navbar-mobile__link" id = "links_mobile_navbar_link">Enlaces</a>
-                    </li>
-                    <li class="header__navbar-mobile__list__item">
-                        <a href="./index.html#contactme" class="header__navbar-mobile__link" id = "contactme_mobile_navbar_link">Contacto</a>
+                        <a href="./index.html#contactme" class="header__navbar-mobile__link"  id="contactme_mobile_navbar_link">Contacto</a>
                     </li>
                     <!-- social media links -->
-                    <li class="header__navbar-mobile__list__item">
-                        <a href="https://github.com/hernanruscica" class="footer_social_link" target="_blank">                                          
-                            <img src="./assets/icons/fontawesome-custom/github-light.svg" style="width: 40px; height: 40px;" alt="icono de github"
-                                class="header_navbar-mobile_social" />
-                        <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link"  target="_blank">                            
-                            <img src="./assets/icons/fontawesome-custom/envelope-light.svg"  style="width: 40px; height: 40px;" alt="icono de correo electronico"
+                    <li class="header__navbar-mobile__list__item" id="social__links__navbar">
+                        <a href="https://github.com/hernanruscica" class="footer_social_link" target="_blank"  id="mobile_navbar_link">                                          
+                            <img src="./assets/icons/fontawesome-custom/github-light.svg"  alt="icono de github"
+                                id="mobile_navbar_link" class="header_navbar-mobile_social" />
+                        <a href="mailto: cesarhernanruscica@gmail.com" class="footer_social_link"  target="_blank"  id="mobile_navbar_link">                            
+                            <img src="./assets/icons/fontawesome-custom/envelope-light.svg"   alt="icono de correo electronico"
                                 class="header_navbar-mobile_social" />
                         </a>
-                        <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work"  target="_blank"
+                        <a href="https://wa.me/+541132924558?text=¡Hello+I'm+interested+with+your+work"  target="_blank"  id="mobile_navbar_link"
                             class="footer_social_link">                            
-                            <img src="./assets/icons/fontawesome-custom/whatsapp-light.svg"  style="width: 40px; height: 40px;" alt="icono de whatsapp"
+                            <img src="./assets/icons/fontawesome-custom/whatsapp-light.svg"   alt="icono de whatsapp"
                                 class="header_navbar-mobile_social" />
                         </a>
                     </li> 
-                </ol>
+                </ul>
             </nav>
-            <!--navbar mobile Termina-->
-
-            <!--navbar Desktop empieza-->
-            <nav class="header__navbar-desktop" id="header__navbar__desktop">
-                <ol class="header__navbar-desktop__list">
-                    <li class="header__navbar-desktop__list__item">
-                        <a href="./index.html#aboutme" class="header__navbar-desktop__link navbar-selected" id="aboutme_desktop_navbar_link">Acerca de mí</a>
-                    </li>            
-                    <li class="header__navbar-desktop__list__item">
-                        <a href="./index.html#myskills" class="header__navbar-desktop__link" id="myskills_desktop_navbar_link">Habilidades</a>
-                    </li>           
-                    <li class="header__navbar-desktop__list__item">
-                        <a href="./index.html#recentprojects" class="header__navbar-desktop__link" id="recentprojects_desktop_navbar_link">Proyectos</a>
-                    </li>
-                    <li class="header__navbar-desktop__list__item">
-                        <a href="./index.html#links" class="header__navbar-desktop__link" id = "links_desktop_navbar_link">Enlaces</a>
-                    </li>            
-                    <li class="header__navbar-desktop__list__item">
-                        <a href="./index.html#contactme" class="header__navbar-desktop__link" id="contactme_desktop_navbar_link">Contacto</a>
-                    </li>
-                </ol>
-            </nav>
-            <!--navbar Desktop Termina-->  
-        </div>     
-    </header>      
+        </div>
+    </header>    
 
     <a href="#" class="btn btn-floating top_arrow" id="top_arrow">        
         <img src="./assets/icons/fontawesome-custom/arrow-up.svg" class="top_arrow_icon"
             style="height: 35px; width: 35px;" alt="icono de flecha para arriba">
     </a>
 
-    <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">
-        
+    <a href="javascript:window.history.back();" class="btn btn-floating left_arrow" id="left_arrow">        
         <img src="./assets/icons/fontawesome-custom/arrow-left.svg" class="left_arrow_icon"
          alt="icono de flecha para la izquierda" style="height: 35px; width: 35px;">
     </a>  
