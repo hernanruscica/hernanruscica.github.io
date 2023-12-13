@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ySection05 = element05.offsetTop;
         yFooter = elementFooter.offsetTop;  
         
-        console.log(element04, ySection04);
+        //console.log(element04, ySection04);
         
     }, 500);
 
@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
 
     let scroollPosY = window.scrollY + tolerance;
     
-    console.log(scroollPosY, ySection01, ySection02, ySection03, ySection04, ySection05, yFooter,  currentPos)
+    //console.log(scroollPosY, ySection01, ySection02, ySection03, ySection04, ySection05, yFooter,  currentPos)
 
     if  (scroollPosY > ySection01 && scroollPosY < ySection02 ){
         currentPos = idSection01;
@@ -79,7 +79,7 @@ window.addEventListener('scroll', () => {
     }
      
 
-console.log(currentPos)
+//console.log(currentPos)
      $d.querySelectorAll('.header__navbar-desktop__list__item>a').forEach((item) => {            
                   item.classList.remove('navbar-selected');
                  });        

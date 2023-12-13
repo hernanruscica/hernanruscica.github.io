@@ -21,7 +21,7 @@ if (!progreso[logro.nombre]) {
     progreso[logro.nombre] = true;
     localStorage.setItem('progreso', JSON.stringify(progreso));
     // Aquí puedes agregar código para mostrar el logro en tu sitio web
-    console.log(`¡Ganaste el logro "${logro.nombre}"!`);
+    //console.log(`¡Ganaste el logro "${logro.nombre}"!`);
 }
 }  
 

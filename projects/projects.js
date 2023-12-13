@@ -1,6 +1,6 @@
 import { createCard } from "./project_card.js";
 
-console.log("desde projects.js");
+//console.log("desde projects.js");
 
 
 

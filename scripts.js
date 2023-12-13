@@ -1,4 +1,4 @@
-console.log('desde js');
+//console.log('desde js');
 const $d = document;
 const $header = $d.getElementById('header');
 const $navbarBtnOpen = $d.getElementById('header__btn-menu-open');
@@ -11,18 +11,18 @@ $d.addEventListener('click', (e) => {
     
     //console.log(e.target.id);
     if (e.target.id == 'header__btn-menu-close'){
-        console.log('click en el boton de cerrar el menu');
+        //console.log('click en el boton de cerrar el menu');
         //$navbar.classList.toggle('navbar_show');
         enableScroll();
     }
     if (e.target.id == 'header__btn-menu-open' ){
-        console.log('click en el boton de abrir el menu');
+        //console.log('click en el boton de abrir el menu');
         //$navbar.classList.toggle('navbar_show')
         disableScroll();
     }
     if (e.target.id.includes('mobile_navbar_link') ){
         //Se hizo click en algun enlace del menu desktop o mobile     
-        console.log('click en  id = "mobile_navbar_link"');         
+        //console.log('click en  id = "mobile_navbar_link"');         
         $d.getElementById("menu-toggle").checked = !$d.getElementById("menu-toggle").checked;
 
         //$navbar.classList.toggle('navbar_show');        
