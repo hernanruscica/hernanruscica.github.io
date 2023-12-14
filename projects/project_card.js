@@ -5,7 +5,7 @@ export function createCard(project) {
             <div class="recentprojects-project__img-container">
                 <img class="recentprojects-project__img-container__img" 
                 src="${project.images[0].src}" alt="${project.images[0].alt}">            
-                <a href="project.html?id=${project.id}" class="btn recentprojects-project__btn">
+                <a href="view_project.html?id=${project.id}" class="btn recentprojects-project__btn">
                 Ver más</a>                   
             </div>
             

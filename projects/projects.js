@@ -7,7 +7,7 @@ import { createCard } from "./project_card.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  const urlArchivoJSON = '../projects02.json';
+  const urlArchivoJSON = './projects.json';
 
   fetch(urlArchivoJSON)
     .then(response => {
